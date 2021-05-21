@@ -16,3 +16,4 @@ D:\CS\2nd semester\AirLineReservationSystem\CS162S21GID11\AirLineManagementSyste
 D:\CS\2nd semester\AirLineReservationSystem\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\obj\Debug\netcoreapp3.1\AirLineManagementSystem.LoginForm.resources
 D:\CS\2nd semester\AirLineReservationSystem\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\obj\Debug\netcoreapp3.1\AirLineManagementSystem.PassengerForm.resources
 D:\CS\2nd semester\AirLineReservationSystem\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\obj\Debug\netcoreapp3.1\AirLineManagementSystem.Properties.Resources.resources
+D:\CS\2nd semester\AirLineReservationSystem\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\obj\Debug\netcoreapp3.1\AirLineManagementSystem.FlightsUC.resources
