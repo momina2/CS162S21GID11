@@ -19,5 +19,105 @@ namespace AirLineManagementSystem
         {
 
         }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked)
+            {
+                SourceBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+                SourceBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
+                DestinationBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+                DestinationBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
+
+                AutoCompleteStringCollection auto = new AutoCompleteStringCollection();
+                string [] cities = new string[] {"Islamabad","Rawalpindi","Karachi","Lahore","Dera Ghazi Khan","Faisalabad",
+                    "Gwadar","Multan","Peshawar","Quetta","Rahim Yar Khan","Sialkot","Turbat",
+                    "Bahawalpur","Chashma","Chilas","Chitral","Dalbandin","Dera Ismail Khan",
+                    "Gilgit","Gujrat","Hyderabad","Islamkot","Jacobabad","Khuzdar","Larkana",
+                    "Muzaffarabad","Nawabshah","Rawalakot","Sibi","Skardu","Sukkur"};
+                auto.AddRange(cities);
+
+                SourceBox.AutoCompleteCustomSource = auto;
+                DestinationBox.AutoCompleteCustomSource = auto;
+
+            }
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if(radioButton2.Checked)
+            {
+
+                AutoCompleteStringCollection auto = new AutoCompleteStringCollection();
+                string[] countries = new string[] {"Afghanistan","Algeria","Argentina","Aruba","Australia",
+                    "Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belgium","Bermuda",
+                    "Bhutan","Bosnia ","Brazil","Canada","Chile","China","Colombia","Costa Rica","Cuba","Denmark","Dominica",
+                    "Egypt","Ethiopia","Finland","France","Georgia","Germany","Greece",
+                    "Greenland","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Isle of Man","Italy",
+                    "Jamaica","Japan","Jersey","Kazakhstan","Kenya","Kuwait","Kyrgyzstan","Lebanon","Lesotho","Liberia","Libya","Malaysia",
+                    "Maldives","Mexico","Mongolia","Montenegro","Morocco",
+                    "Nepal","Netherlands","New Caledonia","New Zealand","Niger","Nigeria","North Korea","Norway","Oman","Pakistan","Palestine",
+                    "Panama","Peru","Philippines","Poland","Portugal","Puerto Rico","Qatar","Romania","Russia","Saudi Arabia","Senegal","Serbia","Singapore",
+                    "Somalia","South Africa","South Korea","Spain","Sri Lanka","St Lucia","Sudan","Swaziland","Sweden","Switzerland","Syria","Tajikistan",
+                    "Thailand","Turkey","Turkmenistan","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States of America","Uzbekistan",
+                    "Venezuela","Vietnam","Yemen","Zambia","Zimbabwe" };
+
+
+                DialogResult result = MessageBox.Show("Do you want to add stop ?","Internation Flight", MessageBoxButtons.YesNo , MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    TextBox Midstop = new TextBox();
+                   
+                    this.Controls.Add(Midstop);
+
+                    Midstop.Location = new Point(268, 95);
+                    Midstop.Size = new Size(97, 22);
+
+                    Label midlabel = new Label();
+                    this.Controls.Add(midlabel);
+                   
+                   midlabel.Location = new Point(176,95);
+                    midlabel.Font = new Font("Century Gothic", 14);
+                    midlabel.Text = "Layover";
+
+                  
+
+                    SourceBox.Location = new Point(73, 95);
+                    SourceBox.Size = new Size(97, 23);
+                    label2.Location = new Point(1, 95);
+
+                    DestinationBox.Location = new Point(481, 95);
+                   DestinationBox.Size = new Size(117, 23);
+                    label3.Location = new Point(368, 95);
+                 }
+                if (result == DialogResult.No)
+                {
+                    SourceBox.Location = new Point(109, 95);
+                    SourceBox.Size = new Size(186, 23);
+                    label2.Location = new Point(25, 95);
+
+                    DestinationBox.Location = new Point(416, 95);
+                    DestinationBox.Size = new Size(179, 23);
+                    label3.Location = new Point(301, 96);
+                }
+
+
+
+                    SourceBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+                SourceBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
+               DestinationBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+                DestinationBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
+
+               
+                auto.AddRange(countries);
+
+                SourceBox.AutoCompleteCustomSource = auto;
+                DestinationBox.AutoCompleteCustomSource = auto;
+
+
+
+            }
+        }
     }
 }

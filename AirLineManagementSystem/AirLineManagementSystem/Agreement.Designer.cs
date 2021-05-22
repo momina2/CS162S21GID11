@@ -43,7 +43,7 @@ namespace AirLineManagementSystem
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(127, 311);
+            this.button1.Location = new System.Drawing.Point(122, 301);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(127, 42);
             this.button1.TabIndex = 1;
