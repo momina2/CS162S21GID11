@@ -46,3 +46,5 @@ D:\CS\2nd semester\AirLineReservationSystem\CS162S21GID11\AirLineManagementSyste
 D:\CS\2nd semester\AirLineReservationSystem\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\obj\Debug\netcoreapp3.1\AirLineManagementSystem.DelayUC.resources
 D:\CS\2nd semester\AirLineReservationSystem\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\obj\Debug\netcoreapp3.1\AirLineManagementSystem.RestoreSeats.resources
 D:\CS\2nd semester\AirLineReservationSystem\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\obj\Debug\netcoreapp3.1\AirLineManagementSystem.SignUp.resources
+D:\CS\2nd semester\AirLineReservationSystem\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\obj\Debug\netcoreapp3.1\AirLineManagementSystem.EmployeeUC.resources
+D:\CS\2nd semester\AirLineReservationSystem\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\obj\Debug\netcoreapp3.1\AirLineManagementSystem.PassengerUC.resources
