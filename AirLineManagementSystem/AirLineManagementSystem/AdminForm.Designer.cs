@@ -197,6 +197,7 @@ namespace AirLineManagementSystem
             this.button6.TabIndex = 5;
             this.button6.Text = "Delay Flights";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -212,6 +213,7 @@ namespace AirLineManagementSystem
             this.button7.TabIndex = 5;
             this.button7.Text = "Remove Seats";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // basepanel
             // 

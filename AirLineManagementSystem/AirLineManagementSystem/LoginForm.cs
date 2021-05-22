@@ -34,5 +34,11 @@ namespace AirLineManagementSystem
                 PasswordBox.UseSystemPasswordChar = true;
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SignUp su = new SignUp();
+            su.Visible = true;
+        }
     }
 }

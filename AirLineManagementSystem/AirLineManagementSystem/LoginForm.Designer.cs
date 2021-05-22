@@ -31,9 +31,9 @@ namespace AirLineManagementSystem
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.PasswordBox = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.Password = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -58,9 +58,9 @@ namespace AirLineManagementSystem
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.PasswordBox);
             this.panel3.Controls.Add(this.textBox1);
-            this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.Password);
             this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.panel5);
@@ -72,6 +72,21 @@ namespace AirLineManagementSystem
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(358, 273);
             this.panel3.TabIndex = 0;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Location = new System.Drawing.Point(79, 232);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(193, 29);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Create Account";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // PasswordBox
             // 
@@ -89,17 +104,6 @@ namespace AirLineManagementSystem
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(207, 16);
             this.textBox1.TabIndex = 8;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.label4.Location = new System.Drawing.Point(136, 244);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 17);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Create Account";
             // 
             // Password
             // 
@@ -211,10 +215,10 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckBox Password;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox PasswordBox;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button2;
     }
 }

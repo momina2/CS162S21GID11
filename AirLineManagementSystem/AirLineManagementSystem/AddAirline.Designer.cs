@@ -42,12 +42,14 @@ namespace AirLineManagementSystem
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.checkBox2);
             this.panel1.Controls.Add(this.checkBox1);
@@ -170,6 +172,16 @@ namespace AirLineManagementSystem
             this.panel3.Size = new System.Drawing.Size(48, 48);
             this.panel3.TabIndex = 4;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(93, 2);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(151, 24);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "ADD  AIRLINE";
+            // 
             // AddAirline
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -201,5 +213,6 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label4;
     }
 }

@@ -52,6 +52,9 @@ namespace AirLineManagementSystem
 
         private void button4_Click(object sender, EventArgs e)
         {
+            AddAirline AL = new AddAirline();
+            basepanel.Controls.Add(AL);
+            basepanel.Controls["AddAirline"].BringToFront();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -67,6 +70,19 @@ namespace AirLineManagementSystem
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            RestoreSeats rs = new RestoreSeats();
+            rs.Visible = true;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            DelayUC df = new DelayUC();
+            basepanel.Controls.Add(df);
+            basepanel.Controls["DelayUC"].BringToFront();
         }
     }
 }
