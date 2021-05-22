@@ -47,16 +47,16 @@ namespace AirLineManagementSystem
             this.panel3.Controls.Add(this.label1);
             this.panel3.Location = new System.Drawing.Point(47, 38);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(489, 167);
+            this.panel3.Size = new System.Drawing.Size(489, 181);
             this.panel3.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(75, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(185, 30);
+            this.label2.Size = new System.Drawing.Size(144, 22);
             this.label2.TabIndex = 17;
             this.label2.Text = "RESTORE SEATS";
             // 
@@ -76,7 +76,7 @@ namespace AirLineManagementSystem
             // 
             // comboBox1
             // 
-            this.comboBox1.Location = new System.Drawing.Point(220, 69);
+            this.comboBox1.Location = new System.Drawing.Point(200, 72);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(172, 23);
             this.comboBox1.TabIndex = 0;
@@ -85,7 +85,7 @@ namespace AirLineManagementSystem
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(95, 69);
+            this.label1.Location = new System.Drawing.Point(75, 69);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 22);
             this.label1.TabIndex = 0;
@@ -94,9 +94,9 @@ namespace AirLineManagementSystem
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
-            this.panel4.Location = new System.Drawing.Point(69, 12);
+            this.panel4.Location = new System.Drawing.Point(69, 25);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(48, 48);
+            this.panel4.Size = new System.Drawing.Size(48, 53);
             this.panel4.TabIndex = 3;
             // 
             // RestoreSeats
@@ -104,7 +104,7 @@ namespace AirLineManagementSystem
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(582, 234);
+            this.ClientSize = new System.Drawing.Size(582, 252);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

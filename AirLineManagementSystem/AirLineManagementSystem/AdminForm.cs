@@ -66,11 +66,15 @@ namespace AirLineManagementSystem
 
             tabControl1.SelectedTab = TransactionPage;
             tabControl1.BringToFront();
+            AddItemTransaction();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-           
+            PassengerForm passenger = new PassengerForm();
+            passenger.Show();
+            this.Visible=false;
+
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -94,7 +98,7 @@ namespace AirLineManagementSystem
         private void button8_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = PassengerPage;
-            AddItem();
+            AddItemPassenger();
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -112,7 +116,7 @@ namespace AirLineManagementSystem
 
         }
 
-        private void AddItem()
+        private void AddItemPassenger()
         {
             PassengerUC[] uc1 = new PassengerUC[6];
 
@@ -125,6 +129,23 @@ namespace AirLineManagementSystem
                 uc1[i].Amount = "107" +i+" Rs.";
 
                 flowLayoutPanel2.Controls.Add(uc1[i]);
+
+
+            }
+
+        }
+
+        private void AddItemTransaction()
+        {
+            TransactionUC[] uc1 = new TransactionUC[6];
+
+            for (int i = 0; i < 6; i++)
+            {
+                uc1[i] = new TransactionUC();
+                uc1[i].Name = "KHADIJA DAR";
+                uc1[i].Amount = "1078" + i + " Rs.";
+
+                flowLayoutPanel3.Controls.Add(uc1[i]);
 
 
             }

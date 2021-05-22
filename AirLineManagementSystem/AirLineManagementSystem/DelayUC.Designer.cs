@@ -39,12 +39,14 @@ namespace AirLineManagementSystem
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.panel1);
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.dateTimePicker1);
             this.panel3.Controls.Add(this.textBox2);
@@ -98,7 +100,7 @@ namespace AirLineManagementSystem
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(107, 15);
+            this.label4.Location = new System.Drawing.Point(214, 15);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(187, 33);
             this.label4.TabIndex = 18;
@@ -137,10 +139,18 @@ namespace AirLineManagementSystem
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
-            this.panel4.Location = new System.Drawing.Point(74, 25);
+            this.panel4.Location = new System.Drawing.Point(78, 38);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(73, 74);
+            this.panel4.Size = new System.Drawing.Size(62, 76);
             this.panel4.TabIndex = 4;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DimGray;
+            this.panel1.Location = new System.Drawing.Point(201, 51);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 2);
+            this.panel1.TabIndex = 23;
             // 
             // DelayUC
             // 
@@ -169,5 +179,6 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel panel1;
     }
 }

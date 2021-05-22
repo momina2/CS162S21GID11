@@ -19,8 +19,7 @@ namespace AirLineManagementSystem
         {
             AdminForm af = new AdminForm();
             af.Show();
-            LoginForm lf = new LoginForm();
-            lf.Hide();
+            this.Visible = false;
         }
 
         private void Password_CheckedChanged(object sender, EventArgs e)
