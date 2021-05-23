@@ -113,5 +113,15 @@ namespace AirLineManagementSystem
         {
 
         }
+
+        private void panel22_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label31_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }
