@@ -39,11 +39,11 @@ namespace AirLineManagementSystem
             // SetPrice
             // 
             this.SetPrice.AutoSize = true;
-            this.SetPrice.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SetPrice.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.SetPrice.ForeColor = System.Drawing.Color.White;
-            this.SetPrice.Location = new System.Drawing.Point(253, 42);
+            this.SetPrice.Location = new System.Drawing.Point(193, 43);
             this.SetPrice.Name = "SetPrice";
-            this.SetPrice.Size = new System.Drawing.Size(102, 36);
+            this.SetPrice.Size = new System.Drawing.Size(96, 33);
             this.SetPrice.TabIndex = 0;
             this.SetPrice.Text = "label1";
             // 
@@ -66,7 +66,7 @@ namespace AirLineManagementSystem
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.ClientSize = new System.Drawing.Size(524, 123);
+            this.ClientSize = new System.Drawing.Size(474, 123);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.SetPrice);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

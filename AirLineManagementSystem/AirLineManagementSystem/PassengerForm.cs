@@ -185,5 +185,12 @@ namespace AirLineManagementSystem
         {
 
         }
+
+        private void LOGIN_Click_1(object sender, EventArgs e)
+        {
+            AdminForm Af = new AdminForm();
+            Af.Show();
+            this.Visible = false;
+        }
     }
 }
