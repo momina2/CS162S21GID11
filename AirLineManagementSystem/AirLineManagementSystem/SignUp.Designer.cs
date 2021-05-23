@@ -83,9 +83,9 @@ namespace AirLineManagementSystem
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.panel1);
-            this.panel2.Location = new System.Drawing.Point(436, 12);
+            this.panel2.Location = new System.Drawing.Point(436, 34);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(359, 493);
+            this.panel2.Size = new System.Drawing.Size(359, 471);
             this.panel2.TabIndex = 2;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -119,7 +119,7 @@ namespace AirLineManagementSystem
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(43, 430);
+            this.button1.Location = new System.Drawing.Point(43, 422);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(270, 39);
             this.button1.TabIndex = 10;

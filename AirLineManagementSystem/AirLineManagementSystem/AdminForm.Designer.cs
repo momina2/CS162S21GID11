@@ -184,7 +184,7 @@ namespace AirLineManagementSystem
             this.button9.ForeColor = System.Drawing.Color.White;
             this.button9.Location = new System.Drawing.Point(3, 3);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(209, 40);
+            this.button9.Size = new System.Drawing.Size(213, 40);
             this.button9.TabIndex = 6;
             this.button9.Text = "HOME";
             this.button9.UseVisualStyleBackColor = true;
@@ -308,7 +308,7 @@ namespace AirLineManagementSystem
             this.PassengerPage.Location = new System.Drawing.Point(4, 24);
             this.PassengerPage.Name = "PassengerPage";
             this.PassengerPage.Padding = new System.Windows.Forms.Padding(3);
-            this.PassengerPage.Size = new System.Drawing.Size(682, 550);
+            this.PassengerPage.Size = new System.Drawing.Size(703, 559);
             this.PassengerPage.TabIndex = 1;
             this.PassengerPage.Text = "tabPage2";
             this.PassengerPage.UseVisualStyleBackColor = true;
@@ -360,7 +360,7 @@ namespace AirLineManagementSystem
             this.TransactionPage.Location = new System.Drawing.Point(4, 24);
             this.TransactionPage.Name = "TransactionPage";
             this.TransactionPage.Padding = new System.Windows.Forms.Padding(3);
-            this.TransactionPage.Size = new System.Drawing.Size(682, 550);
+            this.TransactionPage.Size = new System.Drawing.Size(703, 559);
             this.TransactionPage.TabIndex = 2;
             this.TransactionPage.Text = "TransactionPage";
             this.TransactionPage.UseVisualStyleBackColor = true;
