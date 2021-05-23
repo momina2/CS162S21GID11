@@ -24,6 +24,8 @@ namespace AirLineManagementSystem
         {
             if (radioButton1.Checked)
             {
+                //autocomplete dynamically 
+
                 SourceBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
                 SourceBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
                 DestinationBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
@@ -35,7 +37,8 @@ namespace AirLineManagementSystem
                     "Bahawalpur","Chashma","Chilas","Chitral","Dalbandin","Dera Ismail Khan",
                     "Gilgit","Gujrat","Hyderabad","Islamkot","Jacobabad","Khuzdar","Larkana",
                     "Muzaffarabad","Nawabshah","Rawalakot","Sibi","Skardu","Sukkur"};
-                auto.AddRange(cities);
+
+                     auto.AddRange(cities);
 
                 SourceBox.AutoCompleteCustomSource = auto;
                 DestinationBox.AutoCompleteCustomSource = auto;
@@ -44,7 +47,7 @@ namespace AirLineManagementSystem
 
         }
 
-                    int i = 1;
+                   
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             if(radioButton2.Checked)
@@ -63,42 +66,41 @@ namespace AirLineManagementSystem
                     "Somalia","South Africa","South Korea","Spain","Sri Lanka","St Lucia","Sudan","Swaziland","Sweden","Switzerland","Syria","Tajikistan",
                     "Thailand","Turkey","Turkmenistan","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States of America","Uzbekistan",
                     "Venezuela","Vietnam","Yemen","Zambia","Zimbabwe" };
+                     auto.AddRange(countries);
 
 
                 DialogResult result = MessageBox.Show("Do you want to add stop ?","Internation Flight", MessageBoxButtons.YesNo , MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
                 {
-                    //TextBox stop = new TextBox();
-                    //this.Controls.Add(stop);
-                    //stop.Top = i * 25;
-                    //stop.Left = 150;
-                    //stop.Text = "TextBox" + this.i.ToString();
+                    //layover textbox
                     TextBox Midstop = new TextBox();
-
-                    this.Controls.Add(Midstop);
-                    //Midstop.Text = "TextBox" + this.i.ToString();
-
-                    Midstop.Location = new Point(109, 109);
-                    Midstop.Size = new Size(150, 23);
-                    //Midstop.Text = "TextBox" + this.i.ToString();
-
+                    panel1.Controls.Add(Midstop);
+                    Midstop.Location = new Point(265, 94);
+                    Midstop.Size = new Size(97, 22);
+                 
+                    //layover label
                     Label midlabel = new Label();
-                    this.Controls.Add(midlabel);
-
-                    midlabel.Location = new Point(109, 109);
+                    panel1.Controls.Add(midlabel);
+                    midlabel.Location = new Point(179, 95);
                     midlabel.Font = new Font("Century Gothic", 14);
                     midlabel.Text = "Layover";
 
 
-
-                    SourceBox.Location = new Point(73, 95);
+                    //source textbox loaction 
+                    SourceBox.Location = new Point(74, 95);
                     SourceBox.Size = new Size(97, 23);
                     label2.Location = new Point(1, 95);
 
+                    //destination textbox loaction
                     DestinationBox.Location = new Point(481, 95);
                     DestinationBox.Size = new Size(117, 23);
                     label3.Location = new Point(368, 95);
+
+                    Midstop.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+                    Midstop.AutoCompleteSource = AutoCompleteSource.CustomSource;
+                    Midstop.AutoCompleteCustomSource = auto;
                 }
+
                 if (result == DialogResult.No)
                 {
                     SourceBox.Location = new Point(109, 95);
@@ -112,14 +114,10 @@ namespace AirLineManagementSystem
 
 
 
-                    SourceBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+                SourceBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
                 SourceBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
-               DestinationBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+                DestinationBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
                 DestinationBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
-
-               
-                auto.AddRange(countries);
-
                 SourceBox.AutoCompleteCustomSource = auto;
                 DestinationBox.AutoCompleteCustomSource = auto;
 

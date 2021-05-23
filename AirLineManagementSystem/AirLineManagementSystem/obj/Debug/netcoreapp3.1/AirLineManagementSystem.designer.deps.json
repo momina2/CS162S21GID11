@@ -9,9 +9,22 @@
       "CircularProgressBar/2.2.0": {
         "dependencies": {
           "WinFormAnimation": "1.3.0"
+        },
+        "runtime": {
+          "lib/net35-Client/CircularProgressBar.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          }
         }
       },
-      "WinFormAnimation/1.3.0": {}
+      "WinFormAnimation/1.3.0": {
+        "runtime": {
+          "lib/net35-Client/WinFormAnimation.dll": {
+            "assemblyVersion": "1.3.0.0",
+            "fileVersion": "1.3.0.0"
+          }
+        }
+      }
     }
   },
   "libraries": {

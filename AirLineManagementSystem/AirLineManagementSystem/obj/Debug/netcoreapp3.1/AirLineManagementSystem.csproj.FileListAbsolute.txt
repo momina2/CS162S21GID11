@@ -56,3 +56,7 @@ C:\Users\Ghauri\Documents\C#\CS162S21GID11\AirLineManagementSystem\AirLineManage
 C:\Users\Ghauri\Documents\C#\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\bin\Debug\netcoreapp3.1\WinFormAnimation.dll
 C:\Users\Ghauri\Documents\C#\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\obj\Debug\netcoreapp3.1\AirLineManagementSystem.ProgressBar.resources
 C:\Users\Ghauri\Documents\C#\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\obj\Debug\netcoreapp3.1\AirLineManagementSystem.csproj.CopyComplete
+D:\CS\2nd semester\AirLineReservationSystem\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\bin\Debug\netcoreapp3.1\CircularProgressBar.dll
+D:\CS\2nd semester\AirLineReservationSystem\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\bin\Debug\netcoreapp3.1\WinFormAnimation.dll
+D:\CS\2nd semester\AirLineReservationSystem\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\obj\Debug\netcoreapp3.1\AirLineManagementSystem.ProgressBar.resources
+D:\CS\2nd semester\AirLineReservationSystem\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\obj\Debug\netcoreapp3.1\AirLineManagementSystem.csproj.CopyComplete
