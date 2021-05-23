@@ -266,7 +266,7 @@ namespace AirLineManagementSystem
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(711, 590);
+            this.tabControl1.Size = new System.Drawing.Size(711, 587);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
@@ -277,7 +277,7 @@ namespace AirLineManagementSystem
             this.HomePage.Location = new System.Drawing.Point(4, 24);
             this.HomePage.Name = "HomePage";
             this.HomePage.Padding = new System.Windows.Forms.Padding(3);
-            this.HomePage.Size = new System.Drawing.Size(703, 562);
+            this.HomePage.Size = new System.Drawing.Size(703, 559);
             this.HomePage.TabIndex = 0;
             this.HomePage.Text = "tabPage1";
             this.HomePage.UseVisualStyleBackColor = true;
@@ -308,7 +308,7 @@ namespace AirLineManagementSystem
             this.PassengerPage.Location = new System.Drawing.Point(4, 24);
             this.PassengerPage.Name = "PassengerPage";
             this.PassengerPage.Padding = new System.Windows.Forms.Padding(3);
-            this.PassengerPage.Size = new System.Drawing.Size(703, 562);
+            this.PassengerPage.Size = new System.Drawing.Size(682, 550);
             this.PassengerPage.TabIndex = 1;
             this.PassengerPage.Text = "tabPage2";
             this.PassengerPage.UseVisualStyleBackColor = true;
@@ -360,7 +360,7 @@ namespace AirLineManagementSystem
             this.TransactionPage.Location = new System.Drawing.Point(4, 24);
             this.TransactionPage.Name = "TransactionPage";
             this.TransactionPage.Padding = new System.Windows.Forms.Padding(3);
-            this.TransactionPage.Size = new System.Drawing.Size(703, 562);
+            this.TransactionPage.Size = new System.Drawing.Size(682, 550);
             this.TransactionPage.TabIndex = 2;
             this.TransactionPage.Text = "TransactionPage";
             this.TransactionPage.UseVisualStyleBackColor = true;
