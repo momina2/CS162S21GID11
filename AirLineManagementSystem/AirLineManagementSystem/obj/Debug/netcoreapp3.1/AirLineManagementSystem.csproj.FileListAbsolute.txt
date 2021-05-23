@@ -60,3 +60,4 @@ D:\CS\2nd semester\AirLineReservationSystem\CS162S21GID11\AirLineManagementSyste
 D:\CS\2nd semester\AirLineReservationSystem\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\bin\Debug\netcoreapp3.1\WinFormAnimation.dll
 D:\CS\2nd semester\AirLineReservationSystem\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\obj\Debug\netcoreapp3.1\AirLineManagementSystem.ProgressBar.resources
 D:\CS\2nd semester\AirLineReservationSystem\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\obj\Debug\netcoreapp3.1\AirLineManagementSystem.csproj.CopyComplete
+D:\CS\2nd semester\AirLineReservationSystem\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\obj\Debug\netcoreapp3.1\AirLineManagementSystem.NotificationForm.resources

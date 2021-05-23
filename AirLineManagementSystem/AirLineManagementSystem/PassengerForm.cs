@@ -86,17 +86,17 @@ namespace AirLineManagementSystem
 
         private void HomePage_Click(object sender, EventArgs e)
         {
-
+            downpanel.Size = downpanel.MinimumSize;
         }
 
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            downpanel.Size = downpanel.MinimumSize;
         }
 
         private void ViewPage_Click(object sender, EventArgs e)
         {
-
+            downpanel.Size = downpanel.MinimumSize;
         }
 
         private void textBox7_TextChanged(object sender, EventArgs e)
@@ -122,6 +122,68 @@ namespace AirLineManagementSystem
         private void label31_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void FlyPage_Click(object sender, EventArgs e)
+        {
+            downpanel.Size = downpanel.MinimumSize;
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = PassengerinfoPage;
+        }
+
+        private void SeatSelection_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel39_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label61_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = Payment;
+        }
+
+        private void panel43_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label62_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = Ticketpage;
+        }
+
+        private void radioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+            this.Alert("Visit Booth No # 11");
+        }
+        public void Alert(string msg)
+        {
+            NotificationForm frm = new NotificationForm();
+            frm.showAlert(msg);
+        }
+
+        private void label23_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = SeatSelection;
+        }
+
+        private void LOGIN_Click(object sender, EventArgs e)
+        {
+            AdminForm Af = new AdminForm();
+            Af.Show();
+            this.Visible = false;
+        }
+
+        private void textBox29_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
