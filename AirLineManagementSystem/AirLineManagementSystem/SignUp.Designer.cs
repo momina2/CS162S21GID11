@@ -40,10 +40,8 @@ namespace AirLineManagementSystem
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -64,7 +62,7 @@ namespace AirLineManagementSystem
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.panel1.Location = new System.Drawing.Point(12, 39);
+            this.panel1.Location = new System.Drawing.Point(12, 51);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(335, 5);
             this.panel1.TabIndex = 1;
@@ -79,10 +77,8 @@ namespace AirLineManagementSystem
             this.panel2.Controls.Add(this.checkBox1);
             this.panel2.Controls.Add(this.textBox4);
             this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox2);
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.panel5);
-            this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.label1);
@@ -96,7 +92,7 @@ namespace AirLineManagementSystem
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Black;
-            this.panel7.Location = new System.Drawing.Point(217, 381);
+            this.panel7.Location = new System.Drawing.Point(216, 363);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(35, 1);
             this.panel7.TabIndex = 5;
@@ -108,7 +104,7 @@ namespace AirLineManagementSystem
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(58, 360);
+            this.button2.Location = new System.Drawing.Point(57, 341);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(214, 30);
             this.button2.TabIndex = 12;
@@ -123,18 +119,19 @@ namespace AirLineManagementSystem
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(43, 437);
+            this.button1.Location = new System.Drawing.Point(43, 430);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(270, 39);
             this.button1.TabIndex = 10;
             this.button1.Text = "Proceed";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Font = new System.Drawing.Font("Century Gothic", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox2.Location = new System.Drawing.Point(43, 397);
+            this.checkBox2.Location = new System.Drawing.Point(43, 373);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(181, 21);
             this.checkBox2.TabIndex = 9;
@@ -145,7 +142,7 @@ namespace AirLineManagementSystem
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Century Gothic", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox1.Location = new System.Drawing.Point(43, 363);
+            this.checkBox1.Location = new System.Drawing.Point(43, 344);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(166, 21);
             this.checkBox1.TabIndex = 8;
@@ -156,7 +153,7 @@ namespace AirLineManagementSystem
             // textBox4
             // 
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Location = new System.Drawing.Point(43, 302);
+            this.textBox4.Location = new System.Drawing.Point(43, 292);
             this.textBox4.Name = "textBox4";
             this.textBox4.PlaceholderText = "Phone #";
             this.textBox4.Size = new System.Drawing.Size(270, 16);
@@ -165,25 +162,16 @@ namespace AirLineManagementSystem
             // textBox3
             // 
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Location = new System.Drawing.Point(43, 227);
+            this.textBox3.Location = new System.Drawing.Point(43, 206);
             this.textBox3.Name = "textBox3";
             this.textBox3.PlaceholderText = "CNIC";
             this.textBox3.Size = new System.Drawing.Size(270, 16);
             this.textBox3.TabIndex = 6;
             // 
-            // textBox2
-            // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(43, 155);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PlaceholderText = "Employee ID";
-            this.textBox2.Size = new System.Drawing.Size(270, 16);
-            this.textBox2.TabIndex = 5;
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Black;
-            this.panel6.Location = new System.Drawing.Point(43, 324);
+            this.panel6.Location = new System.Drawing.Point(43, 315);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(270, 1);
             this.panel6.TabIndex = 4;
@@ -191,23 +179,15 @@ namespace AirLineManagementSystem
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Black;
-            this.panel5.Location = new System.Drawing.Point(43, 249);
+            this.panel5.Location = new System.Drawing.Point(43, 227);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(270, 1);
             this.panel5.TabIndex = 4;
             // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Black;
-            this.panel4.Location = new System.Drawing.Point(43, 177);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(270, 1);
-            this.panel4.TabIndex = 4;
-            // 
             // textBox1
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(43, 82);
+            this.textBox1.Location = new System.Drawing.Point(43, 122);
             this.textBox1.Name = "textBox1";
             this.textBox1.PlaceholderText = "Full Name";
             this.textBox1.Size = new System.Drawing.Size(270, 16);
@@ -216,7 +196,7 @@ namespace AirLineManagementSystem
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Black;
-            this.panel3.Location = new System.Drawing.Point(43, 107);
+            this.panel3.Location = new System.Drawing.Point(43, 145);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(270, 1);
             this.panel3.TabIndex = 3;
@@ -224,10 +204,10 @@ namespace AirLineManagementSystem
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(133, 5);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(133, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 31);
+            this.label1.Size = new System.Drawing.Size(118, 36);
             this.label1.TabIndex = 2;
             this.label1.Text = "Sign Up";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -261,10 +241,8 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.Button button1;

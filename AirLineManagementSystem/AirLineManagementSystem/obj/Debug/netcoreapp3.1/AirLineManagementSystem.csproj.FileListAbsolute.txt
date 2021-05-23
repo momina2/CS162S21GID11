@@ -49,3 +49,10 @@ D:\CS\2nd semester\AirLineReservationSystem\CS162S21GID11\AirLineManagementSyste
 D:\CS\2nd semester\AirLineReservationSystem\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\obj\Debug\netcoreapp3.1\AirLineManagementSystem.EmployeeUC.resources
 D:\CS\2nd semester\AirLineReservationSystem\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\obj\Debug\netcoreapp3.1\AirLineManagementSystem.PassengerUC.resources
 D:\CS\2nd semester\AirLineReservationSystem\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\obj\Debug\netcoreapp3.1\AirLineManagementSystem.TransactionUC.resources
+C:\Users\Ghauri\Documents\C#\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\obj\Debug\netcoreapp3.1\AirLineManagementSystem.EmployeeUC.resources
+C:\Users\Ghauri\Documents\C#\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\obj\Debug\netcoreapp3.1\AirLineManagementSystem.PassengerUC.resources
+C:\Users\Ghauri\Documents\C#\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\obj\Debug\netcoreapp3.1\AirLineManagementSystem.TransactionUC.resources
+C:\Users\Ghauri\Documents\C#\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\bin\Debug\netcoreapp3.1\CircularProgressBar.dll
+C:\Users\Ghauri\Documents\C#\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\bin\Debug\netcoreapp3.1\WinFormAnimation.dll
+C:\Users\Ghauri\Documents\C#\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\obj\Debug\netcoreapp3.1\AirLineManagementSystem.ProgressBar.resources
+C:\Users\Ghauri\Documents\C#\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\obj\Debug\netcoreapp3.1\AirLineManagementSystem.csproj.CopyComplete

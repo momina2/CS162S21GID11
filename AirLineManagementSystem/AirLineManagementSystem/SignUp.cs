@@ -35,5 +35,10 @@ namespace AirLineManagementSystem
             Agreement a = new Agreement();
             a.Visible = true;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

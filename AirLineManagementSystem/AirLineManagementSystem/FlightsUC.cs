@@ -44,6 +44,7 @@ namespace AirLineManagementSystem
 
         }
 
+                    int i = 1;
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             if(radioButton2.Checked)
@@ -67,30 +68,37 @@ namespace AirLineManagementSystem
                 DialogResult result = MessageBox.Show("Do you want to add stop ?","Internation Flight", MessageBoxButtons.YesNo , MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
                 {
+                    //TextBox stop = new TextBox();
+                    //this.Controls.Add(stop);
+                    //stop.Top = i * 25;
+                    //stop.Left = 150;
+                    //stop.Text = "TextBox" + this.i.ToString();
                     TextBox Midstop = new TextBox();
-                   
-                    this.Controls.Add(Midstop);
 
-                    Midstop.Location = new Point(268, 95);
-                    Midstop.Size = new Size(97, 22);
+                    this.Controls.Add(Midstop);
+                    //Midstop.Text = "TextBox" + this.i.ToString();
+
+                    Midstop.Location = new Point(109, 109);
+                    Midstop.Size = new Size(150, 23);
+                    //Midstop.Text = "TextBox" + this.i.ToString();
 
                     Label midlabel = new Label();
                     this.Controls.Add(midlabel);
-                   
-                   midlabel.Location = new Point(176,95);
+
+                    midlabel.Location = new Point(109, 109);
                     midlabel.Font = new Font("Century Gothic", 14);
                     midlabel.Text = "Layover";
 
-                  
+
 
                     SourceBox.Location = new Point(73, 95);
                     SourceBox.Size = new Size(97, 23);
                     label2.Location = new Point(1, 95);
 
                     DestinationBox.Location = new Point(481, 95);
-                   DestinationBox.Size = new Size(117, 23);
+                    DestinationBox.Size = new Size(117, 23);
                     label3.Location = new Point(368, 95);
-                 }
+                }
                 if (result == DialogResult.No)
                 {
                     SourceBox.Location = new Point(109, 95);
@@ -114,8 +122,6 @@ namespace AirLineManagementSystem
 
                 SourceBox.AutoCompleteCustomSource = auto;
                 DestinationBox.AutoCompleteCustomSource = auto;
-
-
 
             }
         }

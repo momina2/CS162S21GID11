@@ -17,9 +17,12 @@ namespace AirLineManagementSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AdminForm af = new AdminForm();
-            af.Show();
-            this.Visible = false;
+            ProgressBar PB = new ProgressBar();
+            PB.Show();
+          
+
+        
+                    
         }
 
         private void Password_CheckedChanged(object sender, EventArgs e)

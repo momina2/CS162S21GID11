@@ -29,7 +29,7 @@ namespace AirLineManagementSystem
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -44,16 +44,12 @@ namespace AirLineManagementSystem
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -109,14 +105,14 @@ namespace AirLineManagementSystem
             this.Column2,
             this.Column3,
             this.Column4});
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dataGridView1.Enabled = false;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveBorder;
@@ -152,19 +148,15 @@ namespace AirLineManagementSystem
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.maskedTextBox1);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.textBox4);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(48, 22);
             this.panel1.Name = "panel1";
@@ -203,14 +195,6 @@ namespace AirLineManagementSystem
             this.panel2.Size = new System.Drawing.Size(400, 1);
             this.panel2.TabIndex = 17;
             // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.maskedTextBox1.Location = new System.Drawing.Point(91, 209);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(336, 16);
-            this.maskedTextBox1.TabIndex = 16;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
@@ -218,7 +202,7 @@ namespace AirLineManagementSystem
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(483, 230);
+            this.button1.Location = new System.Drawing.Point(483, 208);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(102, 26);
             this.button1.TabIndex = 15;
@@ -229,69 +213,31 @@ namespace AirLineManagementSystem
             // 
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.Location = new System.Drawing.Point(174, 169);
+            this.textBox4.Location = new System.Drawing.Point(27, 169);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(365, 16);
+            this.textBox4.PlaceholderText = "Employee Phone #";
+            this.textBox4.Size = new System.Drawing.Size(400, 16);
             this.textBox4.TabIndex = 11;
             // 
             // textBox2
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(162, 124);
+            this.textBox2.Location = new System.Drawing.Point(27, 128);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(264, 16);
+            this.textBox2.PlaceholderText = "Employee ID";
+            this.textBox2.Size = new System.Drawing.Size(399, 16);
             this.textBox2.TabIndex = 9;
             // 
             // textBox1
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(103, 74);
+            this.textBox1.Location = new System.Drawing.Point(27, 79);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(324, 16);
+            this.textBox1.PlaceholderText = "Employee Name";
+            this.textBox1.Size = new System.Drawing.Size(400, 16);
             this.textBox1.TabIndex = 8;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(26, 203);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 22);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "CNIC:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(26, 124);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 22);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Employee ID#";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(26, 163);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(162, 22);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Phone Number#";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(26, 75);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 22);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Name:";
             // 
             // label1
             // 
@@ -302,6 +248,16 @@ namespace AirLineManagementSystem
             this.label1.Size = new System.Drawing.Size(172, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = " EMPLOYEE  DATA";
+            // 
+            // textBox3
+            // 
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox3.Location = new System.Drawing.Point(28, 212);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.PlaceholderText = "CNIC";
+            this.textBox3.Size = new System.Drawing.Size(399, 16);
+            this.textBox3.TabIndex = 21;
             // 
             // EmployeeUC
             // 
@@ -333,13 +289,8 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -349,5 +300,6 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
