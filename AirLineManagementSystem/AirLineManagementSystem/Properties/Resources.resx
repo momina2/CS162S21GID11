@@ -163,11 +163,17 @@
   <data name="icons8-next-page-501" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-next-page-501.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-next-page-502" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-next-page-502.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-location-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-location-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-delete-file-30 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-delete-file-30 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-right-arrow-502" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-right-arrow-502.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-login-24 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-login-24 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,10 +214,19 @@
   <data name="icons8-airport-30" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-airport-30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-right-arrow-502" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-right-arrow-502.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="0d016c1d4607b0c5cbe88174b037be86" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\0d016c1d4607b0c5cbe88174b037be86.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-next-page-502" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-next-page-502.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="a2a5fa40d773c1d9af8868fe9ff530fe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\a2a5fa40d773c1d9af8868fe9ff530fe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="istockphoto-523513953-612x612" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\istockphoto-523513953-612x612.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="landscape-building-old-building-bangkok-wallpaper-thumb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\landscape-building-old-building-bangkok-wallpaper-thumb.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="turkey-dreams-of-cappadocia-avanos-nevsehir-wallpaper-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\turkey-dreams-of-cappadocia-avanos-nevsehir-wallpaper-preview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

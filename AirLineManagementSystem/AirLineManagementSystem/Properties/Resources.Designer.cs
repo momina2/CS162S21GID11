@@ -63,6 +63,26 @@ namespace AirLineManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _0d016c1d4607b0c5cbe88174b037be86 {
+            get {
+                object obj = ResourceManager.GetObject("0d016c1d4607b0c5cbe88174b037be86", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap a2a5fa40d773c1d9af8868fe9ff530fe {
+            get {
+                object obj = ResourceManager.GetObject("a2a5fa40d773c1d9af8868fe9ff530fe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_airplane_mode_on_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-airplane-mode-on-24", resourceCulture);
@@ -373,9 +393,39 @@ namespace AirLineManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_523513953_612x612 {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-523513953-612x612", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap landscape_building_old_building_bangkok_wallpaper_thumb {
+            get {
+                object obj = ResourceManager.GetObject("landscape-building-old-building-bangkok-wallpaper-thumb", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LOGO1 {
             get {
                 object obj = ResourceManager.GetObject("LOGO1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap turkey_dreams_of_cappadocia_avanos_nevsehir_wallpaper_preview {
+            get {
+                object obj = ResourceManager.GetObject("turkey-dreams-of-cappadocia-avanos-nevsehir-wallpaper-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

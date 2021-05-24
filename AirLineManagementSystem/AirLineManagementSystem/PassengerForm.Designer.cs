@@ -94,7 +94,6 @@ namespace AirLineManagementSystem
             this.label10 = new System.Windows.Forms.Label();
             this.ViewPage = new System.Windows.Forms.TabPage();
             this.button45 = new System.Windows.Forms.Button();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -166,29 +165,6 @@ namespace AirLineManagementSystem
             this.label61 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.panel41 = new System.Windows.Forms.Panel();
-            this.button33 = new System.Windows.Forms.Button();
-            this.button34 = new System.Windows.Forms.Button();
-            this.button35 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
-            this.button37 = new System.Windows.Forms.Button();
-            this.button38 = new System.Windows.Forms.Button();
-            this.button39 = new System.Windows.Forms.Button();
-            this.button40 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
-            this.button30 = new System.Windows.Forms.Button();
-            this.button31 = new System.Windows.Forms.Button();
-            this.button32 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.label64 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
@@ -200,16 +176,6 @@ namespace AirLineManagementSystem
             this.pictureBox26 = new System.Windows.Forms.PictureBox();
             this.panel15 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.label35 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.label36 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
             this.pictureBox27 = new System.Windows.Forms.PictureBox();
@@ -259,12 +225,52 @@ namespace AirLineManagementSystem
             this.button22 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
+            this.pictureBox31 = new System.Windows.Forms.PictureBox();
+            this.pictureBox32 = new System.Windows.Forms.PictureBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.button46 = new System.Windows.Forms.Button();
+            this.button48 = new System.Windows.Forms.Button();
+            this.button49 = new System.Windows.Forms.Button();
+            this.button50 = new System.Windows.Forms.Button();
+            this.button51 = new System.Windows.Forms.Button();
+            this.button52 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button33 = new System.Windows.Forms.Button();
+            this.button34 = new System.Windows.Forms.Button();
+            this.button35 = new System.Windows.Forms.Button();
+            this.button36 = new System.Windows.Forms.Button();
+            this.button37 = new System.Windows.Forms.Button();
+            this.button38 = new System.Windows.Forms.Button();
+            this.button39 = new System.Windows.Forms.Button();
+            this.button40 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.panel27 = new System.Windows.Forms.Panel();
+            this.button47 = new System.Windows.Forms.Button();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
+            this.panel28 = new System.Windows.Forms.Panel();
+            this.label25 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.basepanel.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.HomePage.SuspendLayout();
             this.CancelPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             this.panel21.SuspendLayout();
@@ -283,7 +289,6 @@ namespace AirLineManagementSystem
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.ViewPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.UpdatePage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
@@ -325,6 +330,9 @@ namespace AirLineManagementSystem
             this.panel35.SuspendLayout();
             this.panel37.SuspendLayout();
             this.downpanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -480,7 +488,10 @@ namespace AirLineManagementSystem
             // 
             // HomePage
             // 
-            this.HomePage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(191)))), ((int)(((byte)(196)))));
+            this.HomePage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.HomePage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HomePage.BackgroundImage")));
+            this.HomePage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.HomePage.Controls.Add(this.label25);
             this.HomePage.Location = new System.Drawing.Point(4, 24);
             this.HomePage.Name = "HomePage";
             this.HomePage.Padding = new System.Windows.Forms.Padding(3);
@@ -500,6 +511,7 @@ namespace AirLineManagementSystem
             this.CancelPage.Controls.Add(this.panel19);
             this.CancelPage.Controls.Add(this.panel18);
             this.CancelPage.Controls.Add(this.label37);
+            this.CancelPage.Controls.Add(this.panel28);
             this.CancelPage.Location = new System.Drawing.Point(4, 24);
             this.CancelPage.Name = "CancelPage";
             this.CancelPage.Padding = new System.Windows.Forms.Padding(3);
@@ -527,8 +539,9 @@ namespace AirLineManagementSystem
             // label63
             // 
             this.label63.AutoSize = true;
+            this.label63.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
             this.label63.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label63.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.label63.ForeColor = System.Drawing.Color.White;
             this.label63.Location = new System.Drawing.Point(275, 81);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(191, 23);
@@ -1004,8 +1017,8 @@ namespace AirLineManagementSystem
             // 
             // ViewPage
             // 
-            this.ViewPage.Controls.Add(this.button45);
             this.ViewPage.Controls.Add(this.pictureBox25);
+            this.ViewPage.Controls.Add(this.button45);
             this.ViewPage.Controls.Add(this.panel3);
             this.ViewPage.Controls.Add(this.label2);
             this.ViewPage.Controls.Add(this.dataGridView1);
@@ -1028,28 +1041,19 @@ namespace AirLineManagementSystem
             this.button45.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button45.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button45.ForeColor = System.Drawing.Color.White;
-            this.button45.Location = new System.Drawing.Point(361, 132);
+            this.button45.Location = new System.Drawing.Point(380, 128);
             this.button45.Name = "button45";
             this.button45.Size = new System.Drawing.Size(99, 33);
             this.button45.TabIndex = 7;
             this.button45.Text = "SEARCH";
             this.button45.UseVisualStyleBackColor = false;
             // 
-            // pictureBox25
-            // 
-            this.pictureBox25.Image = global::AirLineManagementSystem.Properties.Resources.icons8_ticket_confirmed_80;
-            this.pictureBox25.Location = new System.Drawing.Point(771, 20);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(105, 88);
-            this.pictureBox25.TabIndex = 6;
-            this.pictureBox25.TabStop = false;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.panel3.Location = new System.Drawing.Point(19, 233);
+            this.panel3.Location = new System.Drawing.Point(29, 233);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(155, 2);
+            this.panel3.Size = new System.Drawing.Size(140, 2);
             this.panel3.TabIndex = 5;
             // 
             // label2
@@ -1128,9 +1132,9 @@ namespace AirLineManagementSystem
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(361, 85);
+            this.textBox1.Location = new System.Drawing.Point(317, 85);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
+            this.textBox1.Size = new System.Drawing.Size(216, 23);
             this.textBox1.TabIndex = 1;
             // 
             // label1
@@ -1138,7 +1142,7 @@ namespace AirLineManagementSystem
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.label1.Location = new System.Drawing.Point(287, 45);
+            this.label1.Location = new System.Drawing.Point(317, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(216, 27);
             this.label1.TabIndex = 0;
@@ -1153,6 +1157,7 @@ namespace AirLineManagementSystem
             this.UpdatePage.Controls.Add(this.panel4);
             this.UpdatePage.Controls.Add(this.textBox2);
             this.UpdatePage.Controls.Add(this.label3);
+            this.UpdatePage.Controls.Add(this.panel27);
             this.UpdatePage.Location = new System.Drawing.Point(4, 24);
             this.UpdatePage.Name = "UpdatePage";
             this.UpdatePage.Padding = new System.Windows.Forms.Padding(3);
@@ -1421,8 +1426,9 @@ namespace AirLineManagementSystem
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(305, 95);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(170, 21);
@@ -1749,6 +1755,7 @@ namespace AirLineManagementSystem
             // 
             // panel39
             // 
+            this.panel39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
             this.panel39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel39.Controls.Add(this.label61);
             this.panel39.Controls.Add(this.label60);
@@ -1785,233 +1792,53 @@ namespace AirLineManagementSystem
             // 
             // panel41
             // 
+            this.panel41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
             this.panel41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel41.Controls.Add(this.button33);
-            this.panel41.Controls.Add(this.button34);
-            this.panel41.Controls.Add(this.button35);
-            this.panel41.Controls.Add(this.button36);
-            this.panel41.Controls.Add(this.button37);
-            this.panel41.Controls.Add(this.button38);
-            this.panel41.Controls.Add(this.button39);
-            this.panel41.Controls.Add(this.button40);
             this.panel41.Controls.Add(this.button25);
-            this.panel41.Controls.Add(this.button26);
-            this.panel41.Controls.Add(this.button27);
-            this.panel41.Controls.Add(this.button28);
-            this.panel41.Controls.Add(this.button29);
-            this.panel41.Controls.Add(this.button30);
-            this.panel41.Controls.Add(this.button31);
-            this.panel41.Controls.Add(this.button32);
-            this.panel41.Controls.Add(this.button13);
-            this.panel41.Controls.Add(this.button14);
-            this.panel41.Controls.Add(this.button15);
+            this.panel41.Controls.Add(this.button40);
+            this.panel41.Controls.Add(this.button39);
+            this.panel41.Controls.Add(this.button38);
+            this.panel41.Controls.Add(this.button37);
+            this.panel41.Controls.Add(this.button36);
+            this.panel41.Controls.Add(this.button35);
+            this.panel41.Controls.Add(this.button34);
+            this.panel41.Controls.Add(this.button33);
             this.panel41.Controls.Add(this.button16);
-            this.panel41.Controls.Add(this.button11);
+            this.panel41.Controls.Add(this.button15);
+            this.panel41.Controls.Add(this.button14);
+            this.panel41.Controls.Add(this.button13);
             this.panel41.Controls.Add(this.button12);
+            this.panel41.Controls.Add(this.button11);
             this.panel41.Controls.Add(this.button10);
+            this.panel41.Controls.Add(this.button52);
+            this.panel41.Controls.Add(this.button51);
+            this.panel41.Controls.Add(this.button50);
+            this.panel41.Controls.Add(this.button49);
+            this.panel41.Controls.Add(this.button48);
+            this.panel41.Controls.Add(this.button47);
+            this.panel41.Controls.Add(this.button46);
             this.panel41.Controls.Add(this.button8);
             this.panel41.Location = new System.Drawing.Point(157, -1);
             this.panel41.Name = "panel41";
             this.panel41.Size = new System.Drawing.Size(394, 334);
             this.panel41.TabIndex = 0;
             // 
-            // button33
-            // 
-            this.button33.Location = new System.Drawing.Point(204, 240);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(27, 23);
-            this.button33.TabIndex = 25;
-            this.button33.UseVisualStyleBackColor = true;
-            // 
-            // button34
-            // 
-            this.button34.Location = new System.Drawing.Point(171, 240);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(27, 23);
-            this.button34.TabIndex = 24;
-            this.button34.UseVisualStyleBackColor = true;
-            // 
-            // button35
-            // 
-            this.button35.Location = new System.Drawing.Point(204, 194);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(27, 23);
-            this.button35.TabIndex = 23;
-            this.button35.UseVisualStyleBackColor = true;
-            // 
-            // button36
-            // 
-            this.button36.Location = new System.Drawing.Point(171, 194);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(27, 23);
-            this.button36.TabIndex = 22;
-            this.button36.UseVisualStyleBackColor = true;
-            // 
-            // button37
-            // 
-            this.button37.Location = new System.Drawing.Point(204, 137);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(27, 23);
-            this.button37.TabIndex = 21;
-            this.button37.UseVisualStyleBackColor = true;
-            // 
-            // button38
-            // 
-            this.button38.Location = new System.Drawing.Point(171, 137);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(27, 23);
-            this.button38.TabIndex = 20;
-            this.button38.UseVisualStyleBackColor = true;
-            // 
-            // button39
-            // 
-            this.button39.Location = new System.Drawing.Point(204, 91);
-            this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(27, 23);
-            this.button39.TabIndex = 19;
-            this.button39.UseVisualStyleBackColor = true;
-            // 
-            // button40
-            // 
-            this.button40.Location = new System.Drawing.Point(171, 91);
-            this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(27, 23);
-            this.button40.TabIndex = 18;
-            this.button40.UseVisualStyleBackColor = true;
-            // 
-            // button25
-            // 
-            this.button25.Location = new System.Drawing.Point(336, 240);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(27, 23);
-            this.button25.TabIndex = 17;
-            this.button25.UseVisualStyleBackColor = true;
-            // 
-            // button26
-            // 
-            this.button26.Location = new System.Drawing.Point(303, 240);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(27, 23);
-            this.button26.TabIndex = 16;
-            this.button26.UseVisualStyleBackColor = true;
-            // 
-            // button27
-            // 
-            this.button27.Location = new System.Drawing.Point(336, 194);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(27, 23);
-            this.button27.TabIndex = 15;
-            this.button27.UseVisualStyleBackColor = true;
-            // 
-            // button28
-            // 
-            this.button28.Location = new System.Drawing.Point(303, 194);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(27, 23);
-            this.button28.TabIndex = 14;
-            this.button28.UseVisualStyleBackColor = true;
-            // 
-            // button29
-            // 
-            this.button29.Location = new System.Drawing.Point(336, 137);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(27, 23);
-            this.button29.TabIndex = 13;
-            this.button29.UseVisualStyleBackColor = true;
-            // 
-            // button30
-            // 
-            this.button30.Location = new System.Drawing.Point(303, 137);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(27, 23);
-            this.button30.TabIndex = 12;
-            this.button30.UseVisualStyleBackColor = true;
-            // 
-            // button31
-            // 
-            this.button31.Location = new System.Drawing.Point(336, 91);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(27, 23);
-            this.button31.TabIndex = 11;
-            this.button31.UseVisualStyleBackColor = true;
-            // 
-            // button32
-            // 
-            this.button32.Location = new System.Drawing.Point(303, 91);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(27, 23);
-            this.button32.TabIndex = 10;
-            this.button32.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            this.button13.Location = new System.Drawing.Point(67, 240);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(27, 23);
-            this.button13.TabIndex = 9;
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // button14
-            // 
-            this.button14.Location = new System.Drawing.Point(34, 240);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(27, 23);
-            this.button14.TabIndex = 8;
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // button15
-            // 
-            this.button15.Location = new System.Drawing.Point(67, 194);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(27, 23);
-            this.button15.TabIndex = 7;
-            this.button15.UseVisualStyleBackColor = true;
-            // 
-            // button16
-            // 
-            this.button16.Location = new System.Drawing.Point(34, 194);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(27, 23);
-            this.button16.TabIndex = 6;
-            this.button16.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            this.button11.Location = new System.Drawing.Point(67, 137);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(27, 23);
-            this.button11.TabIndex = 5;
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            this.button12.Location = new System.Drawing.Point(34, 137);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(27, 23);
-            this.button12.TabIndex = 4;
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(67, 91);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(27, 23);
-            this.button10.TabIndex = 1;
-            this.button10.UseVisualStyleBackColor = true;
-            // 
             // button8
             // 
+            this.button8.BackColor = System.Drawing.Color.Transparent;
+            this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button8.Location = new System.Drawing.Point(34, 91);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(27, 23);
             this.button8.TabIndex = 0;
-            this.button8.UseVisualStyleBackColor = true;
+            this.button8.UseVisualStyleBackColor = false;
             // 
             // label64
             // 
             this.label64.AutoSize = true;
             this.label64.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label64.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.label64.ForeColor = System.Drawing.Color.White;
             this.label64.Location = new System.Drawing.Point(586, 102);
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(80, 42);
@@ -2022,7 +1849,7 @@ namespace AirLineManagementSystem
             // 
             this.label59.AutoSize = true;
             this.label59.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label59.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.label59.ForeColor = System.Drawing.Color.White;
             this.label59.Location = new System.Drawing.Point(28, 102);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(105, 42);
@@ -2101,17 +1928,17 @@ namespace AirLineManagementSystem
             // panel15
             // 
             this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel15.Controls.Add(this.button5);
-            this.panel15.Controls.Add(this.textBox10);
-            this.panel15.Controls.Add(this.label25);
+            this.panel15.Controls.Add(this.panel26);
+            this.panel15.Controls.Add(this.panel24);
+            this.panel15.Controls.Add(this.panel23);
+            this.panel15.Controls.Add(this.panel22);
             this.panel15.Controls.Add(this.textBox11);
-            this.panel15.Controls.Add(this.label26);
-            this.panel15.Controls.Add(this.textBox12);
-            this.panel15.Controls.Add(this.label27);
+            this.panel15.Controls.Add(this.textBox10);
             this.panel15.Controls.Add(this.textBox13);
-            this.panel15.Controls.Add(this.label35);
-            this.panel15.Controls.Add(this.textBox14);
-            this.panel15.Controls.Add(this.label36);
+            this.panel15.Controls.Add(this.textBox9);
+            this.panel15.Controls.Add(this.panel13);
+            this.panel15.Controls.Add(this.textBox8);
+            this.panel15.Controls.Add(this.button5);
             this.panel15.Controls.Add(this.label28);
             this.panel15.Location = new System.Drawing.Point(68, 86);
             this.panel15.Name = "panel15";
@@ -2132,96 +1959,6 @@ namespace AirLineManagementSystem
             this.button5.Text = "Save";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(150, 185);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(152, 23);
-            this.textBox10.TabIndex = 25;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.label25.Location = new System.Drawing.Point(43, 220);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(51, 21);
-            this.label25.TabIndex = 24;
-            this.label25.Text = "Email";
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(150, 222);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(152, 23);
-            this.textBox11.TabIndex = 23;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.label26.Location = new System.Drawing.Point(43, 183);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(71, 21);
-            this.label26.TabIndex = 22;
-            this.label26.Text = "Phone#";
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(150, 144);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(152, 23);
-            this.textBox12.TabIndex = 21;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.label27.Location = new System.Drawing.Point(43, 142);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(53, 21);
-            this.label27.TabIndex = 20;
-            this.label27.Text = "CNIC";
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(150, 106);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(152, 23);
-            this.textBox13.TabIndex = 19;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.label35.Location = new System.Drawing.Point(43, 107);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(87, 21);
-            this.label35.TabIndex = 18;
-            this.label35.Text = "Passport#\r\n";
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(150, 70);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(152, 23);
-            this.textBox14.TabIndex = 17;
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.label36.Location = new System.Drawing.Point(43, 72);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(58, 21);
-            this.label36.TabIndex = 16;
-            this.label36.Text = "Name";
             // 
             // label28
             // 
@@ -2334,6 +2071,8 @@ namespace AirLineManagementSystem
             // 
             // Ticketpage
             // 
+            this.Ticketpage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Ticketpage.BackgroundImage")));
+            this.Ticketpage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Ticketpage.Controls.Add(this.panel31);
             this.Ticketpage.Location = new System.Drawing.Point(4, 24);
             this.Ticketpage.Name = "Ticketpage";
@@ -2345,6 +2084,8 @@ namespace AirLineManagementSystem
             // 
             // panel31
             // 
+            this.panel31.BackColor = System.Drawing.Color.White;
+            this.panel31.Controls.Add(this.pictureBox31);
             this.panel31.Controls.Add(this.label32);
             this.panel31.Controls.Add(this.label33);
             this.panel31.Controls.Add(this.label34);
@@ -2604,6 +2345,7 @@ namespace AirLineManagementSystem
             // panel37
             // 
             this.panel37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.panel37.Controls.Add(this.pictureBox32);
             this.panel37.Controls.Add(this.label58);
             this.panel37.Location = new System.Drawing.Point(0, 0);
             this.panel37.Name = "panel37";
@@ -2735,6 +2477,379 @@ namespace AirLineManagementSystem
             this.button24.Size = new System.Drawing.Size(75, 23);
             this.button24.TabIndex = 0;
             // 
+            // pictureBox31
+            // 
+            this.pictureBox31.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox31.BackgroundImage")));
+            this.pictureBox31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox31.Location = new System.Drawing.Point(0, 70);
+            this.pictureBox31.Name = "pictureBox31";
+            this.pictureBox31.Size = new System.Drawing.Size(113, 206);
+            this.pictureBox31.TabIndex = 2;
+            this.pictureBox31.TabStop = false;
+            // 
+            // pictureBox32
+            // 
+            this.pictureBox32.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox32.BackgroundImage")));
+            this.pictureBox32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox32.Location = new System.Drawing.Point(9, -24);
+            this.pictureBox32.Name = "pictureBox32";
+            this.pictureBox32.Size = new System.Drawing.Size(100, 111);
+            this.pictureBox32.TabIndex = 2;
+            this.pictureBox32.TabStop = false;
+            // 
+            // textBox8
+            // 
+            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox8.Location = new System.Drawing.Point(41, 65);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.PlaceholderText = "Name";
+            this.textBox8.Size = new System.Drawing.Size(261, 16);
+            this.textBox8.TabIndex = 33;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.Black;
+            this.panel13.Location = new System.Drawing.Point(43, 86);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(261, 1);
+            this.panel13.TabIndex = 32;
+            // 
+            // textBox9
+            // 
+            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox9.Location = new System.Drawing.Point(41, 105);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.PlaceholderText = "Passport#";
+            this.textBox9.Size = new System.Drawing.Size(261, 16);
+            this.textBox9.TabIndex = 34;
+            // 
+            // textBox13
+            // 
+            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox13.Location = new System.Drawing.Point(43, 148);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.PlaceholderText = "CNIC";
+            this.textBox13.Size = new System.Drawing.Size(261, 16);
+            this.textBox13.TabIndex = 35;
+            // 
+            // textBox10
+            // 
+            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox10.Location = new System.Drawing.Point(41, 191);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.PlaceholderText = "Phone#";
+            this.textBox10.Size = new System.Drawing.Size(261, 16);
+            this.textBox10.TabIndex = 36;
+            // 
+            // textBox11
+            // 
+            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox11.Location = new System.Drawing.Point(43, 232);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.PlaceholderText = "Email";
+            this.textBox11.Size = new System.Drawing.Size(261, 16);
+            this.textBox11.TabIndex = 37;
+            // 
+            // panel22
+            // 
+            this.panel22.BackColor = System.Drawing.Color.Black;
+            this.panel22.Location = new System.Drawing.Point(43, 127);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(261, 1);
+            this.panel22.TabIndex = 33;
+            // 
+            // panel23
+            // 
+            this.panel23.BackColor = System.Drawing.Color.Black;
+            this.panel23.Location = new System.Drawing.Point(43, 170);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(261, 1);
+            this.panel23.TabIndex = 33;
+            // 
+            // panel24
+            // 
+            this.panel24.BackColor = System.Drawing.Color.Black;
+            this.panel24.Location = new System.Drawing.Point(43, 213);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(261, 1);
+            this.panel24.TabIndex = 33;
+            // 
+            // panel26
+            // 
+            this.panel26.BackColor = System.Drawing.Color.Black;
+            this.panel26.Location = new System.Drawing.Point(43, 252);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(261, 1);
+            this.panel26.TabIndex = 33;
+            // 
+            // button46
+            // 
+            this.button46.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button46.BackgroundImage")));
+            this.button46.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button46.Location = new System.Drawing.Point(67, 240);
+            this.button46.Name = "button46";
+            this.button46.Size = new System.Drawing.Size(27, 23);
+            this.button46.TabIndex = 26;
+            this.button46.UseVisualStyleBackColor = true;
+            // 
+            // button48
+            // 
+            this.button48.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button48.BackgroundImage")));
+            this.button48.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button48.Location = new System.Drawing.Point(67, 194);
+            this.button48.Name = "button48";
+            this.button48.Size = new System.Drawing.Size(27, 23);
+            this.button48.TabIndex = 28;
+            this.button48.UseVisualStyleBackColor = true;
+            // 
+            // button49
+            // 
+            this.button49.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button49.BackgroundImage")));
+            this.button49.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button49.Location = new System.Drawing.Point(34, 194);
+            this.button49.Name = "button49";
+            this.button49.Size = new System.Drawing.Size(27, 23);
+            this.button49.TabIndex = 29;
+            this.button49.UseVisualStyleBackColor = true;
+            // 
+            // button50
+            // 
+            this.button50.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button50.BackgroundImage")));
+            this.button50.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button50.Location = new System.Drawing.Point(67, 137);
+            this.button50.Name = "button50";
+            this.button50.Size = new System.Drawing.Size(27, 23);
+            this.button50.TabIndex = 30;
+            this.button50.UseVisualStyleBackColor = true;
+            // 
+            // button51
+            // 
+            this.button51.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button51.BackgroundImage")));
+            this.button51.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button51.Location = new System.Drawing.Point(34, 137);
+            this.button51.Name = "button51";
+            this.button51.Size = new System.Drawing.Size(27, 23);
+            this.button51.TabIndex = 31;
+            this.button51.UseVisualStyleBackColor = true;
+            // 
+            // button52
+            // 
+            this.button52.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button52.BackgroundImage")));
+            this.button52.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button52.Location = new System.Drawing.Point(67, 91);
+            this.button52.Name = "button52";
+            this.button52.Size = new System.Drawing.Size(27, 23);
+            this.button52.TabIndex = 32;
+            this.button52.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button10.BackgroundImage")));
+            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button10.Location = new System.Drawing.Point(204, 194);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(27, 23);
+            this.button10.TabIndex = 33;
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            this.button11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button11.BackgroundImage")));
+            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button11.Location = new System.Drawing.Point(171, 194);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(27, 23);
+            this.button11.TabIndex = 34;
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            this.button12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button12.BackgroundImage")));
+            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button12.Location = new System.Drawing.Point(204, 137);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(27, 23);
+            this.button12.TabIndex = 35;
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            this.button13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button13.BackgroundImage")));
+            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button13.Location = new System.Drawing.Point(171, 137);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(27, 23);
+            this.button13.TabIndex = 36;
+            this.button13.UseVisualStyleBackColor = true;
+            // 
+            // button14
+            // 
+            this.button14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button14.BackgroundImage")));
+            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button14.Location = new System.Drawing.Point(204, 91);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(27, 23);
+            this.button14.TabIndex = 37;
+            this.button14.UseVisualStyleBackColor = true;
+            // 
+            // button15
+            // 
+            this.button15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button15.BackgroundImage")));
+            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button15.Location = new System.Drawing.Point(171, 91);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(27, 23);
+            this.button15.TabIndex = 38;
+            this.button15.UseVisualStyleBackColor = true;
+            // 
+            // button16
+            // 
+            this.button16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button16.BackgroundImage")));
+            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button16.Location = new System.Drawing.Point(204, 240);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(27, 23);
+            this.button16.TabIndex = 39;
+            this.button16.UseVisualStyleBackColor = true;
+            // 
+            // button33
+            // 
+            this.button33.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button33.BackgroundImage")));
+            this.button33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button33.Location = new System.Drawing.Point(171, 240);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(27, 23);
+            this.button33.TabIndex = 40;
+            this.button33.UseVisualStyleBackColor = true;
+            // 
+            // button34
+            // 
+            this.button34.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button34.BackgroundImage")));
+            this.button34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button34.Location = new System.Drawing.Point(283, 240);
+            this.button34.Name = "button34";
+            this.button34.Size = new System.Drawing.Size(27, 23);
+            this.button34.TabIndex = 41;
+            this.button34.UseVisualStyleBackColor = true;
+            // 
+            // button35
+            // 
+            this.button35.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button35.BackgroundImage")));
+            this.button35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button35.Location = new System.Drawing.Point(316, 194);
+            this.button35.Name = "button35";
+            this.button35.Size = new System.Drawing.Size(27, 23);
+            this.button35.TabIndex = 42;
+            this.button35.UseVisualStyleBackColor = true;
+            // 
+            // button36
+            // 
+            this.button36.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button36.BackgroundImage")));
+            this.button36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button36.Location = new System.Drawing.Point(283, 194);
+            this.button36.Name = "button36";
+            this.button36.Size = new System.Drawing.Size(27, 23);
+            this.button36.TabIndex = 43;
+            this.button36.UseVisualStyleBackColor = true;
+            // 
+            // button37
+            // 
+            this.button37.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button37.BackgroundImage")));
+            this.button37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button37.Location = new System.Drawing.Point(316, 137);
+            this.button37.Name = "button37";
+            this.button37.Size = new System.Drawing.Size(27, 23);
+            this.button37.TabIndex = 44;
+            this.button37.UseVisualStyleBackColor = true;
+            // 
+            // button38
+            // 
+            this.button38.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button38.BackgroundImage")));
+            this.button38.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button38.Location = new System.Drawing.Point(283, 137);
+            this.button38.Name = "button38";
+            this.button38.Size = new System.Drawing.Size(27, 23);
+            this.button38.TabIndex = 45;
+            this.button38.UseVisualStyleBackColor = true;
+            // 
+            // button39
+            // 
+            this.button39.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button39.BackgroundImage")));
+            this.button39.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button39.Location = new System.Drawing.Point(316, 91);
+            this.button39.Name = "button39";
+            this.button39.Size = new System.Drawing.Size(27, 23);
+            this.button39.TabIndex = 46;
+            this.button39.UseVisualStyleBackColor = true;
+            // 
+            // button40
+            // 
+            this.button40.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button40.BackgroundImage")));
+            this.button40.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button40.Location = new System.Drawing.Point(283, 91);
+            this.button40.Name = "button40";
+            this.button40.Size = new System.Drawing.Size(27, 23);
+            this.button40.TabIndex = 47;
+            this.button40.UseVisualStyleBackColor = true;
+            // 
+            // button25
+            // 
+            this.button25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button25.BackgroundImage")));
+            this.button25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button25.Location = new System.Drawing.Point(316, 240);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(27, 23);
+            this.button25.TabIndex = 48;
+            this.button25.UseVisualStyleBackColor = true;
+            // 
+            // panel27
+            // 
+            this.panel27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
+            this.panel27.Location = new System.Drawing.Point(149, 75);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(701, 392);
+            this.panel27.TabIndex = 27;
+            // 
+            // button47
+            // 
+            this.button47.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button47.BackgroundImage")));
+            this.button47.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button47.Location = new System.Drawing.Point(34, 240);
+            this.button47.Name = "button47";
+            this.button47.Size = new System.Drawing.Size(27, 23);
+            this.button47.TabIndex = 27;
+            this.button47.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox25
+            // 
+            this.pictureBox25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox25.BackgroundImage")));
+            this.pictureBox25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox25.Location = new System.Drawing.Point(776, 45);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(106, 93);
+            this.pictureBox25.TabIndex = 8;
+            this.pictureBox25.TabStop = false;
+            // 
+            // panel28
+            // 
+            this.panel28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
+            this.panel28.Location = new System.Drawing.Point(142, 71);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(680, 395);
+            this.panel28.TabIndex = 24;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label25.ForeColor = System.Drawing.Color.White;
+            this.label25.Location = new System.Drawing.Point(328, 57);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(346, 308);
+            this.label25.TabIndex = 0;
+            this.label25.Text = "       Go \r\n     Forth \r\n      And \r\n   Wander!";
+            // 
             // PassengerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -2756,6 +2871,8 @@ namespace AirLineManagementSystem
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.basepanel.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
+            this.HomePage.ResumeLayout(false);
+            this.HomePage.PerformLayout();
             this.CancelPage.ResumeLayout(false);
             this.CancelPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
@@ -2778,7 +2895,6 @@ namespace AirLineManagementSystem
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ViewPage.ResumeLayout(false);
             this.ViewPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.UpdatePage.ResumeLayout(false);
             this.UpdatePage.PerformLayout();
@@ -2833,6 +2949,9 @@ namespace AirLineManagementSystem
             this.panel37.ResumeLayout(false);
             this.panel37.PerformLayout();
             this.downpanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2925,16 +3044,6 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Panel panel18;
@@ -2950,29 +3059,6 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Panel panel41;
-        private System.Windows.Forms.Button button33;
-        private System.Windows.Forms.Button button34;
-        private System.Windows.Forms.Button button35;
-        private System.Windows.Forms.Button button36;
-        private System.Windows.Forms.Button button37;
-        private System.Windows.Forms.Button button38;
-        private System.Windows.Forms.Button button39;
-        private System.Windows.Forms.Button button40;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.Button button28;
-        private System.Windows.Forms.Button button29;
-        private System.Windows.Forms.Button button30;
-        private System.Windows.Forms.Button button31;
-        private System.Windows.Forms.Button button32;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Panel panel40;
         private System.Windows.Forms.Panel panel39;
@@ -3058,7 +3144,6 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.PictureBox pictureBox24;
         private System.Windows.Forms.PictureBox pictureBox23;
         private System.Windows.Forms.Button button45;
-        private System.Windows.Forms.PictureBox pictureBox25;
         private System.Windows.Forms.PictureBox pictureBox29;
         private System.Windows.Forms.PictureBox pictureBox30;
         private System.Windows.Forms.Label label23;
@@ -3069,5 +3154,44 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.PictureBox pictureBox28;
         private System.Windows.Forms.PictureBox pictureBox26;
         private System.Windows.Forms.PictureBox pictureBox27;
+        private System.Windows.Forms.PictureBox pictureBox31;
+        private System.Windows.Forms.PictureBox pictureBox32;
+        private System.Windows.Forms.Panel panel26;
+        private System.Windows.Forms.Panel panel24;
+        private System.Windows.Forms.Panel panel23;
+        private System.Windows.Forms.Panel panel22;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Button button40;
+        private System.Windows.Forms.Button button39;
+        private System.Windows.Forms.Button button38;
+        private System.Windows.Forms.Button button37;
+        private System.Windows.Forms.Button button36;
+        private System.Windows.Forms.Button button35;
+        private System.Windows.Forms.Button button34;
+        private System.Windows.Forms.Button button33;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button52;
+        private System.Windows.Forms.Button button51;
+        private System.Windows.Forms.Button button50;
+        private System.Windows.Forms.Button button49;
+        private System.Windows.Forms.Button button48;
+        private System.Windows.Forms.Button button46;
+        private System.Windows.Forms.Panel panel27;
+        private System.Windows.Forms.Button button47;
+        private System.Windows.Forms.PictureBox pictureBox25;
+        private System.Windows.Forms.Panel panel28;
+        private System.Windows.Forms.Label label25;
     }
 }
