@@ -255,6 +255,7 @@ namespace AirLineManagementSystem
             // AddAirline
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.White;
             this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);

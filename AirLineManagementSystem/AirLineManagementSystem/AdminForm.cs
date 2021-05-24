@@ -98,12 +98,15 @@ namespace AirLineManagementSystem
         private void button8_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = PassengerPage;
+            tabControl1.BringToFront();
             AddItemPassenger();
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab =HomePage;
+            tabControl1.BringToFront();
+
         }
 
         private void passengerPanel_Paint(object sender, PaintEventArgs e)
