@@ -30,6 +30,7 @@ namespace AirLineManagementSystem
         private void InitializeComponent()
         {
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -39,7 +40,6 @@ namespace AirLineManagementSystem
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,6 +60,14 @@ namespace AirLineManagementSystem
             this.panel3.Size = new System.Drawing.Size(609, 475);
             this.panel3.TabIndex = 2;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DimGray;
+            this.panel1.Location = new System.Drawing.Point(201, 51);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 2);
+            this.panel1.TabIndex = 23;
+            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
@@ -78,9 +86,12 @@ namespace AirLineManagementSystem
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(256, 245);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2023, 12, 31, 0, 0, 0, 0);
+            this.dateTimePicker1.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
             this.dateTimePicker1.TabIndex = 21;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // textBox2
             // 
@@ -143,14 +154,6 @@ namespace AirLineManagementSystem
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(62, 76);
             this.panel4.TabIndex = 4;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.DimGray;
-            this.panel1.Location = new System.Drawing.Point(201, 51);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 2);
-            this.panel1.TabIndex = 23;
             // 
             // DelayUC
             // 

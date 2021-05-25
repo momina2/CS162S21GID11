@@ -24,5 +24,13 @@ namespace AirLineManagementSystem
         {
 
         }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            if (DateTime.Now > dateTimePicker1.Value)
+            {
+                MessageBox.Show("Invalid Date !", "Select Date", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }

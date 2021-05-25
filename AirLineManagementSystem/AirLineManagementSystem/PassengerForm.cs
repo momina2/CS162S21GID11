@@ -10,6 +10,8 @@ namespace AirLineManagementSystem
 {
     public partial class PassengerForm : Form
     {
+      public int totalseats=0;
+       public int click = 1;
         public PassengerForm()
         {
             InitializeComponent();
@@ -111,7 +113,14 @@ namespace AirLineManagementSystem
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
-
+            if(radioButton3.Checked)
+            {
+                label60.Text = "Economy";
+            }
+            else
+            {
+                label60.Text = "Business";
+            }
         }
 
         private void panel22_Paint(object sender, PaintEventArgs e)
@@ -136,6 +145,7 @@ namespace AirLineManagementSystem
 
         private void SeatSelection_Click(object sender, EventArgs e)
         {
+            downpanel.Size = downpanel.MinimumSize;
 
         }
 
@@ -206,21 +216,31 @@ namespace AirLineManagementSystem
 
         private void PassengerinfoPage_Click(object sender, EventArgs e)
         {
-
+            downpanel.Size = downpanel.MinimumSize;
         }
 
         private void button42_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = SeatSelection;
+           
         }
 
         private void button43_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedTab = Payment;
+            if (totalseats == numericUpDown2.Value)
+            { tabControl1.SelectedTab = Payment; }
+            else
+            {
+                MessageBox.Show("Select More Seats", "Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }    
         }
 
         private void button44_Click(object sender, EventArgs e)
         {
+            if (click != numericUpDown2.Value)
+            {
+                MessageBox.Show("Enter Passenger's Data", "Passenger Information", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
             tabControl1.SelectedTab = Ticketpage;
         }
 
@@ -282,7 +302,334 @@ namespace AirLineManagementSystem
 
         private void button5_Click(object sender, EventArgs e)
         {
-            //this.Alert("Visit Booth No # 11");
+            NameBox.Text = "";
+            PassBox.Text = "";
+            CNICBox.Text = "";
+            PhoneBox.Text = "";
+            EmailBox.Text = "";
+
+            NameBox.PlaceholderText = "Name";
+            PassBox.PlaceholderText = "Password";
+            CNICBox.PlaceholderText = "CNIC #";
+            PhoneBox.PlaceholderText = "Phone #";
+            EmailBox.PlaceholderText = "Email";
+
+            if (click == numericUpDown2.Value)
+            {
+                MessageBox.Show("Passengers data had been added", "Passenger Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                NameBox.Enabled = false;
+                PassBox.Enabled = false;
+                CNICBox.Enabled = false;
+                PhoneBox.Enabled = false;
+                EmailBox.Enabled = false;
+
+            }
+            click++;
+
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            if(label60.Text=="Economy")
+            {
+                label61.Text = "11 E";
+            }
+            else
+            {
+                label61.Text = "11 B";
+            }
+            button8.Enabled=false;
+            totalseats++;
+            CheckSeats();
+        }
+
+        private void button52_Click(object sender, EventArgs e)
+        {
+            DisplayMessage();
+        }
+
+      
+            private void button51_Click(object sender, EventArgs e)
+            {
+                if (label60.Text == "Economy")
+                {
+                    label61.Text = "13 E";
+                }
+                else
+                {
+                    label61.Text = "13 B";
+                }
+                button51.Enabled = false;
+            totalseats++;
+            CheckSeats();
+        }
+
+        private void button50_Click(object sender, EventArgs e)
+        {
+            DisplayMessage();
+        }
+            private void button49_Click(object sender, EventArgs e)
+            {
+                if (label60.Text == "Economy")
+                {
+                    label61.Text = "15 E";
+                }
+                else
+                {
+                    label61.Text = "15 B";
+                }
+                button49.Enabled = false;
+            totalseats++;
+            CheckSeats();
+        }
+        
+
+            private void button48_Click(object sender, EventArgs e)
+            {
+
+            DisplayMessage();
+        }
+
+            private void button47_Click(object sender, EventArgs e)
+            {
+                if (label60.Text == "Economy")
+                {
+                    label61.Text = "17 E";
+                }
+                else
+                {
+                    label61.Text = "17 B";
+                }
+                button47.Enabled = false;
+            totalseats++;
+            CheckSeats();
+        }
+
+            private void button46_Click(object sender, EventArgs e)
+            {
+            DisplayMessage();
+        }
+
+            private void button15_Click(object sender, EventArgs e)
+            {
+                if (label60.Text == "Economy")
+                {
+                    label61.Text = "19 E";
+                }
+                else
+                {
+                    label61.Text = "19 B";
+                }
+                button15.Enabled = false;
+            totalseats++;
+            CheckSeats();
+        }
+
+            private void button14_Click(object sender, EventArgs e)
+            {
+            DisplayMessage();
+        }
+
+            private void button13_Click(object sender, EventArgs e)
+            {
+                if (label60.Text == "Economy")
+                {
+                    label61.Text = "21 E";
+                }
+                else
+                {
+                    label61.Text = "21 B";
+                }
+                button13.Enabled = false;
+            totalseats++;
+            CheckSeats();
+        }
+
+            private void button12_Click(object sender, EventArgs e)
+            {
+            DisplayMessage();
+        }
+
+            private void button11_Click(object sender, EventArgs e)
+            {
+                if (label60.Text == "Economy")
+                {
+                    label61.Text = "23 E";
+                }
+                else
+                {
+                    label61.Text = "23 B";
+                }
+                button11.Enabled = false;
+            totalseats++;
+            CheckSeats();
+        }
+
+            private void button10_Click(object sender, EventArgs e)
+            {
+            DisplayMessage();
+        }
+
+            private void button33_Click(object sender, EventArgs e)
+            {
+                if (label60.Text == "Economy")
+                {
+                    label61.Text = "25 E";
+                }
+                else
+                {
+                    label61.Text = "25 B";
+                }
+                button33.Enabled = false;
+            totalseats++;
+            CheckSeats();
+        }
+
+            private void button16_Click(object sender, EventArgs e)
+            {
+            DisplayMessage();
+        }
+
+            private void button40_Click(object sender, EventArgs e)
+            {
+                if (label60.Text == "Economy")
+                {
+                    label61.Text = "27 E";
+                }
+                else
+                {
+                    label61.Text = "27 B";
+                }
+                button40.Enabled = false;
+            totalseats++;
+            CheckSeats();
+        }
+
+            private void button39_Click(object sender, EventArgs e)
+            {
+            DisplayMessage();
+        }
+
+            private void button38_Click(object sender, EventArgs e)
+            {
+                if (label60.Text == "Economy")
+                {
+                    label61.Text = "29 E";
+                }
+                else
+                {
+                    label61.Text = "29 B";
+                }
+                button38.Enabled = false;
+            totalseats++;
+            CheckSeats();
+        }
+
+            private void button37_Click(object sender, EventArgs e)
+            {
+            DisplayMessage();
+        }
+
+            private void button36_Click(object sender, EventArgs e)
+            {
+                if (label60.Text == "Economy")
+                {
+                    label61.Text = "31 E";
+                }
+                else
+                {
+                    label61.Text = "31 B";
+                }
+                button36.Enabled = false;
+            totalseats++;
+            CheckSeats();
+        }
+
+            private void button35_Click(object sender, EventArgs e)
+            {
+            DisplayMessage();
+            }
+
+            private void button34_Click(object sender, EventArgs e)
+            {
+                if (label60.Text == "Economy")
+                {
+                    label61.Text = "33 E";
+                }
+                else
+                {
+                    label61.Text = "33 B";
+                }
+                button34.Enabled = false;
+            totalseats++;
+            CheckSeats();
+        }
+
+            private void button25_Click(object sender, EventArgs e)
+            {
+            DisplayMessage();
+            }
+        
+
+        private void UpdatePage_Click(object sender, EventArgs e)
+        {
+            downpanel.Size = downpanel.MinimumSize;
+        }
+
+        private void Ticketpage_Click(object sender, EventArgs e)
+        {
+            downpanel.Size = downpanel.MinimumSize;
+        }
+
+        private void Payment_Click(object sender, EventArgs e)
+        {
+            downpanel.Size = downpanel.MinimumSize;
+        }
+
+        private void CancelPage_Click(object sender, EventArgs e)
+        {
+            downpanel.Size = downpanel.MinimumSize;
+        }
+        public void CheckSeats()
+        {
+            if (totalseats == numericUpDown2.Value)
+            {
+                tabControl1.SelectedTab = Payment;
+            }
+        }
+        public void DisplayMessage()
+        {
+            MessageBox.Show("Enable to Select this Seat.\n    Due to Covid-19 ", "Seat Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void DestinationBox_TextChanged(object sender, EventArgs e)
+        {
+            if(SourceBox.Text==DestinationBox.Text)
+            {
+                MessageBox.Show("Flight not Found !", "Flight Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+        }
+
+        private void SourceBox_TextChanged(object sender, EventArgs e)
+        {
+            if (SourceBox.Text == DestinationBox.Text)
+            {
+                MessageBox.Show("Flight not Found !", "Flight Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton4.Checked)
+            {
+                label60.Text = "Business";
+            }
+            else
+            {
+                label60.Text = "Economy";
+            }
         }
     }
 }

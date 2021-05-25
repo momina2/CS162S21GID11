@@ -43,6 +43,7 @@ namespace AirLineManagementSystem
             this.basepanel = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.HomePage = new System.Windows.Forms.TabPage();
+            this.label25 = new System.Windows.Forms.Label();
             this.CancelPage = new System.Windows.Forms.TabPage();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.textBox20 = new System.Windows.Forms.TextBox();
@@ -93,6 +94,7 @@ namespace AirLineManagementSystem
             this.panel7 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.ViewPage = new System.Windows.Forms.TabPage();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.button45 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -165,6 +167,29 @@ namespace AirLineManagementSystem
             this.label61 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.panel41 = new System.Windows.Forms.Panel();
+            this.button25 = new System.Windows.Forms.Button();
+            this.button40 = new System.Windows.Forms.Button();
+            this.button39 = new System.Windows.Forms.Button();
+            this.button38 = new System.Windows.Forms.Button();
+            this.button37 = new System.Windows.Forms.Button();
+            this.button36 = new System.Windows.Forms.Button();
+            this.button35 = new System.Windows.Forms.Button();
+            this.button34 = new System.Windows.Forms.Button();
+            this.button33 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button52 = new System.Windows.Forms.Button();
+            this.button51 = new System.Windows.Forms.Button();
+            this.button50 = new System.Windows.Forms.Button();
+            this.button49 = new System.Windows.Forms.Button();
+            this.button48 = new System.Windows.Forms.Button();
+            this.button47 = new System.Windows.Forms.Button();
+            this.button46 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.label64 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
@@ -175,6 +200,16 @@ namespace AirLineManagementSystem
             this.panel14 = new System.Windows.Forms.Panel();
             this.pictureBox26 = new System.Windows.Forms.PictureBox();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.EmailBox = new System.Windows.Forms.TextBox();
+            this.PhoneBox = new System.Windows.Forms.TextBox();
+            this.CNICBox = new System.Windows.Forms.TextBox();
+            this.PassBox = new System.Windows.Forms.TextBox();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.NameBox = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.label28 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
@@ -188,6 +223,29 @@ namespace AirLineManagementSystem
             this.label30 = new System.Windows.Forms.Label();
             this.Ticketpage = new System.Windows.Forms.TabPage();
             this.panel31 = new System.Windows.Forms.Panel();
+            this.Dest = new System.Windows.Forms.Label();
+            this.panel34 = new System.Windows.Forms.Panel();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.Sourcel = new System.Windows.Forms.Label();
+            this.Timel = new System.Windows.Forms.Label();
+            this.seatl = new System.Windows.Forms.Label();
+            this.Gatel = new System.Windows.Forms.Label();
+            this.Flightl = new System.Windows.Forms.Label();
+            this.Namel = new System.Windows.Forms.Label();
+            this.pictureBox31 = new System.Windows.Forms.PictureBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
@@ -199,18 +257,11 @@ namespace AirLineManagementSystem
             this.label48 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.panel33 = new System.Windows.Forms.Panel();
-            this.panel34 = new System.Windows.Forms.Panel();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
             this.panel35 = new System.Windows.Forms.Panel();
             this.label57 = new System.Windows.Forms.Label();
             this.panel36 = new System.Windows.Forms.Panel();
             this.panel37 = new System.Windows.Forms.Panel();
+            this.pictureBox32 = new System.Windows.Forms.PictureBox();
             this.label58 = new System.Windows.Forms.Label();
             this.panel38 = new System.Windows.Forms.Panel();
             this.downpanel = new System.Windows.Forms.Panel();
@@ -225,45 +276,6 @@ namespace AirLineManagementSystem
             this.button22 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
-            this.pictureBox31 = new System.Windows.Forms.PictureBox();
-            this.pictureBox32 = new System.Windows.Forms.PictureBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.button46 = new System.Windows.Forms.Button();
-            this.button48 = new System.Windows.Forms.Button();
-            this.button49 = new System.Windows.Forms.Button();
-            this.button50 = new System.Windows.Forms.Button();
-            this.button51 = new System.Windows.Forms.Button();
-            this.button52 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button33 = new System.Windows.Forms.Button();
-            this.button34 = new System.Windows.Forms.Button();
-            this.button35 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
-            this.button37 = new System.Windows.Forms.Button();
-            this.button38 = new System.Windows.Forms.Button();
-            this.button39 = new System.Windows.Forms.Button();
-            this.button40 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.panel27 = new System.Windows.Forms.Panel();
-            this.button47 = new System.Windows.Forms.Button();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
-            this.panel28 = new System.Windows.Forms.Panel();
-            this.label25 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -289,6 +301,7 @@ namespace AirLineManagementSystem
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.ViewPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.UpdatePage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
@@ -325,14 +338,13 @@ namespace AirLineManagementSystem
             this.panel17.SuspendLayout();
             this.Ticketpage.SuspendLayout();
             this.panel31.SuspendLayout();
-            this.panel32.SuspendLayout();
             this.panel34.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
+            this.panel32.SuspendLayout();
             this.panel35.SuspendLayout();
             this.panel37.SuspendLayout();
-            this.downpanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
+            this.downpanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -463,9 +475,9 @@ namespace AirLineManagementSystem
             // 
             this.basepanel.Controls.Add(this.tabControl1);
             this.basepanel.Controls.Add(this.downpanel);
-            this.basepanel.Location = new System.Drawing.Point(0, 84);
+            this.basepanel.Location = new System.Drawing.Point(0, 77);
             this.basepanel.Name = "basepanel";
-            this.basepanel.Size = new System.Drawing.Size(952, 491);
+            this.basepanel.Size = new System.Drawing.Size(952, 539);
             this.basepanel.TabIndex = 2;
             // 
             // tabControl1
@@ -482,7 +494,7 @@ namespace AirLineManagementSystem
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(952, 505);
+            this.tabControl1.Size = new System.Drawing.Size(952, 539);
             this.tabControl1.TabIndex = 7;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
@@ -495,10 +507,22 @@ namespace AirLineManagementSystem
             this.HomePage.Location = new System.Drawing.Point(4, 24);
             this.HomePage.Name = "HomePage";
             this.HomePage.Padding = new System.Windows.Forms.Padding(3);
-            this.HomePage.Size = new System.Drawing.Size(944, 477);
+            this.HomePage.Size = new System.Drawing.Size(944, 511);
             this.HomePage.TabIndex = 0;
             this.HomePage.Text = "HomePage";
             this.HomePage.Click += new System.EventHandler(this.HomePage_Click);
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label25.ForeColor = System.Drawing.Color.White;
+            this.label25.Location = new System.Drawing.Point(328, 57);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(346, 308);
+            this.label25.TabIndex = 0;
+            this.label25.Text = "       Go \r\n     Forth \r\n      And \r\n   Wander!";
             // 
             // CancelPage
             // 
@@ -511,13 +535,13 @@ namespace AirLineManagementSystem
             this.CancelPage.Controls.Add(this.panel19);
             this.CancelPage.Controls.Add(this.panel18);
             this.CancelPage.Controls.Add(this.label37);
-            this.CancelPage.Controls.Add(this.panel28);
             this.CancelPage.Location = new System.Drawing.Point(4, 24);
             this.CancelPage.Name = "CancelPage";
             this.CancelPage.Padding = new System.Windows.Forms.Padding(3);
-            this.CancelPage.Size = new System.Drawing.Size(944, 477);
+            this.CancelPage.Size = new System.Drawing.Size(944, 511);
             this.CancelPage.TabIndex = 1;
             this.CancelPage.Text = "CancelPage";
+            this.CancelPage.Click += new System.EventHandler(this.CancelPage_Click);
             // 
             // pictureBox18
             // 
@@ -539,9 +563,9 @@ namespace AirLineManagementSystem
             // label63
             // 
             this.label63.AutoSize = true;
-            this.label63.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
+            this.label63.BackColor = System.Drawing.Color.White;
             this.label63.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label63.ForeColor = System.Drawing.Color.White;
+            this.label63.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
             this.label63.Location = new System.Drawing.Point(275, 81);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(191, 23);
@@ -808,7 +832,7 @@ namespace AirLineManagementSystem
             this.FlyPage.Location = new System.Drawing.Point(4, 24);
             this.FlyPage.Name = "FlyPage";
             this.FlyPage.Padding = new System.Windows.Forms.Padding(3);
-            this.FlyPage.Size = new System.Drawing.Size(944, 477);
+            this.FlyPage.Size = new System.Drawing.Size(944, 511);
             this.FlyPage.TabIndex = 2;
             this.FlyPage.Text = "flypage";
             this.FlyPage.Click += new System.EventHandler(this.FlyPage_Click);
@@ -859,7 +883,7 @@ namespace AirLineManagementSystem
             this.button41.FlatAppearance.BorderSize = 0;
             this.button41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button41.Image = global::AirLineManagementSystem.Properties.Resources.icons8_next_page_501;
-            this.button41.Location = new System.Drawing.Point(812, 412);
+            this.button41.Location = new System.Drawing.Point(764, 431);
             this.button41.Name = "button41";
             this.button41.Size = new System.Drawing.Size(75, 62);
             this.button41.TabIndex = 34;
@@ -965,6 +989,7 @@ namespace AirLineManagementSystem
             this.DestinationBox.Name = "DestinationBox";
             this.DestinationBox.Size = new System.Drawing.Size(152, 23);
             this.DestinationBox.TabIndex = 22;
+            this.DestinationBox.TextChanged += new System.EventHandler(this.DestinationBox_TextChanged);
             // 
             // label12
             // 
@@ -983,6 +1008,7 @@ namespace AirLineManagementSystem
             this.SourceBox.Name = "SourceBox";
             this.SourceBox.Size = new System.Drawing.Size(159, 23);
             this.SourceBox.TabIndex = 20;
+            this.SourceBox.TextChanged += new System.EventHandler(this.SourceBox_TextChanged);
             // 
             // label11
             // 
@@ -1027,11 +1053,21 @@ namespace AirLineManagementSystem
             this.ViewPage.Location = new System.Drawing.Point(4, 24);
             this.ViewPage.Name = "ViewPage";
             this.ViewPage.Padding = new System.Windows.Forms.Padding(3);
-            this.ViewPage.Size = new System.Drawing.Size(944, 477);
+            this.ViewPage.Size = new System.Drawing.Size(944, 511);
             this.ViewPage.TabIndex = 3;
             this.ViewPage.Text = "ViewPage";
             this.ViewPage.UseVisualStyleBackColor = true;
             this.ViewPage.Click += new System.EventHandler(this.ViewPage_Click);
+            // 
+            // pictureBox25
+            // 
+            this.pictureBox25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox25.BackgroundImage")));
+            this.pictureBox25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox25.Location = new System.Drawing.Point(776, 45);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(106, 93);
+            this.pictureBox25.TabIndex = 8;
+            this.pictureBox25.TabStop = false;
             // 
             // button45
             // 
@@ -1157,14 +1193,14 @@ namespace AirLineManagementSystem
             this.UpdatePage.Controls.Add(this.panel4);
             this.UpdatePage.Controls.Add(this.textBox2);
             this.UpdatePage.Controls.Add(this.label3);
-            this.UpdatePage.Controls.Add(this.panel27);
             this.UpdatePage.Location = new System.Drawing.Point(4, 24);
             this.UpdatePage.Name = "UpdatePage";
             this.UpdatePage.Padding = new System.Windows.Forms.Padding(3);
-            this.UpdatePage.Size = new System.Drawing.Size(944, 477);
+            this.UpdatePage.Size = new System.Drawing.Size(944, 511);
             this.UpdatePage.TabIndex = 4;
             this.UpdatePage.Text = "UpdatePage";
             this.UpdatePage.UseVisualStyleBackColor = true;
+            this.UpdatePage.Click += new System.EventHandler(this.UpdatePage_Click);
             // 
             // pictureBox19
             // 
@@ -1208,9 +1244,9 @@ namespace AirLineManagementSystem
             // pictureBox22
             // 
             this.pictureBox22.Image = global::AirLineManagementSystem.Properties.Resources.icons8_clipboard_30;
-            this.pictureBox22.Location = new System.Drawing.Point(4, 5);
+            this.pictureBox22.Location = new System.Drawing.Point(5, 5);
             this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(43, 47);
+            this.pictureBox22.Size = new System.Drawing.Size(40, 45);
             this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox22.TabIndex = 25;
             this.pictureBox22.TabStop = false;
@@ -1426,9 +1462,9 @@ namespace AirLineManagementSystem
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
+            this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
             this.label3.Location = new System.Drawing.Point(305, 95);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(170, 21);
@@ -1447,7 +1483,7 @@ namespace AirLineManagementSystem
             this.PassengerinfoPage.Location = new System.Drawing.Point(4, 24);
             this.PassengerinfoPage.Name = "PassengerinfoPage";
             this.PassengerinfoPage.Padding = new System.Windows.Forms.Padding(3);
-            this.PassengerinfoPage.Size = new System.Drawing.Size(944, 477);
+            this.PassengerinfoPage.Size = new System.Drawing.Size(944, 511);
             this.PassengerinfoPage.TabIndex = 5;
             this.PassengerinfoPage.Text = "passengerINFO";
             this.PassengerinfoPage.UseVisualStyleBackColor = true;
@@ -1479,7 +1515,7 @@ namespace AirLineManagementSystem
             this.button42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button42.ForeColor = System.Drawing.Color.White;
             this.button42.Image = global::AirLineManagementSystem.Properties.Resources.icons8_next_page_501;
-            this.button42.Location = new System.Drawing.Point(812, 394);
+            this.button42.Location = new System.Drawing.Point(750, 406);
             this.button42.Name = "button42";
             this.button42.Size = new System.Drawing.Size(75, 62);
             this.button42.TabIndex = 35;
@@ -1559,6 +1595,7 @@ namespace AirLineManagementSystem
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Business";
             this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
             // 
             // label13
             // 
@@ -1713,7 +1750,7 @@ namespace AirLineManagementSystem
             this.SeatSelection.Location = new System.Drawing.Point(4, 24);
             this.SeatSelection.Name = "SeatSelection";
             this.SeatSelection.Padding = new System.Windows.Forms.Padding(3);
-            this.SeatSelection.Size = new System.Drawing.Size(944, 477);
+            this.SeatSelection.Size = new System.Drawing.Size(944, 511);
             this.SeatSelection.TabIndex = 6;
             this.SeatSelection.Text = "v";
             this.SeatSelection.UseVisualStyleBackColor = true;
@@ -1737,9 +1774,9 @@ namespace AirLineManagementSystem
             this.button43.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button43.ForeColor = System.Drawing.Color.White;
             this.button43.Image = global::AirLineManagementSystem.Properties.Resources.icons8_next_page_501;
-            this.button43.Location = new System.Drawing.Point(849, 405);
+            this.button43.Location = new System.Drawing.Point(715, 428);
             this.button43.Name = "button43";
-            this.button43.Size = new System.Drawing.Size(75, 62);
+            this.button43.Size = new System.Drawing.Size(75, 54);
             this.button43.TabIndex = 36;
             this.button43.UseVisualStyleBackColor = false;
             this.button43.Click += new System.EventHandler(this.button43_Click);
@@ -1823,6 +1860,259 @@ namespace AirLineManagementSystem
             this.panel41.Size = new System.Drawing.Size(394, 334);
             this.panel41.TabIndex = 0;
             // 
+            // button25
+            // 
+            this.button25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button25.BackgroundImage")));
+            this.button25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button25.Location = new System.Drawing.Point(316, 240);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(27, 23);
+            this.button25.TabIndex = 48;
+            this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
+            // 
+            // button40
+            // 
+            this.button40.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button40.BackgroundImage")));
+            this.button40.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button40.Location = new System.Drawing.Point(283, 91);
+            this.button40.Name = "button40";
+            this.button40.Size = new System.Drawing.Size(27, 23);
+            this.button40.TabIndex = 47;
+            this.button40.UseVisualStyleBackColor = true;
+            this.button40.Click += new System.EventHandler(this.button40_Click);
+            // 
+            // button39
+            // 
+            this.button39.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button39.BackgroundImage")));
+            this.button39.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button39.Location = new System.Drawing.Point(316, 91);
+            this.button39.Name = "button39";
+            this.button39.Size = new System.Drawing.Size(27, 23);
+            this.button39.TabIndex = 46;
+            this.button39.UseVisualStyleBackColor = true;
+            this.button39.Click += new System.EventHandler(this.button39_Click);
+            // 
+            // button38
+            // 
+            this.button38.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button38.BackgroundImage")));
+            this.button38.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button38.Location = new System.Drawing.Point(283, 137);
+            this.button38.Name = "button38";
+            this.button38.Size = new System.Drawing.Size(27, 23);
+            this.button38.TabIndex = 45;
+            this.button38.UseVisualStyleBackColor = true;
+            this.button38.Click += new System.EventHandler(this.button38_Click);
+            // 
+            // button37
+            // 
+            this.button37.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button37.BackgroundImage")));
+            this.button37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button37.Location = new System.Drawing.Point(316, 137);
+            this.button37.Name = "button37";
+            this.button37.Size = new System.Drawing.Size(27, 23);
+            this.button37.TabIndex = 44;
+            this.button37.UseVisualStyleBackColor = true;
+            this.button37.Click += new System.EventHandler(this.button37_Click);
+            // 
+            // button36
+            // 
+            this.button36.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button36.BackgroundImage")));
+            this.button36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button36.Location = new System.Drawing.Point(283, 194);
+            this.button36.Name = "button36";
+            this.button36.Size = new System.Drawing.Size(27, 23);
+            this.button36.TabIndex = 43;
+            this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.button36_Click);
+            // 
+            // button35
+            // 
+            this.button35.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button35.BackgroundImage")));
+            this.button35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button35.Location = new System.Drawing.Point(316, 194);
+            this.button35.Name = "button35";
+            this.button35.Size = new System.Drawing.Size(27, 23);
+            this.button35.TabIndex = 42;
+            this.button35.UseVisualStyleBackColor = true;
+            this.button35.Click += new System.EventHandler(this.button35_Click);
+            // 
+            // button34
+            // 
+            this.button34.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button34.BackgroundImage")));
+            this.button34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button34.Location = new System.Drawing.Point(283, 240);
+            this.button34.Name = "button34";
+            this.button34.Size = new System.Drawing.Size(27, 23);
+            this.button34.TabIndex = 41;
+            this.button34.UseVisualStyleBackColor = true;
+            this.button34.Click += new System.EventHandler(this.button34_Click);
+            // 
+            // button33
+            // 
+            this.button33.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button33.BackgroundImage")));
+            this.button33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button33.Location = new System.Drawing.Point(171, 240);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(27, 23);
+            this.button33.TabIndex = 40;
+            this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.button33_Click);
+            // 
+            // button16
+            // 
+            this.button16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button16.BackgroundImage")));
+            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button16.Location = new System.Drawing.Point(204, 240);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(27, 23);
+            this.button16.TabIndex = 39;
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
+            // 
+            // button15
+            // 
+            this.button15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button15.BackgroundImage")));
+            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button15.Location = new System.Drawing.Point(171, 91);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(27, 23);
+            this.button15.TabIndex = 38;
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // button14
+            // 
+            this.button14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button14.BackgroundImage")));
+            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button14.Location = new System.Drawing.Point(204, 91);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(27, 23);
+            this.button14.TabIndex = 37;
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // button13
+            // 
+            this.button13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button13.BackgroundImage")));
+            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button13.Location = new System.Drawing.Point(171, 137);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(27, 23);
+            this.button13.TabIndex = 36;
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // button12
+            // 
+            this.button12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button12.BackgroundImage")));
+            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button12.Location = new System.Drawing.Point(204, 137);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(27, 23);
+            this.button12.TabIndex = 35;
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // button11
+            // 
+            this.button11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button11.BackgroundImage")));
+            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button11.Location = new System.Drawing.Point(171, 194);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(27, 23);
+            this.button11.TabIndex = 34;
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // button10
+            // 
+            this.button10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button10.BackgroundImage")));
+            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button10.Location = new System.Drawing.Point(204, 194);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(27, 23);
+            this.button10.TabIndex = 33;
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button52
+            // 
+            this.button52.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button52.BackgroundImage")));
+            this.button52.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button52.Location = new System.Drawing.Point(67, 91);
+            this.button52.Name = "button52";
+            this.button52.Size = new System.Drawing.Size(27, 23);
+            this.button52.TabIndex = 32;
+            this.button52.UseVisualStyleBackColor = true;
+            this.button52.Click += new System.EventHandler(this.button52_Click);
+            // 
+            // button51
+            // 
+            this.button51.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button51.BackgroundImage")));
+            this.button51.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button51.Location = new System.Drawing.Point(34, 137);
+            this.button51.Name = "button51";
+            this.button51.Size = new System.Drawing.Size(27, 23);
+            this.button51.TabIndex = 31;
+            this.button51.UseVisualStyleBackColor = true;
+            this.button51.Click += new System.EventHandler(this.button51_Click);
+            // 
+            // button50
+            // 
+            this.button50.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button50.BackgroundImage")));
+            this.button50.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button50.Location = new System.Drawing.Point(67, 137);
+            this.button50.Name = "button50";
+            this.button50.Size = new System.Drawing.Size(27, 23);
+            this.button50.TabIndex = 30;
+            this.button50.UseVisualStyleBackColor = true;
+            this.button50.Click += new System.EventHandler(this.button50_Click);
+            // 
+            // button49
+            // 
+            this.button49.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button49.BackgroundImage")));
+            this.button49.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button49.Location = new System.Drawing.Point(34, 194);
+            this.button49.Name = "button49";
+            this.button49.Size = new System.Drawing.Size(27, 23);
+            this.button49.TabIndex = 29;
+            this.button49.UseVisualStyleBackColor = true;
+            this.button49.Click += new System.EventHandler(this.button49_Click);
+            // 
+            // button48
+            // 
+            this.button48.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button48.BackgroundImage")));
+            this.button48.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button48.Location = new System.Drawing.Point(67, 194);
+            this.button48.Name = "button48";
+            this.button48.Size = new System.Drawing.Size(27, 23);
+            this.button48.TabIndex = 28;
+            this.button48.UseVisualStyleBackColor = true;
+            this.button48.Click += new System.EventHandler(this.button48_Click);
+            // 
+            // button47
+            // 
+            this.button47.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button47.BackgroundImage")));
+            this.button47.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button47.Location = new System.Drawing.Point(34, 240);
+            this.button47.Name = "button47";
+            this.button47.Size = new System.Drawing.Size(27, 23);
+            this.button47.TabIndex = 27;
+            this.button47.UseVisualStyleBackColor = true;
+            this.button47.Click += new System.EventHandler(this.button47_Click);
+            // 
+            // button46
+            // 
+            this.button46.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button46.BackgroundImage")));
+            this.button46.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button46.Location = new System.Drawing.Point(67, 240);
+            this.button46.Name = "button46";
+            this.button46.Size = new System.Drawing.Size(27, 23);
+            this.button46.TabIndex = 26;
+            this.button46.UseVisualStyleBackColor = true;
+            this.button46.Click += new System.EventHandler(this.button46_Click);
+            // 
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.Transparent;
@@ -1833,6 +2123,7 @@ namespace AirLineManagementSystem
             this.button8.Size = new System.Drawing.Size(27, 23);
             this.button8.TabIndex = 0;
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // label64
             // 
@@ -1869,9 +2160,10 @@ namespace AirLineManagementSystem
             this.Payment.Location = new System.Drawing.Point(4, 24);
             this.Payment.Name = "Payment";
             this.Payment.Padding = new System.Windows.Forms.Padding(3);
-            this.Payment.Size = new System.Drawing.Size(944, 477);
+            this.Payment.Size = new System.Drawing.Size(944, 511);
             this.Payment.TabIndex = 7;
             this.Payment.Text = "Payment";
+            this.Payment.Click += new System.EventHandler(this.Payment_Click);
             // 
             // button44
             // 
@@ -1880,7 +2172,7 @@ namespace AirLineManagementSystem
             this.button44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button44.ForeColor = System.Drawing.Color.White;
             this.button44.Image = global::AirLineManagementSystem.Properties.Resources.icons8_next_page_501;
-            this.button44.Location = new System.Drawing.Point(808, 404);
+            this.button44.Location = new System.Drawing.Point(797, 425);
             this.button44.Name = "button44";
             this.button44.Size = new System.Drawing.Size(75, 62);
             this.button44.TabIndex = 37;
@@ -1932,18 +2224,103 @@ namespace AirLineManagementSystem
             this.panel15.Controls.Add(this.panel24);
             this.panel15.Controls.Add(this.panel23);
             this.panel15.Controls.Add(this.panel22);
-            this.panel15.Controls.Add(this.textBox11);
-            this.panel15.Controls.Add(this.textBox10);
-            this.panel15.Controls.Add(this.textBox13);
-            this.panel15.Controls.Add(this.textBox9);
+            this.panel15.Controls.Add(this.EmailBox);
+            this.panel15.Controls.Add(this.PhoneBox);
+            this.panel15.Controls.Add(this.CNICBox);
+            this.panel15.Controls.Add(this.PassBox);
             this.panel15.Controls.Add(this.panel13);
-            this.panel15.Controls.Add(this.textBox8);
+            this.panel15.Controls.Add(this.NameBox);
             this.panel15.Controls.Add(this.button5);
             this.panel15.Controls.Add(this.label28);
             this.panel15.Location = new System.Drawing.Point(68, 86);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(336, 305);
             this.panel15.TabIndex = 8;
+            // 
+            // panel26
+            // 
+            this.panel26.BackColor = System.Drawing.Color.Black;
+            this.panel26.Location = new System.Drawing.Point(43, 252);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(261, 1);
+            this.panel26.TabIndex = 33;
+            // 
+            // panel24
+            // 
+            this.panel24.BackColor = System.Drawing.Color.Black;
+            this.panel24.Location = new System.Drawing.Point(43, 213);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(261, 1);
+            this.panel24.TabIndex = 33;
+            // 
+            // panel23
+            // 
+            this.panel23.BackColor = System.Drawing.Color.Black;
+            this.panel23.Location = new System.Drawing.Point(43, 170);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(261, 1);
+            this.panel23.TabIndex = 33;
+            // 
+            // panel22
+            // 
+            this.panel22.BackColor = System.Drawing.Color.Black;
+            this.panel22.Location = new System.Drawing.Point(43, 127);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(261, 1);
+            this.panel22.TabIndex = 33;
+            // 
+            // EmailBox
+            // 
+            this.EmailBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EmailBox.Location = new System.Drawing.Point(43, 232);
+            this.EmailBox.Name = "EmailBox";
+            this.EmailBox.PlaceholderText = "Email";
+            this.EmailBox.Size = new System.Drawing.Size(261, 16);
+            this.EmailBox.TabIndex = 37;
+            // 
+            // PhoneBox
+            // 
+            this.PhoneBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PhoneBox.Location = new System.Drawing.Point(41, 191);
+            this.PhoneBox.Name = "PhoneBox";
+            this.PhoneBox.PlaceholderText = "Phone#";
+            this.PhoneBox.Size = new System.Drawing.Size(261, 16);
+            this.PhoneBox.TabIndex = 36;
+            // 
+            // CNICBox
+            // 
+            this.CNICBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CNICBox.Location = new System.Drawing.Point(43, 148);
+            this.CNICBox.Name = "CNICBox";
+            this.CNICBox.PlaceholderText = "CNIC";
+            this.CNICBox.Size = new System.Drawing.Size(261, 16);
+            this.CNICBox.TabIndex = 35;
+            // 
+            // PassBox
+            // 
+            this.PassBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PassBox.Location = new System.Drawing.Point(41, 105);
+            this.PassBox.Name = "PassBox";
+            this.PassBox.PlaceholderText = "Passport#";
+            this.PassBox.Size = new System.Drawing.Size(261, 16);
+            this.PassBox.TabIndex = 34;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.Black;
+            this.panel13.Location = new System.Drawing.Point(43, 86);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(261, 1);
+            this.panel13.TabIndex = 32;
+            // 
+            // NameBox
+            // 
+            this.NameBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.NameBox.Location = new System.Drawing.Point(41, 65);
+            this.NameBox.Name = "NameBox";
+            this.NameBox.PlaceholderText = "Name";
+            this.NameBox.Size = new System.Drawing.Size(261, 16);
+            this.NameBox.TabIndex = 33;
             // 
             // button5
             // 
@@ -2077,14 +2454,23 @@ namespace AirLineManagementSystem
             this.Ticketpage.Location = new System.Drawing.Point(4, 24);
             this.Ticketpage.Name = "Ticketpage";
             this.Ticketpage.Padding = new System.Windows.Forms.Padding(3);
-            this.Ticketpage.Size = new System.Drawing.Size(944, 477);
+            this.Ticketpage.Size = new System.Drawing.Size(944, 511);
             this.Ticketpage.TabIndex = 8;
             this.Ticketpage.Text = "Ticket";
             this.Ticketpage.UseVisualStyleBackColor = true;
+            this.Ticketpage.Click += new System.EventHandler(this.Ticketpage_Click);
             // 
             // panel31
             // 
             this.panel31.BackColor = System.Drawing.Color.White;
+            this.panel31.Controls.Add(this.Dest);
+            this.panel31.Controls.Add(this.panel34);
+            this.panel31.Controls.Add(this.Sourcel);
+            this.panel31.Controls.Add(this.Timel);
+            this.panel31.Controls.Add(this.seatl);
+            this.panel31.Controls.Add(this.Gatel);
+            this.panel31.Controls.Add(this.Flightl);
+            this.panel31.Controls.Add(this.Namel);
             this.panel31.Controls.Add(this.pictureBox31);
             this.panel31.Controls.Add(this.label32);
             this.panel31.Controls.Add(this.label33);
@@ -2096,7 +2482,6 @@ namespace AirLineManagementSystem
             this.panel31.Controls.Add(this.label48);
             this.panel31.Controls.Add(this.label49);
             this.panel31.Controls.Add(this.panel33);
-            this.panel31.Controls.Add(this.panel34);
             this.panel31.Controls.Add(this.panel35);
             this.panel31.Controls.Add(this.panel36);
             this.panel31.Controls.Add(this.panel37);
@@ -2105,6 +2490,269 @@ namespace AirLineManagementSystem
             this.panel31.Name = "panel31";
             this.panel31.Size = new System.Drawing.Size(776, 294);
             this.panel31.TabIndex = 1;
+            // 
+            // Dest
+            // 
+            this.Dest.AutoSize = true;
+            this.Dest.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Dest.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.Dest.Location = new System.Drawing.Point(347, 243);
+            this.Dest.Name = "Dest";
+            this.Dest.Size = new System.Drawing.Size(68, 23);
+            this.Dest.TabIndex = 20;
+            this.Dest.Text = "Source";
+            // 
+            // panel34
+            // 
+            this.panel34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel34.Controls.Add(this.label66);
+            this.panel34.Controls.Add(this.label65);
+            this.panel34.Controls.Add(this.label36);
+            this.panel34.Controls.Add(this.label62);
+            this.panel34.Controls.Add(this.label35);
+            this.panel34.Controls.Add(this.label27);
+            this.panel34.Controls.Add(this.label26);
+            this.panel34.Controls.Add(this.label50);
+            this.panel34.Controls.Add(this.label51);
+            this.panel34.Controls.Add(this.label52);
+            this.panel34.Controls.Add(this.label53);
+            this.panel34.Controls.Add(this.label54);
+            this.panel34.Controls.Add(this.label55);
+            this.panel34.Controls.Add(this.label56);
+            this.panel34.Location = new System.Drawing.Point(585, 70);
+            this.panel34.Name = "panel34";
+            this.panel34.Size = new System.Drawing.Size(191, 206);
+            this.panel34.TabIndex = 4;
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label66.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.label66.Location = new System.Drawing.Point(15, 178);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(32, 15);
+            this.label66.TabIndex = 25;
+            this.label66.Text = "Time";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label65.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.label65.Location = new System.Drawing.Point(13, 135);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(39, 15);
+            this.label65.TabIndex = 24;
+            this.label65.Text = "Gate #";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.label36.Location = new System.Drawing.Point(141, 95);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(20, 15);
+            this.label36.TabIndex = 23;
+            this.label36.Text = "To";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label62.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.label62.Location = new System.Drawing.Point(14, 94);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(27, 15);
+            this.label62.TabIndex = 22;
+            this.label62.Text = "Seat";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.label35.Location = new System.Drawing.Point(137, 40);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(33, 15);
+            this.label35.TabIndex = 21;
+            this.label35.Text = "From";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.label27.Location = new System.Drawing.Point(444, 32);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(68, 23);
+            this.label27.TabIndex = 20;
+            this.label27.Text = "Source";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.label26.Location = new System.Drawing.Point(10, 39);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(63, 15);
+            this.label26.TabIndex = 18;
+            this.label26.Text = "FlightName";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.label50.Location = new System.Drawing.Point(10, 159);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(42, 16);
+            this.label50.TabIndex = 17;
+            this.label50.Text = "TIME:";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label51.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.label51.Location = new System.Drawing.Point(10, 114);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(44, 16);
+            this.label51.TabIndex = 16;
+            this.label51.Text = "GATE";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label52.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.label52.Location = new System.Drawing.Point(141, 71);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(29, 16);
+            this.label52.TabIndex = 15;
+            this.label52.Text = "TO:";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label53.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.label53.Location = new System.Drawing.Point(10, 71);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(43, 16);
+            this.label53.TabIndex = 14;
+            this.label53.Text = "SEAT";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label54.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.label54.Location = new System.Drawing.Point(131, 13);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(49, 16);
+            this.label54.TabIndex = 13;
+            this.label54.Text = "FROM:";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label55.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.label55.Location = new System.Drawing.Point(10, 13);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(57, 16);
+            this.label55.TabIndex = 12;
+            this.label55.Text = "FLIGHT:";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label56.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.label56.Location = new System.Drawing.Point(74, 147);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(128, 58);
+            this.label56.TabIndex = 11;
+            this.label56.Text = "22 D";
+            // 
+            // Sourcel
+            // 
+            this.Sourcel.AutoSize = true;
+            this.Sourcel.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Sourcel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.Sourcel.Location = new System.Drawing.Point(120, 243);
+            this.Sourcel.Name = "Sourcel";
+            this.Sourcel.Size = new System.Drawing.Size(68, 23);
+            this.Sourcel.TabIndex = 19;
+            this.Sourcel.Text = "Source";
+            // 
+            // Timel
+            // 
+            this.Timel.AutoSize = true;
+            this.Timel.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Timel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.Timel.Location = new System.Drawing.Point(258, 171);
+            this.Timel.Name = "Timel";
+            this.Timel.Size = new System.Drawing.Size(28, 15);
+            this.Timel.TabIndex = 18;
+            this.Timel.Text = "time";
+            // 
+            // seatl
+            // 
+            this.seatl.AutoSize = true;
+            this.seatl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.seatl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.seatl.Location = new System.Drawing.Point(120, 171);
+            this.seatl.Name = "seatl";
+            this.seatl.Size = new System.Drawing.Size(36, 15);
+            this.seatl.TabIndex = 17;
+            this.seatl.Text = "Seat #";
+            // 
+            // Gatel
+            // 
+            this.Gatel.AutoSize = true;
+            this.Gatel.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gatel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.Gatel.Location = new System.Drawing.Point(250, 128);
+            this.Gatel.Name = "Gatel";
+            this.Gatel.Size = new System.Drawing.Size(39, 15);
+            this.Gatel.TabIndex = 17;
+            this.Gatel.Text = "Gate #";
+            // 
+            // Flightl
+            // 
+            this.Flightl.AutoSize = true;
+            this.Flightl.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Flightl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.Flightl.Location = new System.Drawing.Point(120, 128);
+            this.Flightl.Name = "Flightl";
+            this.Flightl.Size = new System.Drawing.Size(63, 15);
+            this.Flightl.TabIndex = 16;
+            this.Flightl.Text = "FlightName";
+            // 
+            // Namel
+            // 
+            this.Namel.AutoSize = true;
+            this.Namel.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Namel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.Namel.Location = new System.Drawing.Point(197, 76);
+            this.Namel.Name = "Namel";
+            this.Namel.Size = new System.Drawing.Size(53, 21);
+            this.Namel.TabIndex = 15;
+            this.Namel.Text = "Name";
+            // 
+            // pictureBox31
+            // 
+            this.pictureBox31.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox31.BackgroundImage")));
+            this.pictureBox31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox31.Location = new System.Drawing.Point(0, 70);
+            this.pictureBox31.Name = "pictureBox31";
+            this.pictureBox31.Size = new System.Drawing.Size(113, 206);
+            this.pictureBox31.TabIndex = 2;
+            this.pictureBox31.TabStop = false;
             // 
             // label32
             // 
@@ -2222,98 +2870,6 @@ namespace AirLineManagementSystem
             this.panel33.Size = new System.Drawing.Size(470, 2);
             this.panel33.TabIndex = 5;
             // 
-            // panel34
-            // 
-            this.panel34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel34.Controls.Add(this.label50);
-            this.panel34.Controls.Add(this.label51);
-            this.panel34.Controls.Add(this.label52);
-            this.panel34.Controls.Add(this.label53);
-            this.panel34.Controls.Add(this.label54);
-            this.panel34.Controls.Add(this.label55);
-            this.panel34.Controls.Add(this.label56);
-            this.panel34.Location = new System.Drawing.Point(585, 70);
-            this.panel34.Name = "panel34";
-            this.panel34.Size = new System.Drawing.Size(191, 206);
-            this.panel34.TabIndex = 4;
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.label50.Location = new System.Drawing.Point(10, 159);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(42, 16);
-            this.label50.TabIndex = 17;
-            this.label50.Text = "TIME:";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label51.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.label51.Location = new System.Drawing.Point(10, 114);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(44, 16);
-            this.label51.TabIndex = 16;
-            this.label51.Text = "GATE";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label52.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.label52.Location = new System.Drawing.Point(141, 71);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(29, 16);
-            this.label52.TabIndex = 15;
-            this.label52.Text = "TO:";
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label53.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.label53.Location = new System.Drawing.Point(10, 71);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(43, 16);
-            this.label53.TabIndex = 14;
-            this.label53.Text = "SEAT";
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label54.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.label54.Location = new System.Drawing.Point(131, 13);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(49, 16);
-            this.label54.TabIndex = 13;
-            this.label54.Text = "FROM:";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label55.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.label55.Location = new System.Drawing.Point(10, 13);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(57, 16);
-            this.label55.TabIndex = 12;
-            this.label55.Text = "FLIGHT:";
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label56.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.label56.Location = new System.Drawing.Point(74, 147);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(128, 58);
-            this.label56.TabIndex = 11;
-            this.label56.Text = "22 D";
-            // 
             // panel35
             // 
             this.panel35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
@@ -2351,6 +2907,16 @@ namespace AirLineManagementSystem
             this.panel37.Name = "panel37";
             this.panel37.Size = new System.Drawing.Size(585, 70);
             this.panel37.TabIndex = 1;
+            // 
+            // pictureBox32
+            // 
+            this.pictureBox32.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox32.BackgroundImage")));
+            this.pictureBox32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox32.Location = new System.Drawing.Point(9, -24);
+            this.pictureBox32.Name = "pictureBox32";
+            this.pictureBox32.Size = new System.Drawing.Size(100, 111);
+            this.pictureBox32.TabIndex = 2;
+            this.pictureBox32.TabStop = false;
             // 
             // label58
             // 
@@ -2477,385 +3043,12 @@ namespace AirLineManagementSystem
             this.button24.Size = new System.Drawing.Size(75, 23);
             this.button24.TabIndex = 0;
             // 
-            // pictureBox31
-            // 
-            this.pictureBox31.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox31.BackgroundImage")));
-            this.pictureBox31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox31.Location = new System.Drawing.Point(0, 70);
-            this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(113, 206);
-            this.pictureBox31.TabIndex = 2;
-            this.pictureBox31.TabStop = false;
-            // 
-            // pictureBox32
-            // 
-            this.pictureBox32.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox32.BackgroundImage")));
-            this.pictureBox32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox32.Location = new System.Drawing.Point(9, -24);
-            this.pictureBox32.Name = "pictureBox32";
-            this.pictureBox32.Size = new System.Drawing.Size(100, 111);
-            this.pictureBox32.TabIndex = 2;
-            this.pictureBox32.TabStop = false;
-            // 
-            // textBox8
-            // 
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Location = new System.Drawing.Point(41, 65);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.PlaceholderText = "Name";
-            this.textBox8.Size = new System.Drawing.Size(261, 16);
-            this.textBox8.TabIndex = 33;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.Black;
-            this.panel13.Location = new System.Drawing.Point(43, 86);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(261, 1);
-            this.panel13.TabIndex = 32;
-            // 
-            // textBox9
-            // 
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Location = new System.Drawing.Point(41, 105);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.PlaceholderText = "Passport#";
-            this.textBox9.Size = new System.Drawing.Size(261, 16);
-            this.textBox9.TabIndex = 34;
-            // 
-            // textBox13
-            // 
-            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox13.Location = new System.Drawing.Point(43, 148);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.PlaceholderText = "CNIC";
-            this.textBox13.Size = new System.Drawing.Size(261, 16);
-            this.textBox13.TabIndex = 35;
-            // 
-            // textBox10
-            // 
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox10.Location = new System.Drawing.Point(41, 191);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.PlaceholderText = "Phone#";
-            this.textBox10.Size = new System.Drawing.Size(261, 16);
-            this.textBox10.TabIndex = 36;
-            // 
-            // textBox11
-            // 
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox11.Location = new System.Drawing.Point(43, 232);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.PlaceholderText = "Email";
-            this.textBox11.Size = new System.Drawing.Size(261, 16);
-            this.textBox11.TabIndex = 37;
-            // 
-            // panel22
-            // 
-            this.panel22.BackColor = System.Drawing.Color.Black;
-            this.panel22.Location = new System.Drawing.Point(43, 127);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(261, 1);
-            this.panel22.TabIndex = 33;
-            // 
-            // panel23
-            // 
-            this.panel23.BackColor = System.Drawing.Color.Black;
-            this.panel23.Location = new System.Drawing.Point(43, 170);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(261, 1);
-            this.panel23.TabIndex = 33;
-            // 
-            // panel24
-            // 
-            this.panel24.BackColor = System.Drawing.Color.Black;
-            this.panel24.Location = new System.Drawing.Point(43, 213);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(261, 1);
-            this.panel24.TabIndex = 33;
-            // 
-            // panel26
-            // 
-            this.panel26.BackColor = System.Drawing.Color.Black;
-            this.panel26.Location = new System.Drawing.Point(43, 252);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(261, 1);
-            this.panel26.TabIndex = 33;
-            // 
-            // button46
-            // 
-            this.button46.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button46.BackgroundImage")));
-            this.button46.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button46.Location = new System.Drawing.Point(67, 240);
-            this.button46.Name = "button46";
-            this.button46.Size = new System.Drawing.Size(27, 23);
-            this.button46.TabIndex = 26;
-            this.button46.UseVisualStyleBackColor = true;
-            // 
-            // button48
-            // 
-            this.button48.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button48.BackgroundImage")));
-            this.button48.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button48.Location = new System.Drawing.Point(67, 194);
-            this.button48.Name = "button48";
-            this.button48.Size = new System.Drawing.Size(27, 23);
-            this.button48.TabIndex = 28;
-            this.button48.UseVisualStyleBackColor = true;
-            // 
-            // button49
-            // 
-            this.button49.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button49.BackgroundImage")));
-            this.button49.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button49.Location = new System.Drawing.Point(34, 194);
-            this.button49.Name = "button49";
-            this.button49.Size = new System.Drawing.Size(27, 23);
-            this.button49.TabIndex = 29;
-            this.button49.UseVisualStyleBackColor = true;
-            // 
-            // button50
-            // 
-            this.button50.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button50.BackgroundImage")));
-            this.button50.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button50.Location = new System.Drawing.Point(67, 137);
-            this.button50.Name = "button50";
-            this.button50.Size = new System.Drawing.Size(27, 23);
-            this.button50.TabIndex = 30;
-            this.button50.UseVisualStyleBackColor = true;
-            // 
-            // button51
-            // 
-            this.button51.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button51.BackgroundImage")));
-            this.button51.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button51.Location = new System.Drawing.Point(34, 137);
-            this.button51.Name = "button51";
-            this.button51.Size = new System.Drawing.Size(27, 23);
-            this.button51.TabIndex = 31;
-            this.button51.UseVisualStyleBackColor = true;
-            // 
-            // button52
-            // 
-            this.button52.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button52.BackgroundImage")));
-            this.button52.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button52.Location = new System.Drawing.Point(67, 91);
-            this.button52.Name = "button52";
-            this.button52.Size = new System.Drawing.Size(27, 23);
-            this.button52.TabIndex = 32;
-            this.button52.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button10.BackgroundImage")));
-            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button10.Location = new System.Drawing.Point(204, 194);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(27, 23);
-            this.button10.TabIndex = 33;
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            this.button11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button11.BackgroundImage")));
-            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button11.Location = new System.Drawing.Point(171, 194);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(27, 23);
-            this.button11.TabIndex = 34;
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            this.button12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button12.BackgroundImage")));
-            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button12.Location = new System.Drawing.Point(204, 137);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(27, 23);
-            this.button12.TabIndex = 35;
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            this.button13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button13.BackgroundImage")));
-            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button13.Location = new System.Drawing.Point(171, 137);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(27, 23);
-            this.button13.TabIndex = 36;
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // button14
-            // 
-            this.button14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button14.BackgroundImage")));
-            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button14.Location = new System.Drawing.Point(204, 91);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(27, 23);
-            this.button14.TabIndex = 37;
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // button15
-            // 
-            this.button15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button15.BackgroundImage")));
-            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button15.Location = new System.Drawing.Point(171, 91);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(27, 23);
-            this.button15.TabIndex = 38;
-            this.button15.UseVisualStyleBackColor = true;
-            // 
-            // button16
-            // 
-            this.button16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button16.BackgroundImage")));
-            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button16.Location = new System.Drawing.Point(204, 240);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(27, 23);
-            this.button16.TabIndex = 39;
-            this.button16.UseVisualStyleBackColor = true;
-            // 
-            // button33
-            // 
-            this.button33.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button33.BackgroundImage")));
-            this.button33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button33.Location = new System.Drawing.Point(171, 240);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(27, 23);
-            this.button33.TabIndex = 40;
-            this.button33.UseVisualStyleBackColor = true;
-            // 
-            // button34
-            // 
-            this.button34.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button34.BackgroundImage")));
-            this.button34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button34.Location = new System.Drawing.Point(283, 240);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(27, 23);
-            this.button34.TabIndex = 41;
-            this.button34.UseVisualStyleBackColor = true;
-            // 
-            // button35
-            // 
-            this.button35.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button35.BackgroundImage")));
-            this.button35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button35.Location = new System.Drawing.Point(316, 194);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(27, 23);
-            this.button35.TabIndex = 42;
-            this.button35.UseVisualStyleBackColor = true;
-            // 
-            // button36
-            // 
-            this.button36.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button36.BackgroundImage")));
-            this.button36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button36.Location = new System.Drawing.Point(283, 194);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(27, 23);
-            this.button36.TabIndex = 43;
-            this.button36.UseVisualStyleBackColor = true;
-            // 
-            // button37
-            // 
-            this.button37.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button37.BackgroundImage")));
-            this.button37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button37.Location = new System.Drawing.Point(316, 137);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(27, 23);
-            this.button37.TabIndex = 44;
-            this.button37.UseVisualStyleBackColor = true;
-            // 
-            // button38
-            // 
-            this.button38.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button38.BackgroundImage")));
-            this.button38.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button38.Location = new System.Drawing.Point(283, 137);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(27, 23);
-            this.button38.TabIndex = 45;
-            this.button38.UseVisualStyleBackColor = true;
-            // 
-            // button39
-            // 
-            this.button39.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button39.BackgroundImage")));
-            this.button39.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button39.Location = new System.Drawing.Point(316, 91);
-            this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(27, 23);
-            this.button39.TabIndex = 46;
-            this.button39.UseVisualStyleBackColor = true;
-            // 
-            // button40
-            // 
-            this.button40.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button40.BackgroundImage")));
-            this.button40.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button40.Location = new System.Drawing.Point(283, 91);
-            this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(27, 23);
-            this.button40.TabIndex = 47;
-            this.button40.UseVisualStyleBackColor = true;
-            // 
-            // button25
-            // 
-            this.button25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button25.BackgroundImage")));
-            this.button25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button25.Location = new System.Drawing.Point(316, 240);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(27, 23);
-            this.button25.TabIndex = 48;
-            this.button25.UseVisualStyleBackColor = true;
-            // 
-            // panel27
-            // 
-            this.panel27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
-            this.panel27.Location = new System.Drawing.Point(149, 75);
-            this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(701, 392);
-            this.panel27.TabIndex = 27;
-            // 
-            // button47
-            // 
-            this.button47.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button47.BackgroundImage")));
-            this.button47.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button47.Location = new System.Drawing.Point(34, 240);
-            this.button47.Name = "button47";
-            this.button47.Size = new System.Drawing.Size(27, 23);
-            this.button47.TabIndex = 27;
-            this.button47.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox25
-            // 
-            this.pictureBox25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox25.BackgroundImage")));
-            this.pictureBox25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox25.Location = new System.Drawing.Point(776, 45);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(106, 93);
-            this.pictureBox25.TabIndex = 8;
-            this.pictureBox25.TabStop = false;
-            // 
-            // panel28
-            // 
-            this.panel28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
-            this.panel28.Location = new System.Drawing.Point(142, 71);
-            this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(680, 395);
-            this.panel28.TabIndex = 24;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.BackColor = System.Drawing.Color.Transparent;
-            this.label25.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(328, 57);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(346, 308);
-            this.label25.TabIndex = 0;
-            this.label25.Text = "       Go \r\n     Forth \r\n      And \r\n   Wander!";
-            // 
             // PassengerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(950, 576);
+            this.ClientSize = new System.Drawing.Size(950, 616);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.basepanel);
             this.Controls.Add(this.panel2);
@@ -2895,6 +3088,7 @@ namespace AirLineManagementSystem
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ViewPage.ResumeLayout(false);
             this.ViewPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.UpdatePage.ResumeLayout(false);
             this.UpdatePage.PerformLayout();
@@ -2940,18 +3134,17 @@ namespace AirLineManagementSystem
             this.Ticketpage.ResumeLayout(false);
             this.panel31.ResumeLayout(false);
             this.panel31.PerformLayout();
-            this.panel32.ResumeLayout(false);
-            this.panel32.PerformLayout();
             this.panel34.ResumeLayout(false);
             this.panel34.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
+            this.panel32.ResumeLayout(false);
+            this.panel32.PerformLayout();
             this.panel35.ResumeLayout(false);
             this.panel35.PerformLayout();
             this.panel37.ResumeLayout(false);
             this.panel37.PerformLayout();
-            this.downpanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
+            this.downpanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3160,12 +3353,12 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.Panel panel24;
         private System.Windows.Forms.Panel panel23;
         private System.Windows.Forms.Panel panel22;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox EmailBox;
+        private System.Windows.Forms.TextBox PhoneBox;
+        private System.Windows.Forms.TextBox CNICBox;
+        private System.Windows.Forms.TextBox PassBox;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox NameBox;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Button button40;
         private System.Windows.Forms.Button button39;
@@ -3188,10 +3381,22 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.Button button49;
         private System.Windows.Forms.Button button48;
         private System.Windows.Forms.Button button46;
-        private System.Windows.Forms.Panel panel27;
         private System.Windows.Forms.Button button47;
         private System.Windows.Forms.PictureBox pictureBox25;
-        private System.Windows.Forms.Panel panel28;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label Namel;
+        private System.Windows.Forms.Label Dest;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label Sourcel;
+        private System.Windows.Forms.Label Timel;
+        private System.Windows.Forms.Label seatl;
+        private System.Windows.Forms.Label Gatel;
+        private System.Windows.Forms.Label Flightl;
     }
 }

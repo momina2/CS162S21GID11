@@ -123,5 +123,30 @@ namespace AirLineManagementSystem
 
             }
         }
+
+        private void SourceBox_TextChanged(object sender, EventArgs e)
+        {
+            if (SourceBox.Text == DestinationBox.Text)
+            {
+                MessageBox.Show("Flight not Found !", "Flight Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+        }
+
+        private void DestinationBox_TextChanged(object sender, EventArgs e)
+        {
+            if (SourceBox.Text == DestinationBox.Text)
+            {
+                MessageBox.Show("Flight not Found !", "Flight Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            if(DateTime.Now>dateTimePicker1.Value)
+            {
+                MessageBox.Show("Invalid Date !", "Select Date", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }

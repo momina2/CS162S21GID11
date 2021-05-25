@@ -29,7 +29,7 @@ namespace AirLineManagementSystem
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -40,6 +40,7 @@ namespace AirLineManagementSystem
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -49,7 +50,6 @@ namespace AirLineManagementSystem
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -105,14 +105,14 @@ namespace AirLineManagementSystem
             this.Column2,
             this.Column3,
             this.Column4});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dataGridView1.Enabled = false;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveBorder;
@@ -162,6 +162,17 @@ namespace AirLineManagementSystem
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(614, 268);
             this.panel1.TabIndex = 4;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox3.Location = new System.Drawing.Point(28, 212);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.PlaceholderText = "CNIC";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(399, 16);
+            this.textBox3.TabIndex = 21;
             // 
             // panel8
             // 
@@ -216,6 +227,7 @@ namespace AirLineManagementSystem
             this.textBox4.Location = new System.Drawing.Point(27, 169);
             this.textBox4.Name = "textBox4";
             this.textBox4.PlaceholderText = "Employee Phone #";
+            this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(400, 16);
             this.textBox4.TabIndex = 11;
             // 
@@ -226,6 +238,7 @@ namespace AirLineManagementSystem
             this.textBox2.Location = new System.Drawing.Point(27, 128);
             this.textBox2.Name = "textBox2";
             this.textBox2.PlaceholderText = "Employee ID";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(399, 16);
             this.textBox2.TabIndex = 9;
             // 
@@ -236,6 +249,7 @@ namespace AirLineManagementSystem
             this.textBox1.Location = new System.Drawing.Point(27, 79);
             this.textBox1.Name = "textBox1";
             this.textBox1.PlaceholderText = "Employee Name";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(400, 16);
             this.textBox1.TabIndex = 8;
             // 
@@ -248,16 +262,6 @@ namespace AirLineManagementSystem
             this.label1.Size = new System.Drawing.Size(172, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = " EMPLOYEE  DATA";
-            // 
-            // textBox3
-            // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(28, 212);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.PlaceholderText = "CNIC";
-            this.textBox3.Size = new System.Drawing.Size(399, 16);
-            this.textBox3.TabIndex = 21;
             // 
             // EmployeeUC
             // 
