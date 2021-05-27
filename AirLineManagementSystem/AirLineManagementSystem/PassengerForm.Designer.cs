@@ -166,31 +166,31 @@ namespace AirLineManagementSystem
             this.panel39 = new System.Windows.Forms.Panel();
             this.label61 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
-            this.panel41 = new System.Windows.Forms.Panel();
+            this.seatPanel = new System.Windows.Forms.Panel();
             this.button25 = new System.Windows.Forms.Button();
-            this.button40 = new System.Windows.Forms.Button();
+            this.st9 = new System.Windows.Forms.Button();
             this.button39 = new System.Windows.Forms.Button();
-            this.button38 = new System.Windows.Forms.Button();
+            this.st10 = new System.Windows.Forms.Button();
             this.button37 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
+            this.st11 = new System.Windows.Forms.Button();
             this.button35 = new System.Windows.Forms.Button();
-            this.button34 = new System.Windows.Forms.Button();
-            this.button33 = new System.Windows.Forms.Button();
+            this.st12 = new System.Windows.Forms.Button();
+            this.st8 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
+            this.st5 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
+            this.st6 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
+            this.st7 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button52 = new System.Windows.Forms.Button();
-            this.button51 = new System.Windows.Forms.Button();
+            this.st2 = new System.Windows.Forms.Button();
             this.button50 = new System.Windows.Forms.Button();
-            this.button49 = new System.Windows.Forms.Button();
+            this.st3 = new System.Windows.Forms.Button();
             this.button48 = new System.Windows.Forms.Button();
-            this.button47 = new System.Windows.Forms.Button();
+            this.st4 = new System.Windows.Forms.Button();
             this.button46 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.st1 = new System.Windows.Forms.Button();
             this.label64 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.Payment = new System.Windows.Forms.TabPage();
@@ -326,7 +326,7 @@ namespace AirLineManagementSystem
             this.panel11.SuspendLayout();
             this.SeatSelection.SuspendLayout();
             this.panel39.SuspendLayout();
-            this.panel41.SuspendLayout();
+            this.seatPanel.SuspendLayout();
             this.Payment.SuspendLayout();
             this.panel25.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
@@ -518,11 +518,12 @@ namespace AirLineManagementSystem
             this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(328, 57);
+            this.label25.Location = new System.Drawing.Point(297, 82);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(346, 308);
             this.label25.TabIndex = 0;
             this.label25.Text = "       Go \r\n     Forth \r\n      And \r\n   Wander!";
+            this.label25.Click += new System.EventHandler(this.label25_Click);
             // 
             // CancelPage
             // 
@@ -1796,7 +1797,7 @@ namespace AirLineManagementSystem
             this.panel39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel39.Controls.Add(this.label61);
             this.panel39.Controls.Add(this.label60);
-            this.panel39.Controls.Add(this.panel41);
+            this.panel39.Controls.Add(this.seatPanel);
             this.panel39.Controls.Add(this.label64);
             this.panel39.Controls.Add(this.label59);
             this.panel39.Location = new System.Drawing.Point(128, 88);
@@ -1827,38 +1828,39 @@ namespace AirLineManagementSystem
             this.label60.TabIndex = 38;
             this.label60.Text = "Economy";
             // 
-            // panel41
+            // seatPanel
             // 
-            this.panel41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
-            this.panel41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel41.Controls.Add(this.button25);
-            this.panel41.Controls.Add(this.button40);
-            this.panel41.Controls.Add(this.button39);
-            this.panel41.Controls.Add(this.button38);
-            this.panel41.Controls.Add(this.button37);
-            this.panel41.Controls.Add(this.button36);
-            this.panel41.Controls.Add(this.button35);
-            this.panel41.Controls.Add(this.button34);
-            this.panel41.Controls.Add(this.button33);
-            this.panel41.Controls.Add(this.button16);
-            this.panel41.Controls.Add(this.button15);
-            this.panel41.Controls.Add(this.button14);
-            this.panel41.Controls.Add(this.button13);
-            this.panel41.Controls.Add(this.button12);
-            this.panel41.Controls.Add(this.button11);
-            this.panel41.Controls.Add(this.button10);
-            this.panel41.Controls.Add(this.button52);
-            this.panel41.Controls.Add(this.button51);
-            this.panel41.Controls.Add(this.button50);
-            this.panel41.Controls.Add(this.button49);
-            this.panel41.Controls.Add(this.button48);
-            this.panel41.Controls.Add(this.button47);
-            this.panel41.Controls.Add(this.button46);
-            this.panel41.Controls.Add(this.button8);
-            this.panel41.Location = new System.Drawing.Point(157, -1);
-            this.panel41.Name = "panel41";
-            this.panel41.Size = new System.Drawing.Size(394, 334);
-            this.panel41.TabIndex = 0;
+            this.seatPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
+            this.seatPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.seatPanel.Controls.Add(this.button25);
+            this.seatPanel.Controls.Add(this.st9);
+            this.seatPanel.Controls.Add(this.button39);
+            this.seatPanel.Controls.Add(this.st10);
+            this.seatPanel.Controls.Add(this.button37);
+            this.seatPanel.Controls.Add(this.st11);
+            this.seatPanel.Controls.Add(this.button35);
+            this.seatPanel.Controls.Add(this.st12);
+            this.seatPanel.Controls.Add(this.st8);
+            this.seatPanel.Controls.Add(this.button16);
+            this.seatPanel.Controls.Add(this.st5);
+            this.seatPanel.Controls.Add(this.button14);
+            this.seatPanel.Controls.Add(this.st6);
+            this.seatPanel.Controls.Add(this.button12);
+            this.seatPanel.Controls.Add(this.st7);
+            this.seatPanel.Controls.Add(this.button10);
+            this.seatPanel.Controls.Add(this.button52);
+            this.seatPanel.Controls.Add(this.st2);
+            this.seatPanel.Controls.Add(this.button50);
+            this.seatPanel.Controls.Add(this.st3);
+            this.seatPanel.Controls.Add(this.button48);
+            this.seatPanel.Controls.Add(this.st4);
+            this.seatPanel.Controls.Add(this.button46);
+            this.seatPanel.Controls.Add(this.st1);
+            this.seatPanel.Location = new System.Drawing.Point(157, -1);
+            this.seatPanel.Name = "seatPanel";
+            this.seatPanel.Size = new System.Drawing.Size(394, 334);
+            this.seatPanel.TabIndex = 0;
+            this.seatPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.seatPanel_Paint);
             // 
             // button25
             // 
@@ -1871,16 +1873,16 @@ namespace AirLineManagementSystem
             this.button25.UseVisualStyleBackColor = true;
             this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
-            // button40
+            // st9
             // 
-            this.button40.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button40.BackgroundImage")));
-            this.button40.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button40.Location = new System.Drawing.Point(283, 91);
-            this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(27, 23);
-            this.button40.TabIndex = 47;
-            this.button40.UseVisualStyleBackColor = true;
-            this.button40.Click += new System.EventHandler(this.button40_Click);
+            this.st9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("st9.BackgroundImage")));
+            this.st9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.st9.Location = new System.Drawing.Point(283, 91);
+            this.st9.Name = "st9";
+            this.st9.Size = new System.Drawing.Size(27, 23);
+            this.st9.TabIndex = 47;
+            this.st9.UseVisualStyleBackColor = true;
+            this.st9.Click += new System.EventHandler(this.button40_Click);
             // 
             // button39
             // 
@@ -1893,16 +1895,16 @@ namespace AirLineManagementSystem
             this.button39.UseVisualStyleBackColor = true;
             this.button39.Click += new System.EventHandler(this.button39_Click);
             // 
-            // button38
+            // st10
             // 
-            this.button38.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button38.BackgroundImage")));
-            this.button38.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button38.Location = new System.Drawing.Point(283, 137);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(27, 23);
-            this.button38.TabIndex = 45;
-            this.button38.UseVisualStyleBackColor = true;
-            this.button38.Click += new System.EventHandler(this.button38_Click);
+            this.st10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("st10.BackgroundImage")));
+            this.st10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.st10.Location = new System.Drawing.Point(283, 137);
+            this.st10.Name = "st10";
+            this.st10.Size = new System.Drawing.Size(27, 23);
+            this.st10.TabIndex = 45;
+            this.st10.UseVisualStyleBackColor = true;
+            this.st10.Click += new System.EventHandler(this.button38_Click);
             // 
             // button37
             // 
@@ -1915,16 +1917,16 @@ namespace AirLineManagementSystem
             this.button37.UseVisualStyleBackColor = true;
             this.button37.Click += new System.EventHandler(this.button37_Click);
             // 
-            // button36
+            // st11
             // 
-            this.button36.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button36.BackgroundImage")));
-            this.button36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button36.Location = new System.Drawing.Point(283, 194);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(27, 23);
-            this.button36.TabIndex = 43;
-            this.button36.UseVisualStyleBackColor = true;
-            this.button36.Click += new System.EventHandler(this.button36_Click);
+            this.st11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("st11.BackgroundImage")));
+            this.st11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.st11.Location = new System.Drawing.Point(283, 194);
+            this.st11.Name = "st11";
+            this.st11.Size = new System.Drawing.Size(27, 23);
+            this.st11.TabIndex = 43;
+            this.st11.UseVisualStyleBackColor = true;
+            this.st11.Click += new System.EventHandler(this.button36_Click);
             // 
             // button35
             // 
@@ -1937,27 +1939,27 @@ namespace AirLineManagementSystem
             this.button35.UseVisualStyleBackColor = true;
             this.button35.Click += new System.EventHandler(this.button35_Click);
             // 
-            // button34
+            // st12
             // 
-            this.button34.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button34.BackgroundImage")));
-            this.button34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button34.Location = new System.Drawing.Point(283, 240);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(27, 23);
-            this.button34.TabIndex = 41;
-            this.button34.UseVisualStyleBackColor = true;
-            this.button34.Click += new System.EventHandler(this.button34_Click);
+            this.st12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("st12.BackgroundImage")));
+            this.st12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.st12.Location = new System.Drawing.Point(283, 240);
+            this.st12.Name = "st12";
+            this.st12.Size = new System.Drawing.Size(27, 23);
+            this.st12.TabIndex = 41;
+            this.st12.UseVisualStyleBackColor = true;
+            this.st12.Click += new System.EventHandler(this.button34_Click);
             // 
-            // button33
+            // st8
             // 
-            this.button33.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button33.BackgroundImage")));
-            this.button33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button33.Location = new System.Drawing.Point(171, 240);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(27, 23);
-            this.button33.TabIndex = 40;
-            this.button33.UseVisualStyleBackColor = true;
-            this.button33.Click += new System.EventHandler(this.button33_Click);
+            this.st8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("st8.BackgroundImage")));
+            this.st8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.st8.Location = new System.Drawing.Point(171, 240);
+            this.st8.Name = "st8";
+            this.st8.Size = new System.Drawing.Size(27, 23);
+            this.st8.TabIndex = 40;
+            this.st8.UseVisualStyleBackColor = true;
+            this.st8.Click += new System.EventHandler(this.button33_Click);
             // 
             // button16
             // 
@@ -1970,16 +1972,16 @@ namespace AirLineManagementSystem
             this.button16.UseVisualStyleBackColor = true;
             this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
-            // button15
+            // st5
             // 
-            this.button15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button15.BackgroundImage")));
-            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button15.Location = new System.Drawing.Point(171, 91);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(27, 23);
-            this.button15.TabIndex = 38;
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
+            this.st5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("st5.BackgroundImage")));
+            this.st5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.st5.Location = new System.Drawing.Point(171, 91);
+            this.st5.Name = "st5";
+            this.st5.Size = new System.Drawing.Size(27, 23);
+            this.st5.TabIndex = 38;
+            this.st5.UseVisualStyleBackColor = true;
+            this.st5.Click += new System.EventHandler(this.button15_Click);
             // 
             // button14
             // 
@@ -1992,16 +1994,16 @@ namespace AirLineManagementSystem
             this.button14.UseVisualStyleBackColor = true;
             this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
-            // button13
+            // st6
             // 
-            this.button13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button13.BackgroundImage")));
-            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button13.Location = new System.Drawing.Point(171, 137);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(27, 23);
-            this.button13.TabIndex = 36;
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
+            this.st6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("st6.BackgroundImage")));
+            this.st6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.st6.Location = new System.Drawing.Point(171, 137);
+            this.st6.Name = "st6";
+            this.st6.Size = new System.Drawing.Size(27, 23);
+            this.st6.TabIndex = 36;
+            this.st6.UseVisualStyleBackColor = true;
+            this.st6.Click += new System.EventHandler(this.button13_Click);
             // 
             // button12
             // 
@@ -2014,16 +2016,16 @@ namespace AirLineManagementSystem
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
-            // button11
+            // st7
             // 
-            this.button11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button11.BackgroundImage")));
-            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button11.Location = new System.Drawing.Point(171, 194);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(27, 23);
-            this.button11.TabIndex = 34;
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.st7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("st7.BackgroundImage")));
+            this.st7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.st7.Location = new System.Drawing.Point(171, 194);
+            this.st7.Name = "st7";
+            this.st7.Size = new System.Drawing.Size(27, 23);
+            this.st7.TabIndex = 34;
+            this.st7.UseVisualStyleBackColor = true;
+            this.st7.Click += new System.EventHandler(this.button11_Click);
             // 
             // button10
             // 
@@ -2047,16 +2049,16 @@ namespace AirLineManagementSystem
             this.button52.UseVisualStyleBackColor = true;
             this.button52.Click += new System.EventHandler(this.button52_Click);
             // 
-            // button51
+            // st2
             // 
-            this.button51.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button51.BackgroundImage")));
-            this.button51.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button51.Location = new System.Drawing.Point(34, 137);
-            this.button51.Name = "button51";
-            this.button51.Size = new System.Drawing.Size(27, 23);
-            this.button51.TabIndex = 31;
-            this.button51.UseVisualStyleBackColor = true;
-            this.button51.Click += new System.EventHandler(this.button51_Click);
+            this.st2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("st2.BackgroundImage")));
+            this.st2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.st2.Location = new System.Drawing.Point(34, 137);
+            this.st2.Name = "st2";
+            this.st2.Size = new System.Drawing.Size(27, 23);
+            this.st2.TabIndex = 31;
+            this.st2.UseVisualStyleBackColor = true;
+            this.st2.Click += new System.EventHandler(this.button51_Click);
             // 
             // button50
             // 
@@ -2069,16 +2071,16 @@ namespace AirLineManagementSystem
             this.button50.UseVisualStyleBackColor = true;
             this.button50.Click += new System.EventHandler(this.button50_Click);
             // 
-            // button49
+            // st3
             // 
-            this.button49.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button49.BackgroundImage")));
-            this.button49.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button49.Location = new System.Drawing.Point(34, 194);
-            this.button49.Name = "button49";
-            this.button49.Size = new System.Drawing.Size(27, 23);
-            this.button49.TabIndex = 29;
-            this.button49.UseVisualStyleBackColor = true;
-            this.button49.Click += new System.EventHandler(this.button49_Click);
+            this.st3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("st3.BackgroundImage")));
+            this.st3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.st3.Location = new System.Drawing.Point(34, 194);
+            this.st3.Name = "st3";
+            this.st3.Size = new System.Drawing.Size(27, 23);
+            this.st3.TabIndex = 29;
+            this.st3.UseVisualStyleBackColor = true;
+            this.st3.Click += new System.EventHandler(this.button49_Click);
             // 
             // button48
             // 
@@ -2091,16 +2093,16 @@ namespace AirLineManagementSystem
             this.button48.UseVisualStyleBackColor = true;
             this.button48.Click += new System.EventHandler(this.button48_Click);
             // 
-            // button47
+            // st4
             // 
-            this.button47.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button47.BackgroundImage")));
-            this.button47.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button47.Location = new System.Drawing.Point(34, 240);
-            this.button47.Name = "button47";
-            this.button47.Size = new System.Drawing.Size(27, 23);
-            this.button47.TabIndex = 27;
-            this.button47.UseVisualStyleBackColor = true;
-            this.button47.Click += new System.EventHandler(this.button47_Click);
+            this.st4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("st4.BackgroundImage")));
+            this.st4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.st4.Location = new System.Drawing.Point(34, 240);
+            this.st4.Name = "st4";
+            this.st4.Size = new System.Drawing.Size(27, 23);
+            this.st4.TabIndex = 27;
+            this.st4.UseVisualStyleBackColor = true;
+            this.st4.Click += new System.EventHandler(this.button47_Click);
             // 
             // button46
             // 
@@ -2113,17 +2115,17 @@ namespace AirLineManagementSystem
             this.button46.UseVisualStyleBackColor = true;
             this.button46.Click += new System.EventHandler(this.button46_Click);
             // 
-            // button8
+            // st1
             // 
-            this.button8.BackColor = System.Drawing.Color.Transparent;
-            this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button8.Location = new System.Drawing.Point(34, 91);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(27, 23);
-            this.button8.TabIndex = 0;
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.st1.BackColor = System.Drawing.Color.Transparent;
+            this.st1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("st1.BackgroundImage")));
+            this.st1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.st1.Location = new System.Drawing.Point(34, 91);
+            this.st1.Name = "st1";
+            this.st1.Size = new System.Drawing.Size(27, 23);
+            this.st1.TabIndex = 0;
+            this.st1.UseVisualStyleBackColor = false;
+            this.st1.Click += new System.EventHandler(this.button8_Click);
             // 
             // label64
             // 
@@ -3057,6 +3059,7 @@ namespace AirLineManagementSystem
             this.Name = "PassengerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PassengerForm";
+            this.Load += new System.EventHandler(this.PassengerForm_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -3119,7 +3122,7 @@ namespace AirLineManagementSystem
             this.SeatSelection.PerformLayout();
             this.panel39.ResumeLayout(false);
             this.panel39.PerformLayout();
-            this.panel41.ResumeLayout(false);
+            this.seatPanel.ResumeLayout(false);
             this.Payment.ResumeLayout(false);
             this.panel25.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
@@ -3251,8 +3254,8 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Panel panel41;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Panel seatPanel;
+        private System.Windows.Forms.Button st1;
         private System.Windows.Forms.Panel panel40;
         private System.Windows.Forms.Panel panel39;
         private System.Windows.Forms.Panel panel31;
@@ -3360,25 +3363,25 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.TextBox NameBox;
         private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button40;
+        private System.Windows.Forms.Button st9;
         private System.Windows.Forms.Button button39;
-        private System.Windows.Forms.Button button38;
+        private System.Windows.Forms.Button st10;
         private System.Windows.Forms.Button button37;
-        private System.Windows.Forms.Button button36;
+        private System.Windows.Forms.Button st11;
         private System.Windows.Forms.Button button35;
         private System.Windows.Forms.Button button34;
-        private System.Windows.Forms.Button button33;
+        private System.Windows.Forms.Button st8;
         private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button st5;
         private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button st6;
         private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button st7;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button52;
-        private System.Windows.Forms.Button button51;
+        private System.Windows.Forms.Button st2;
         private System.Windows.Forms.Button button50;
-        private System.Windows.Forms.Button button49;
+        private System.Windows.Forms.Button st3;
         private System.Windows.Forms.Button button48;
         private System.Windows.Forms.Button button46;
         private System.Windows.Forms.Button button47;
@@ -3398,5 +3401,7 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.Label seatl;
         private System.Windows.Forms.Label Gatel;
         private System.Windows.Forms.Label Flightl;
+        private System.Windows.Forms.Button st4;
+        private System.Windows.Forms.Button st12;
     }
 }

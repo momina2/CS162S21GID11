@@ -29,6 +29,7 @@ namespace AirLineManagementSystem
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminForm));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -272,6 +273,8 @@ namespace AirLineManagementSystem
             // 
             // HomePage
             // 
+            this.HomePage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HomePage.BackgroundImage")));
+            this.HomePage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.HomePage.Controls.Add(this.panel4);
             this.HomePage.Controls.Add(this.panel2);
             this.HomePage.Location = new System.Drawing.Point(4, 24);

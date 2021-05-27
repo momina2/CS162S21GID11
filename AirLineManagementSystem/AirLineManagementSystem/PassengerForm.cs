@@ -339,9 +339,11 @@ namespace AirLineManagementSystem
             {
                 label61.Text = "11 B";
             }
-            button8.Enabled=false;
+            st1.Enabled=false;
             totalseats++;
             CheckSeats();
+            st1.BackColor = Color.LimeGreen;
+
         }
 
         private void button52_Click(object sender, EventArgs e)
@@ -360,9 +362,11 @@ namespace AirLineManagementSystem
                 {
                     label61.Text = "13 B";
                 }
-                button51.Enabled = false;
+                st2.Enabled = false;
             totalseats++;
             CheckSeats();
+            st2.BackColor = Color.LimeGreen;
+            
         }
 
         private void button50_Click(object sender, EventArgs e)
@@ -379,9 +383,10 @@ namespace AirLineManagementSystem
                 {
                     label61.Text = "15 B";
                 }
-                button49.Enabled = false;
+                st3.Enabled = false;
             totalseats++;
             CheckSeats();
+            st3.BackColor = Color.LimeGreen;
         }
         
 
@@ -401,9 +406,12 @@ namespace AirLineManagementSystem
                 {
                     label61.Text = "17 B";
                 }
-                button47.Enabled = false;
+                st4.Enabled = false;
             totalseats++;
             CheckSeats();
+            st4.BackColor = Color.LimeGreen;
+
+            
         }
 
             private void button46_Click(object sender, EventArgs e)
@@ -421,9 +429,10 @@ namespace AirLineManagementSystem
                 {
                     label61.Text = "19 B";
                 }
-                button15.Enabled = false;
+                st5.Enabled = false;
             totalseats++;
             CheckSeats();
+            st5.BackColor = Color.LimeGreen;
         }
 
             private void button14_Click(object sender, EventArgs e)
@@ -441,7 +450,8 @@ namespace AirLineManagementSystem
                 {
                     label61.Text = "21 B";
                 }
-                button13.Enabled = false;
+                st6.Enabled = false;
+            st6.BackColor = Color.LimeGreen;
             totalseats++;
             CheckSeats();
         }
@@ -461,9 +471,10 @@ namespace AirLineManagementSystem
                 {
                     label61.Text = "23 B";
                 }
-                button11.Enabled = false;
+                st7.Enabled = false;
             totalseats++;
             CheckSeats();
+            st7.BackColor = Color.LimeGreen;
         }
 
             private void button10_Click(object sender, EventArgs e)
@@ -481,9 +492,10 @@ namespace AirLineManagementSystem
                 {
                     label61.Text = "25 B";
                 }
-                button33.Enabled = false;
+                st8.Enabled = false;
             totalseats++;
             CheckSeats();
+            st8.BackColor = Color.LimeGreen;
         }
 
             private void button16_Click(object sender, EventArgs e)
@@ -501,9 +513,10 @@ namespace AirLineManagementSystem
                 {
                     label61.Text = "27 B";
                 }
-                button40.Enabled = false;
+                st9.Enabled = false;
             totalseats++;
             CheckSeats();
+            st9.BackColor = Color.LimeGreen;
         }
 
             private void button39_Click(object sender, EventArgs e)
@@ -521,9 +534,10 @@ namespace AirLineManagementSystem
                 {
                     label61.Text = "29 B";
                 }
-                button38.Enabled = false;
+                st10.Enabled = false;
             totalseats++;
             CheckSeats();
+            st10.BackColor = Color.LimeGreen;
         }
 
             private void button37_Click(object sender, EventArgs e)
@@ -541,9 +555,10 @@ namespace AirLineManagementSystem
                 {
                     label61.Text = "31 B";
                 }
-                button36.Enabled = false;
+                st11.Enabled = false;
             totalseats++;
             CheckSeats();
+            st11.BackColor = Color.LimeGreen;
         }
 
             private void button35_Click(object sender, EventArgs e)
@@ -561,12 +576,14 @@ namespace AirLineManagementSystem
                 {
                     label61.Text = "33 B";
                 }
-                button34.Enabled = false;
+                st12.Enabled = false;
             totalseats++;
             CheckSeats();
+            st12.BackColor = Color.LimeGreen;
+
         }
 
-            private void button25_Click(object sender, EventArgs e)
+        private void button25_Click(object sender, EventArgs e)
             {
             DisplayMessage();
             }
@@ -630,6 +647,23 @@ namespace AirLineManagementSystem
             {
                 label60.Text = "Economy";
             }
+        }
+        private void seatPanel_Paint(object sender, PaintEventArgs e)
+        {
+           
+           
+        }
+
+       
+
+        private void PassengerForm_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void label25_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
