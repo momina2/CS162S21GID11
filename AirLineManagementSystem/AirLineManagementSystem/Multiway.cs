@@ -6,5 +6,12 @@ namespace AirLineManagementSystem
 {
     class Multiway
     {
+        private string midWayStop;
+
+        public string MidWayStop
+        {
+            get { return midWayStop; }
+            set { midWayStop = value; }
+        }
     }
 }

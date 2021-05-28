@@ -4,7 +4,14 @@ using System.Text;
 
 namespace AirLineManagementSystem
 {
-    class Person
+   public interface Person
     {
+        void AddPerson();
+        void DeletePerson();
+        void SearchPerson();
+        void UpdatePerson();
+
     }
+    
 }
+
