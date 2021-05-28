@@ -187,7 +187,8 @@ namespace AirLineManagementSystem
 
         private void LOGIN_Click(object sender, EventArgs e)
         {
-            AdminForm Af = new AdminForm();
+            LoginForm Af = new LoginForm();
+            //AdminForm Af = new AdminForm();
             Af.Show();
             this.Visible = false;
         }
