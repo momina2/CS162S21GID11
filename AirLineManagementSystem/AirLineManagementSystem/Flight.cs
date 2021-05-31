@@ -11,7 +11,11 @@ namespace AirLineManagementSystem
         private string source;
         private string destination;
         private string flightCode;
-        private DateTime flightTime;
+        private string airlineName;
+        private string flightType;
+
+
+
 
 
         public string Source
@@ -29,10 +33,17 @@ namespace AirLineManagementSystem
             get { return flightCode; }
             set { flightCode = value; }
         }
-        public DateTime FlightTime
+        public string AirlineName
         {
-            get { return flightTime; }
-            set { flightTime = value; }
+            get { return airlineName; }
+            set { airlineName = value; }
         }
+        public string FlightType
+        {
+            get { return flightType; }
+            set { flightType = value; }
+        }
+
+
     }
 }

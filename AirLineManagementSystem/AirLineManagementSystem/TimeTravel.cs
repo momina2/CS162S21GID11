@@ -6,6 +6,7 @@ namespace AirLineManagementSystem
 {
     class TimeTravel
     {
+
         private double totaldistance;
         private double time;
 

@@ -15,7 +15,15 @@ namespace AirLineManagementSystem
         {
             InitializeComponent();
         }
-       
+
+
+
+        SqlConnection con = new SqlConnection(Configuration.connection);
+        FlightsFlying flightData=new FlightsFlying();
+        TimeTravel travelTime = new TimeTravel();
+
+
+
         private void label4_Click(object sender, EventArgs e)
         {
 
@@ -43,6 +51,7 @@ namespace AirLineManagementSystem
 
                 SourceBox.AutoCompleteCustomSource = auto;
                 DestinationBox.AutoCompleteCustomSource = auto;
+                flightData.FlightType = "Domestic";
 
             }
 
@@ -53,6 +62,7 @@ namespace AirLineManagementSystem
         {
             if(radioButton2.Checked)
             {
+                flightData.FlightType = "International";
 
                 AutoCompleteStringCollection auto = new AutoCompleteStringCollection();
                 string[] countries = new string[] {"Afghanistan","Algeria","Argentina","Aruba","Australia",
@@ -152,10 +162,55 @@ namespace AirLineManagementSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
+            flightData.Source=SourceBox.Text;
+            flightData.Destination = DestinationBox.Text;
+            flightData.FlightTime = dateTimePicker1.Value;
+            travelTime.TotalDistance =Convert.ToDouble(textBox3.Text);
+            //call function to calculate timetravel
+            //Random Flight Code Generator
+            flightData.FlightLuggage = textBox4.Text;
+            flightData.AirlineName = comboBox1.SelectedItem.ToString();
            
+            FlightsFlying.Obj.AddFlightList(flightData);
 
 
-           
+            con.Open();
+            String query = "INSERT INTO allFlights (FlightCode,Source,Destination,AirLine,FlightType) VALUES ('" + "#123" + "','" + SourceBox.Text + "','" + DestinationBox.Text + "','" + comboBox1.SelectedItem.ToString() + "','" + flightData.FlightType + "')";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            sda.SelectCommand.ExecuteNonQuery();
+            con.Close();
+            MessageBox.Show("BALLEY BALLEY", "Hogyaa", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+
+            //to View Data in Table
+            ToViewFlights();
+
+
+
+
+        }
+        public void ToViewFlights()
+        {
+            con.Open();
+            string query = "SELECT * FROM allFlights";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            dataGridView1.DataSource = dt;
+            con.Close();
+        }
+
+        private void FlightsUC_Load(object sender, EventArgs e)
+        {
+            ToViewFlights();
+        }
+
+        
+
+        private void dataGridView1_CellMouseDoubleClick_1(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            SourceBox.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            DestinationBox.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
         }
     }
 }
