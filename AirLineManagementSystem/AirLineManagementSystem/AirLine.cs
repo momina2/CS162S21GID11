@@ -6,9 +6,9 @@ namespace AirLineManagementSystem
 {
     class AirLine
     {
-        private String airlineCode;
-        private String airlineName;
-        private String description;
+        private string airlineCode;
+        private string airlineName;
+        private string description;
        
         public string AirLineCode
         {

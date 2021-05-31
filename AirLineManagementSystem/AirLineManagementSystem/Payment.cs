@@ -4,7 +4,16 @@ using System.Text;
 
 namespace AirLineManagementSystem
 {
-    class Payment
+    abstract class Payment
     {
+        private double totalTransaction;
+
+        public double TotalTransaction
+        {
+            get { return totalTransaction; }
+            set { totalTransaction = value; }
+        }
+
+        public abstract double TransactionAmount();
     }
 }
