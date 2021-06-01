@@ -103,5 +103,20 @@ namespace AirLineManagementSystem
         {
             return false;
         }
+
+        public char alpha()
+        {
+            Random rnd = new Random();
+            char randomChar = (char)rnd.Next('A', 'Z');
+            return randomChar;
+        }
+        public int Airline_Code_Generator()
+        {
+            Random ran1 = new Random();
+            int num = ran1.Next(100, 500);
+            return num;
+            
+                      
+        }
     }
 }

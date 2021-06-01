@@ -35,10 +35,6 @@ namespace AirLineManagementSystem
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -100,11 +96,6 @@ namespace AirLineManagementSystem
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4});
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -124,26 +115,7 @@ namespace AirLineManagementSystem
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(612, 172);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "NAME";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "EMPLOYEE NUMBER";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "PHONE NO#";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "CNIC";
-            this.Column4.Name = "Column4";
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // panel1
             // 
@@ -170,7 +142,6 @@ namespace AirLineManagementSystem
             this.textBox3.Location = new System.Drawing.Point(28, 212);
             this.textBox3.Name = "textBox3";
             this.textBox3.PlaceholderText = "CNIC";
-            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(399, 16);
             this.textBox3.TabIndex = 21;
             // 
@@ -219,6 +190,7 @@ namespace AirLineManagementSystem
             this.button1.TabIndex = 15;
             this.button1.Text = "ADD";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox4
             // 
@@ -227,7 +199,6 @@ namespace AirLineManagementSystem
             this.textBox4.Location = new System.Drawing.Point(27, 169);
             this.textBox4.Name = "textBox4";
             this.textBox4.PlaceholderText = "Employee Phone #";
-            this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(400, 16);
             this.textBox4.TabIndex = 11;
             // 
@@ -238,7 +209,6 @@ namespace AirLineManagementSystem
             this.textBox2.Location = new System.Drawing.Point(27, 128);
             this.textBox2.Name = "textBox2";
             this.textBox2.PlaceholderText = "Employee ID";
-            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(399, 16);
             this.textBox2.TabIndex = 9;
             // 
@@ -249,7 +219,6 @@ namespace AirLineManagementSystem
             this.textBox1.Location = new System.Drawing.Point(27, 79);
             this.textBox1.Name = "textBox1";
             this.textBox1.PlaceholderText = "Employee Name";
-            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(400, 16);
             this.textBox1.TabIndex = 8;
             // 
@@ -296,10 +265,6 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel6;

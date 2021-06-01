@@ -8,7 +8,7 @@ namespace AirLineManagementSystem
     {
 
         private string name;
-        private int phoneNumber;
+        private string phoneNumber;
         private string cnic;
         private string employeeId;
 
@@ -17,7 +17,7 @@ namespace AirLineManagementSystem
             get { return name; }
             set { name = value; }
         }
-        public int PhoneNumber
+        public string PhoneNumber
         {
             get { return phoneNumber; }
             set { phoneNumber = value; }

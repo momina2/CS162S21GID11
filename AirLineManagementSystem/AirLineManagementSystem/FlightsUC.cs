@@ -172,10 +172,11 @@ namespace AirLineManagementSystem
             flightData.AirlineName = comboBox1.SelectedItem.ToString();
            
             FlightsFlying.Obj.AddFlightList(flightData);
+            Validation v = new Validation();
 
 
             con.Open();
-            String query = "INSERT INTO allFlights (FlightCode,Source,Destination,AirLine,FlightType) VALUES ('" + "#123" + "','" + SourceBox.Text + "','" + DestinationBox.Text + "','" + comboBox1.SelectedItem.ToString() + "','" + flightData.FlightType + "')";
+            string query = "INSERT INTO allFlights (FlightCode,Source,Destination,AirLine,FlightType) VALUES ('" + "#123" + v.alpha() +v.Airline_Code_Generator() + "','" + SourceBox.Text + "','" + DestinationBox.Text + "','" + comboBox1.SelectedItem.ToString() + "','" + flightData.FlightType + "')";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             sda.SelectCommand.ExecuteNonQuery();
             con.Close();
@@ -189,6 +190,8 @@ namespace AirLineManagementSystem
 
 
         }
+        
+       
         public void ToViewFlights()
         {
             con.Open();
@@ -211,6 +214,11 @@ namespace AirLineManagementSystem
         {
             SourceBox.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
             DestinationBox.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
