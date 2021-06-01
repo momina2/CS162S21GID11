@@ -103,13 +103,15 @@ namespace AirLineManagementSystem
         {
             return false;
         }
-
+        //Random number for Flightcode
         public char alpha()
         {
             Random rnd = new Random();
             char randomChar = (char)rnd.Next('A', 'Z');
             return randomChar;
         }
+        
+        //Random alphabet for Flightcode
         public int Airline_Code_Generator()
         {
             Random ran1 = new Random();

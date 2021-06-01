@@ -22,7 +22,26 @@ namespace AirLineManagementSystem
         FlightsFlying flightData=new FlightsFlying();
         TimeTravel travelTime = new TimeTravel();
 
+        private void FlightsUC_Load(object sender, EventArgs e)
+        {
+            ToViewFlights();
+            DataGridViewButtonColumn btn = new DataGridViewButtonColumn();
+            btn.HeaderText = "Update";
+            btn.Width = 25;
+            btn.Name = "up";
+            btn.Text = "Update";
+            btn.UseColumnTextForButtonValue = true;
+            dataGridView1.Columns.Add(btn);
+            DataGridViewButtonColumn btn2 = new DataGridViewButtonColumn();
+            btn2.HeaderText = "Delete";
+            btn2.Width = 25;
+            btn2.Name = "del";
+            btn2.Text = "Delete";
+            btn2.UseColumnTextForButtonValue = true;
+            dataGridView1.Columns.Add(btn2);
 
+
+        }
 
         private void label4_Click(object sender, EventArgs e)
         {
@@ -176,7 +195,7 @@ namespace AirLineManagementSystem
 
 
             con.Open();
-            string query = "INSERT INTO allFlights (FlightCode,Source,Destination,AirLine,FlightType) VALUES ('" + "#123" + v.alpha() +v.Airline_Code_Generator() + "','" + SourceBox.Text + "','" + DestinationBox.Text + "','" + comboBox1.SelectedItem.ToString() + "','" + flightData.FlightType + "')";
+            string query = "INSERT INTO allFlights (FlightCode,Source,Destination,AirLine,FlightType) VALUES ('" + "#" + v.alpha() +v.Airline_Code_Generator() + "','" + SourceBox.Text + "','" + DestinationBox.Text + "','" + comboBox1.SelectedItem.ToString() + "','" + flightData.FlightType + "')";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             sda.SelectCommand.ExecuteNonQuery();
             con.Close();
@@ -203,10 +222,7 @@ namespace AirLineManagementSystem
             con.Close();
         }
 
-        private void FlightsUC_Load(object sender, EventArgs e)
-        {
-            ToViewFlights();
-        }
+       
 
         
 
@@ -218,7 +234,26 @@ namespace AirLineManagementSystem
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.ColumnIndex == 0)
+            {
 
+                SourceBox.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+                DestinationBox.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+
+            }
+            if (e.ColumnIndex == 1)
+            {
+
+                string value = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+                con.Open();
+                string query = "DELETE FROM allFlights where FlightCode = '" + value + "'";
+                SqlDataAdapter sda = new SqlDataAdapter(query, con);
+                sda.SelectCommand.ExecuteNonQuery();
+                con.Close();
+                // MessageBox.Show("Ja Ja Tur Ja ");
+                ToViewFlights();
+
+            }
         }
     }
 }

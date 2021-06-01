@@ -68,5 +68,20 @@ namespace AirLineManagementSystem
             dataGridView1.DataSource = dt;
             con.Close();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            checkBox1.CheckState = CheckState.Unchecked;
+            checkBox2.CheckState = CheckState.Unchecked;
+            textBox1.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            richTextBox1.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+            if (dataGridView1.SelectedRows[0].Cells[2].Value.ToString() == "Not Active")
+            {
+                checkBox2.CheckState = CheckState.Checked;
+            }
+            else
+                checkBox1.CheckState = CheckState.Checked;
+
+        }
     }
 }

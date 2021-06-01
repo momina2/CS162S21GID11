@@ -75,9 +75,9 @@ namespace AirLineManagementSystem
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(49, 46);
+            this.panel1.Location = new System.Drawing.Point(26, 46);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(614, 264);
+            this.panel1.Size = new System.Drawing.Size(652, 270);
             this.panel1.TabIndex = 0;
             // 
             // radioButton2
@@ -113,7 +113,7 @@ namespace AirLineManagementSystem
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(451, 230);
+            this.button1.Location = new System.Drawing.Point(520, 229);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(102, 26);
             this.button1.TabIndex = 15;
@@ -125,7 +125,7 @@ namespace AirLineManagementSystem
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(340, 193);
+            this.label7.Location = new System.Drawing.Point(338, 192);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(70, 22);
             this.label7.TabIndex = 12;
@@ -133,21 +133,21 @@ namespace AirLineManagementSystem
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(239, 191);
+            this.textBox4.Location = new System.Drawing.Point(223, 192);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(72, 23);
+            this.textBox4.Size = new System.Drawing.Size(90, 23);
             this.textBox4.TabIndex = 11;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(477, 139);
+            this.textBox3.Location = new System.Drawing.Point(515, 137);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(107, 23);
             this.textBox3.TabIndex = 10;
             // 
             // DestinationBox
             // 
-            this.DestinationBox.Location = new System.Drawing.Point(416, 96);
+            this.DestinationBox.Location = new System.Drawing.Point(441, 96);
             this.DestinationBox.Name = "DestinationBox";
             this.DestinationBox.Size = new System.Drawing.Size(179, 23);
             this.DestinationBox.TabIndex = 9;
@@ -167,16 +167,16 @@ namespace AirLineManagementSystem
             this.comboBox1.Items.AddRange(new object[] {
             "PIA ",
             "IDK"});
-            this.comboBox1.Location = new System.Drawing.Point(416, 192);
+            this.comboBox1.Location = new System.Drawing.Point(414, 192);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(154, 23);
+            this.comboBox1.Size = new System.Drawing.Size(199, 23);
             this.comboBox1.TabIndex = 7;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(25, 188);
+            this.label6.Location = new System.Drawing.Point(23, 189);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(198, 22);
             this.label6.TabIndex = 6;
@@ -186,19 +186,19 @@ namespace AirLineManagementSystem
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(18, 138);
+            this.label5.Location = new System.Drawing.Point(23, 139);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 22);
+            this.label5.Size = new System.Drawing.Size(56, 22);
             this.label5.TabIndex = 5;
-            this.label5.Text = "Date:";
+            this.label5.Text = "Date";
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(85, 138);
+            this.dateTimePicker1.Location = new System.Drawing.Point(85, 137);
             this.dateTimePicker1.MaxDate = new System.DateTime(2023, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker1.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(186, 23);
+            this.dateTimePicker1.Size = new System.Drawing.Size(210, 23);
             this.dateTimePicker1.TabIndex = 4;
             this.dateTimePicker1.Value = new System.DateTime(2021, 6, 1, 0, 0, 0, 0);
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
@@ -207,7 +207,7 @@ namespace AirLineManagementSystem
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(277, 139);
+            this.label4.Location = new System.Drawing.Point(306, 139);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(203, 22);
             this.label4.TabIndex = 3;
@@ -218,7 +218,7 @@ namespace AirLineManagementSystem
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(301, 96);
+            this.label3.Location = new System.Drawing.Point(323, 96);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(112, 22);
             this.label3.TabIndex = 2;
@@ -228,11 +228,11 @@ namespace AirLineManagementSystem
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(25, 95);
+            this.label2.Location = new System.Drawing.Point(23, 93);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 22);
+            this.label2.Size = new System.Drawing.Size(73, 22);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Source:";
+            this.label2.Text = "Source";
             // 
             // label1
             // 
@@ -249,9 +249,9 @@ namespace AirLineManagementSystem
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.dataGridView1);
             this.panel3.Controls.Add(this.label8);
-            this.panel3.Location = new System.Drawing.Point(49, 348);
+            this.panel3.Location = new System.Drawing.Point(25, 348);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(615, 209);
+            this.panel3.Size = new System.Drawing.Size(653, 209);
             this.panel3.TabIndex = 1;
             // 
             // dataGridView1
@@ -267,7 +267,7 @@ namespace AirLineManagementSystem
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(614, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(652, 150);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseDoubleClick_1);
@@ -276,7 +276,7 @@ namespace AirLineManagementSystem
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(87, 14);
+            this.label8.Location = new System.Drawing.Point(86, 14);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(71, 22);
             this.label8.TabIndex = 2;
@@ -285,7 +285,7 @@ namespace AirLineManagementSystem
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
-            this.panel4.Location = new System.Drawing.Point(83, 30);
+            this.panel4.Location = new System.Drawing.Point(58, 30);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(48, 53);
             this.panel4.TabIndex = 2;
@@ -293,7 +293,7 @@ namespace AirLineManagementSystem
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
-            this.panel5.Location = new System.Drawing.Point(83, 336);
+            this.panel5.Location = new System.Drawing.Point(45, 336);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(48, 49);
             this.panel5.TabIndex = 3;

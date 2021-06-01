@@ -7,6 +7,20 @@ namespace AirLineManagementSystem
     class Employee
     {
 
+        SortedSet<Employee> empset = new SortedSet<Employee>();
+        private static Employee obj = null;
+        public static Employee Obj
+        {
+            get
+            {
+                if (obj == null)
+                {
+                    obj = new Employee();
+                }
+                return obj;
+            }
+        }
+
         private string name;
         private string phoneNumber;
         private string cnic;
@@ -31,6 +45,14 @@ namespace AirLineManagementSystem
         { 
             get { return employeeId; }
             set { employeeId = value; }
+        }
+        public void AddEmployeeList(Employee obj)
+        {
+            empset.Add(obj);
+        }
+        public SortedSet<Employee> DisplayFlight()
+        {
+            return empset;
         }
     }
 }

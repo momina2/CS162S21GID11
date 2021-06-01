@@ -12,6 +12,7 @@ namespace AirLineManagementSystem
     public partial class EmployeeUC : UserControl
     {
         SqlConnection con = new SqlConnection(Configuration.connection);
+        Employee e = new Employee();
         public EmployeeUC()
         {
             InitializeComponent();
@@ -19,24 +20,26 @@ namespace AirLineManagementSystem
 
         private void label4_Click(object sender, EventArgs e)
         {
-
+      
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             con.Open();
-            string query = "INSERT INTO EmployeeData (ID,Name,Phone#,CNIC) VALUES ('" + textBox2.Text + "','" + textBox1.Text + "','" + textBox3.Text + "','" + textBox4.Text + "')";
+            string query = "INSERT INTO EmployeeData (ID,Name,Phone#,CNIC,Password) VALUES ('" + textBox2.Text + "','" + textBox1.Text + "','" + textBox4.Text + "','" + textBox3.Text + "','" + textBox5.Text + "')";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             sda.SelectCommand.ExecuteNonQuery();
             con.Close();
             MessageBox.Show("HO GYAAAA BALLAY BALLAY!!!");
 
             ToViewEmployee();
-            AddToList();
+            
+            //AddToList();
         }
 
         public void AddToList(string emp)
         {
+            e=new Employee();
             List<Employee> data = new List<Employee>();
 
             SqlCommand cmd = new SqlCommand();
@@ -47,7 +50,7 @@ namespace AirLineManagementSystem
 
             while (reader.Read())
             {
-                Employee e = new Employee();
+                 e = new Employee();
 
                 e.Name = reader["Name"].ToString();
                 e.PhoneNumber = reader["PhoneNumber"].ToString();
@@ -56,10 +59,18 @@ namespace AirLineManagementSystem
 
                 data.Add(e);
             }
-            
+            for (int i = 0; i < data.Count; i++)
+            {
+                MessageBox.Show(e.Name); 
+                MessageBox.Show("Nahi hoya");
+               
+
+            }
+            MessageBox.Show("Nahi hoya");
+
         }
-        public void AddToList()
-        {
+        //public void AddToList()
+        //{
            
             /*SqlCommand cmd = new SqlCommand();
           
@@ -107,7 +118,7 @@ namespace AirLineManagementSystem
             // Console.WriteLine(data);
             //con.Close();
 
-        }
+       // }
 
         public void ToViewEmployee()
         {
@@ -121,9 +132,59 @@ namespace AirLineManagementSystem
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void EmployeeUC_Load(object sender, EventArgs e)
         {
+            ToViewEmployee();
+            // AddToList();
+            //Button in Table
+            DataGridViewButtonColumn btn = new DataGridViewButtonColumn();
+            btn.HeaderText = "Delete";
+            btn.Name = "Delet";
+            btn.Text = "Delete";
+            btn.UseColumnTextForButtonValue = true;
+            dataGridView1.Columns.Add(btn);
 
+
+        }
+
+        private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            //Password column
+            if(e.ColumnIndex==5)
+            {
+                if(e.Value!=null)
+                {
+                    e.Value = new string('*', e.Value.ToString().Length);
+                }
+                
+            }
+        }
+
+        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //Auto fill text boxes
+            textBox2.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            textBox1.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+            textBox4.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+            textBox3.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+            textBox5.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //Delete Employee
+            if (e.ColumnIndex == 0)
+            {
+                string value = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+                con.Open();
+                string query = "DELETE FROM EmployeeData where Name = '" + value + "'";
+                SqlDataAdapter sda = new SqlDataAdapter(query, con);
+                sda.SelectCommand.ExecuteNonQuery();
+                con.Close();
+                // MessageBox.Show("Ja Ja Tur Ja ");
+                ToViewEmployee();
+            }
         }
     }
 }
