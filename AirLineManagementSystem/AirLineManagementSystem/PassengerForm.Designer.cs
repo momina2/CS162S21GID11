@@ -45,6 +45,7 @@ namespace AirLineManagementSystem
             this.HomePage = new System.Windows.Forms.TabPage();
             this.label25 = new System.Windows.Forms.Label();
             this.CancelPage = new System.Windows.Forms.TabPage();
+            this.button11 = new System.Windows.Forms.Button();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.label63 = new System.Windows.Forms.Label();
@@ -109,6 +110,7 @@ namespace AirLineManagementSystem
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.UpdatePage = new System.Windows.Forms.TabPage();
+            this.button8 = new System.Windows.Forms.Button();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
@@ -276,7 +278,6 @@ namespace AirLineManagementSystem
             this.button22 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -530,6 +531,7 @@ namespace AirLineManagementSystem
             // 
             this.CancelPage.BackColor = System.Drawing.Color.White;
             this.CancelPage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CancelPage.Controls.Add(this.button11);
             this.CancelPage.Controls.Add(this.pictureBox18);
             this.CancelPage.Controls.Add(this.textBox20);
             this.CancelPage.Controls.Add(this.label63);
@@ -545,6 +547,21 @@ namespace AirLineManagementSystem
             this.CancelPage.Text = "CancelPage";
             this.CancelPage.Click += new System.EventHandler(this.CancelPage_Click);
             // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button11.ForeColor = System.Drawing.Color.White;
+            this.button11.Location = new System.Drawing.Point(639, 79);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(83, 28);
+            this.button11.TabIndex = 23;
+            this.button11.Text = "Enter";
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click_1);
+            // 
             // pictureBox18
             // 
             this.pictureBox18.Image = global::AirLineManagementSystem.Properties.Resources.icons8_delete_file_30__1_;
@@ -559,7 +576,7 @@ namespace AirLineManagementSystem
             // 
             this.textBox20.Location = new System.Drawing.Point(472, 81);
             this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(207, 23);
+            this.textBox20.Size = new System.Drawing.Size(148, 23);
             this.textBox20.TabIndex = 22;
             // 
             // label63
@@ -1205,6 +1222,21 @@ namespace AirLineManagementSystem
             this.UpdatePage.UseVisualStyleBackColor = true;
             this.UpdatePage.Click += new System.EventHandler(this.UpdatePage_Click);
             // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(627, 95);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(97, 28);
+            this.button8.TabIndex = 22;
+            this.button8.Text = "Search";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click_1);
+            // 
             // pictureBox19
             // 
             this.pictureBox19.Image = global::AirLineManagementSystem.Properties.Resources.icons8_delete_file_30__2_;
@@ -1389,7 +1421,6 @@ namespace AirLineManagementSystem
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(152, 23);
             this.textBox7.TabIndex = 11;
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // label8
             // 
@@ -1460,7 +1491,7 @@ namespace AirLineManagementSystem
             // 
             this.textBox2.Location = new System.Drawing.Point(481, 97);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(126, 23);
+            this.textBox2.Size = new System.Drawing.Size(120, 23);
             this.textBox2.TabIndex = 3;
             // 
             // label3
@@ -1732,7 +1763,6 @@ namespace AirLineManagementSystem
             this.label16.Size = new System.Drawing.Size(120, 22);
             this.label16.TabIndex = 6;
             this.label16.Text = "Arrival Date";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // label14
             // 
@@ -3049,21 +3079,6 @@ namespace AirLineManagementSystem
             this.button24.Size = new System.Drawing.Size(75, 23);
             this.button24.TabIndex = 0;
             // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(627, 95);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(97, 28);
-            this.button8.TabIndex = 22;
-            this.button8.Text = "Search";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click_1);
-            // 
             // PassengerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -3423,5 +3438,6 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.Button st4;
         private System.Windows.Forms.Button st12;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button11;
     }
 }

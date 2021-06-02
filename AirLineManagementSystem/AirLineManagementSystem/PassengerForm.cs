@@ -27,10 +27,7 @@ namespace AirLineManagementSystem
 
             tabControl1.SelectedTab = CancelPage;
             // tabControl1.BringToFront();
-
-
-
-        }
+          }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -68,8 +65,6 @@ namespace AirLineManagementSystem
 
             downpanel.Size = downpanel.MaximumSize;
             this.downpanel.BringToFront();
-
-
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -102,16 +97,6 @@ namespace AirLineManagementSystem
             downpanel.Size = downpanel.MinimumSize;
         }
 
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label16_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
             if(radioButton3.Checked)
@@ -124,10 +109,7 @@ namespace AirLineManagementSystem
             }
         }
 
-        private void panel22_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+      
 
         private void label31_Click(object sender, EventArgs e)
         {
@@ -330,11 +312,6 @@ namespace AirLineManagementSystem
 
             }
             click++;
-
-         
-
-
-
         }
       
         SqlConnection con = new SqlConnection(Configuration.connection);
@@ -342,15 +319,11 @@ namespace AirLineManagementSystem
         {
             Validation vad = new Validation();
                 con.Open();
-                string query = "INSERT INTO PassengerInfo (Name,Passport#,CNIC,Phone#,Email,Ticket#) VALUES ('" + NameBox.Text + "','" + PassBox.Text + "','" + CNICBox.Text + "','" + PhoneBox.Text + "','" + EmailBox.Text + "','" + "#A00" + vad.tickNum() + "')";
+                string query = "INSERT INTO PassengerInfo (Name,Passport,CNIC,Phone,Email,Ticket) VALUES ('" + NameBox.Text + "','" + PassBox.Text + "','" + CNICBox.Text + "','" + PhoneBox.Text + "','" + EmailBox.Text + "','" + "#A00" + vad.tickNum() + "')";
                 SqlDataAdapter sda = new SqlDataAdapter(query, con);
                 sda.SelectCommand.ExecuteNonQuery();
                 MessageBox.Show("Data Sucessfully Added", "Passenger Added", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 con.Close();
-
-            
-
-
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -699,43 +672,81 @@ namespace AirLineManagementSystem
         {
             update();        
         }
-        public void search()
+        
+        private void button8_Click_1(object sender, EventArgs e)
+        {
+            string searchticket=textBox2.Text;
+            search(searchticket);
+        }
+
+        private void button11_Click_1(object sender, EventArgs e)
+        {
+            string searchticket = textBox20.Text;
+              Delete(searchticket);
+
+        }
+
+
+
+        public void Delete(string Ticket)
         {
             con.Open();
-            string query = "SELECT * FROM AirlineManagement where Ticket# = '" + textBox2.Text + "'";
-            SqlCommand sc = new SqlCommand(query, con);
-            SqlDataReader sdr;
-            sdr = sc.ExecuteReader();
-            if (sdr.HasRows)
-            {
-                sdr.Read();
-                textBox3.Text = (sdr["Name"].ToString());
-                textBox4.Text = (sdr["Passport#"].ToString());
-                textBox5.Text = (sdr["CNIC"].ToString());
-                textBox6.Text = (sdr["Phone#"].ToString());
-                textBox7.Text = (sdr["Email"].ToString());
-            }
-            else
-            {
-                MessageBox.Show("Data Not Found");
-            }
+            string query = "DELETE FROM PassengerInfo where Ticket = '" + Ticket + "'";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            sda.SelectCommand.ExecuteNonQuery();
             con.Close();
-          
+            MessageBox.Show("Ja Ja Tur Ja ");
         }
 
         public void update()
         {
             con.Open();
-            string query = "UPDATE AirlineManagement SET Name = '" + textBox3.Text + "' Passport# = '" + textBox4.Text + "'CNIC ='" + textBox5.Text + "' Phone# = '" + textBox6.Text + "'Email = '" + textBox7.Text + "'Where Ticket# = '" + textBox2.Text + "'";
+
+            string query = "UPDATE PassengerInfo SET Name = '" + textBox3.Text + "', Passport = '" + textBox4.Text + "', CNIC ='" + textBox5.Text + "', Phone = '" + textBox6.Text + "', Email = '" + textBox7.Text + "'Where Ticket = '" + textBox2.Text + "'";
+
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
+
             sda.SelectCommand.ExecuteNonQuery();
             con.Close();
             MessageBox.Show("HO DYAAAA !!!");
         }
-
-        private void button8_Click_1(object sender, EventArgs e)
+        public void search(string ticket)
         {
-            search();
+
+            try
+            {
+
+                con.Open();
+                string query = "SELECT * FROM PassengerInfo where Ticket = '" + ticket + "'";
+
+                SqlCommand sda = new SqlCommand(query, con);
+                SqlDataReader dr;
+
+                dr = sda.ExecuteReader();
+                if (dr.HasRows)
+                {
+                    dr.Read();
+                    textBox3.Text = (dr["Name"].ToString());
+                    textBox4.Text = (dr["Passport"].ToString());
+                    textBox5.Text = (dr["CNIC"].ToString());
+                    textBox6.Text = (dr["Phone"].ToString());
+                    textBox7.Text = (dr["Email"].ToString());
+                }
+                else
+                {
+                    MessageBox.Show("DATA NOT FOUND!!");
+
+                }
+
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
         }
+
     }
 }
