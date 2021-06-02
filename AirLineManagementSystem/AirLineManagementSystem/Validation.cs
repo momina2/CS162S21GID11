@@ -2,32 +2,28 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Windows.Forms;
 
 namespace AirLineManagementSystem
 {
     class Validation
     {
-        private bool ValidName(string name)
+       
+        public string ValidName(string name)
         {
             if (Regex.Match(name, @"^([a-zA-Z]+|[a-zA-Z]+\s[a-zA-Z]+)$").Success)
             {
-                Console.WriteLine("Valid Name");
+                bool flag = true;
             }
             else
             {
-                Console.WriteLine("InValid Name");
-
-
+                bool flag = false;
+                
             }
-            return false;
+            return name;
         }
-
-        private bool IsValidFlightNo()
-        {
-            return false;
-        }
-
-        private bool ValidTicket(int ticket)
+    
+        public int ValidTicket(int ticket)
         {
             if ((ticket >= 'A' || ticket <= 'Z') || (ticket >= 'a' || ticket <= 'z'))
             {
@@ -38,10 +34,10 @@ namespace AirLineManagementSystem
                 Console.WriteLine("Valid Name");
             }
 
-            return false;
+            return ticket;
         }
 
-        private bool isValidCNIC(string cnic)
+        public string isValidCNIC(string cnic)
         {
             bool flag = false;
             char[] c = cnic.ToCharArray();
@@ -71,10 +67,10 @@ namespace AirLineManagementSystem
             {
                 flag = true;
             }
-            return false;
+            return cnic;
         }
 
-        private bool isValidEmail(string email)
+        public string isValidEmail(string email)
         {
             bool flag = false;
             if (email.Contains("@"))
@@ -96,13 +92,9 @@ namespace AirLineManagementSystem
 
             }
 
-            return false;
+            return email;
         }
 
-        private bool IsValidPhone()
-        {
-            return false;
-        }
         //Random number for Flightcode
         public char alpha()
         {
@@ -116,9 +108,43 @@ namespace AirLineManagementSystem
         {
             Random ran1 = new Random();
             int num = ran1.Next(100, 500);
+            return num;                      
+        }
+        //Random Ticket Number
+        public int tickNum()
+        {
+
+            Random ran1 = new Random();
+            int num = ran1.Next(1000, 2000);
             return num;
+
+        }
+        public string isValidPhoneNum(string phoneNum)
+        {
+            bool flag = false;
+            char[] Phone = phoneNum.ToCharArray();
+            if(phoneNum.Length > 11 || phoneNum.Length < 11)
+            {
+                MessageBox.Show("Re-check the Phone Number Length");
+            }
+
+            for(int i=0; i<11; i++)
+            {
+                if (Phone[i] >= '0' || Phone[i] <= '9')
+                {
+                    flag = true;
+                }
+                else 
+                {
+                    flag = false;
+                }
+            }
             
-                      
+            if(false)
+            {
+                MessageBox.Show("Invalid Phone#");
+            }
+            return phoneNum;
         }
     }
 }

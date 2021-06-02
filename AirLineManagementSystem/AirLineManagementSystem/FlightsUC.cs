@@ -31,6 +31,9 @@ namespace AirLineManagementSystem
             btn.Name = "up";
             btn.Text = "Update";
             btn.UseColumnTextForButtonValue = true;
+            btn.FlatStyle = FlatStyle.Popup;
+            btn.DefaultCellStyle.BackColor = Color.DarkBlue;
+            btn.DefaultCellStyle.ForeColor = Color.White;
             dataGridView1.Columns.Add(btn);
             DataGridViewButtonColumn btn2 = new DataGridViewButtonColumn();
             btn2.HeaderText = "Delete";
@@ -38,6 +41,9 @@ namespace AirLineManagementSystem
             btn2.Name = "del";
             btn2.Text = "Delete";
             btn2.UseColumnTextForButtonValue = true;
+            btn2.FlatStyle = FlatStyle.Popup;
+            btn2.DefaultCellStyle.BackColor = Color.DarkBlue;
+            btn2.DefaultCellStyle.ForeColor = Color.White;
             dataGridView1.Columns.Add(btn2);
 
 

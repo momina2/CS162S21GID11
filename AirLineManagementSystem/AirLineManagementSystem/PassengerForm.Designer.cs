@@ -276,6 +276,7 @@ namespace AirLineManagementSystem
             this.button22 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -1187,6 +1188,7 @@ namespace AirLineManagementSystem
             // 
             // UpdatePage
             // 
+            this.UpdatePage.Controls.Add(this.button8);
             this.UpdatePage.Controls.Add(this.pictureBox19);
             this.UpdatePage.Controls.Add(this.panel12);
             this.UpdatePage.Controls.Add(this.label15);
@@ -1344,12 +1346,13 @@ namespace AirLineManagementSystem
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(257, 255);
+            this.button4.Location = new System.Drawing.Point(245, 258);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(97, 28);
             this.button4.TabIndex = 15;
             this.button4.Text = "Save";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label9
             // 
@@ -1457,7 +1460,7 @@ namespace AirLineManagementSystem
             // 
             this.textBox2.Location = new System.Drawing.Point(481, 97);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(207, 23);
+            this.textBox2.Size = new System.Drawing.Size(126, 23);
             this.textBox2.TabIndex = 3;
             // 
             // label3
@@ -2318,11 +2321,12 @@ namespace AirLineManagementSystem
             // NameBox
             // 
             this.NameBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.NameBox.Location = new System.Drawing.Point(41, 65);
+            this.NameBox.Location = new System.Drawing.Point(43, 68);
             this.NameBox.Name = "NameBox";
             this.NameBox.PlaceholderText = "Name";
             this.NameBox.Size = new System.Drawing.Size(261, 16);
             this.NameBox.TabIndex = 33;
+            this.NameBox.TextChanged += new System.EventHandler(this.NameBox_TextChanged);
             // 
             // button5
             // 
@@ -3045,6 +3049,21 @@ namespace AirLineManagementSystem
             this.button24.Size = new System.Drawing.Size(75, 23);
             this.button24.TabIndex = 0;
             // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(627, 95);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(97, 28);
+            this.button8.TabIndex = 22;
+            this.button8.Text = "Search";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click_1);
+            // 
             // PassengerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -3403,5 +3422,6 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.Label Flightl;
         private System.Windows.Forms.Button st4;
         private System.Windows.Forms.Button st12;
+        private System.Windows.Forms.Button button8;
     }
 }

@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace AirLineManagementSystem
 {
@@ -303,6 +304,9 @@ namespace AirLineManagementSystem
 
         private void button5_Click(object sender, EventArgs e)
         {
+            //Adding Passengers To database
+            addPassenger();
+
             NameBox.Text = "";
             PassBox.Text = "";
             CNICBox.Text = "";
@@ -326,6 +330,25 @@ namespace AirLineManagementSystem
 
             }
             click++;
+
+         
+
+
+
+        }
+      
+        SqlConnection con = new SqlConnection(Configuration.connection);
+        public void addPassenger()
+        {
+            Validation vad = new Validation();
+                con.Open();
+                string query = "INSERT INTO PassengerInfo (Name,Passport#,CNIC,Phone#,Email,Ticket#) VALUES ('" + NameBox.Text + "','" + PassBox.Text + "','" + CNICBox.Text + "','" + PhoneBox.Text + "','" + EmailBox.Text + "','" + "#A00" + vad.tickNum() + "')";
+                SqlDataAdapter sda = new SqlDataAdapter(query, con);
+                sda.SelectCommand.ExecuteNonQuery();
+                MessageBox.Show("Data Sucessfully Added", "Passenger Added", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                con.Close();
+
+            
 
 
         }
@@ -665,6 +688,54 @@ namespace AirLineManagementSystem
         private void label25_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void NameBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            update();        
+        }
+        public void search()
+        {
+            con.Open();
+            string query = "SELECT * FROM AirlineManagement where Ticket# = '" + textBox2.Text + "'";
+            SqlCommand sc = new SqlCommand(query, con);
+            SqlDataReader sdr;
+            sdr = sc.ExecuteReader();
+            if (sdr.HasRows)
+            {
+                sdr.Read();
+                textBox3.Text = (sdr["Name"].ToString());
+                textBox4.Text = (sdr["Passport#"].ToString());
+                textBox5.Text = (sdr["CNIC"].ToString());
+                textBox6.Text = (sdr["Phone#"].ToString());
+                textBox7.Text = (sdr["Email"].ToString());
+            }
+            else
+            {
+                MessageBox.Show("Data Not Found");
+            }
+            con.Close();
+          
+        }
+
+        public void update()
+        {
+            con.Open();
+            string query = "UPDATE AirlineManagement SET Name = '" + textBox3.Text + "' Passport# = '" + textBox4.Text + "'CNIC ='" + textBox5.Text + "' Phone# = '" + textBox6.Text + "'Email = '" + textBox7.Text + "'Where Ticket# = '" + textBox2.Text + "'";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            sda.SelectCommand.ExecuteNonQuery();
+            con.Close();
+            MessageBox.Show("HO DYAAAA !!!");
+        }
+
+        private void button8_Click_1(object sender, EventArgs e)
+        {
+            search();
         }
     }
 }
