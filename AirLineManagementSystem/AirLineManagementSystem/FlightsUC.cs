@@ -21,20 +21,15 @@ namespace AirLineManagementSystem
         SqlConnection con = new SqlConnection(Configuration.connection);
         FlightsFlying flightData=new FlightsFlying();
         TimeTravel travelTime = new TimeTravel();
+        TextBox Midstop = new TextBox();
 
         private void FlightsUC_Load(object sender, EventArgs e)
         {
-            ToViewFlights();
-            DataGridViewButtonColumn btn = new DataGridViewButtonColumn();
-            btn.HeaderText = "Update";
-            btn.Width = 25;
-            btn.Name = "up";
-            btn.Text = "Update";
-            btn.UseColumnTextForButtonValue = true;
-            btn.FlatStyle = FlatStyle.Popup;
-            btn.DefaultCellStyle.BackColor = Color.DarkBlue;
-            btn.DefaultCellStyle.ForeColor = Color.White;
-            dataGridView1.Columns.Add(btn);
+            ToViewFlights(); 
+            comboBox1.DataSource = getAirLine();
+            comboBox1.DisplayMember = "Airline";
+
+
             DataGridViewButtonColumn btn2 = new DataGridViewButtonColumn();
             btn2.HeaderText = "Delete";
             btn2.Width = 25;
@@ -87,7 +82,7 @@ namespace AirLineManagementSystem
         {
             if(radioButton2.Checked)
             {
-                flightData.FlightType = "International";
+               
 
                 AutoCompleteStringCollection auto = new AutoCompleteStringCollection();
                 string[] countries = new string[] {"Afghanistan","Algeria","Argentina","Aruba","Australia",
@@ -109,10 +104,11 @@ namespace AirLineManagementSystem
                 if (result == DialogResult.Yes)
                 {
                     //layover textbox
-                    TextBox Midstop = new TextBox();
+                   
                     panel1.Controls.Add(Midstop);
                     Midstop.Location = new Point(265, 94);
                     Midstop.Size = new Size(97, 22);
+                    
                  
                     //layover label
                     Label midlabel = new Label();
@@ -120,6 +116,7 @@ namespace AirLineManagementSystem
                     midlabel.Location = new Point(179, 95);
                     midlabel.Font = new Font("Century Gothic", 14);
                     midlabel.Text = "Layover";
+
 
 
                     //source textbox loaction 
@@ -157,6 +154,8 @@ namespace AirLineManagementSystem
                 SourceBox.AutoCompleteCustomSource = auto;
                 DestinationBox.AutoCompleteCustomSource = auto;
 
+                
+
             }
         }
 
@@ -191,18 +190,33 @@ namespace AirLineManagementSystem
             flightData.Destination = DestinationBox.Text;
             flightData.FlightTime = dateTimePicker1.Value;
             travelTime.TotalDistance =Convert.ToDouble(textBox3.Text);
+            flightData.MidWayStop = Midstop.Text;
+            if(flightData.MidWayStop==null)
+            {
+                flightData.MidWayStop = "No Layover";
+            }
+          
+
             //call function to calculate timetravel
             //Random Flight Code Generator
+
             flightData.FlightLuggage = textBox4.Text;
             flightData.AirlineName = comboBox1.SelectedItem.ToString();
-           
+            string value = "";
+            bool isChecked = radioButton1.Checked;
+            if (isChecked)
+                value = radioButton1.Text;
+            else
+                value = radioButton2.Text.ToLower().ToString();
+
             FlightsFlying.Obj.AddFlightList(flightData);
             Validation v = new Validation();
 
 
             con.Open();
-            string query = "INSERT INTO allFlights (FlightCode,Source,Destination,AirLine,FlightType) VALUES ('" + "#" + v.alpha() +v.Airline_Code_Generator() + "','" + SourceBox.Text + "','" + DestinationBox.Text + "','" + comboBox1.SelectedItem.ToString() + "','" + flightData.FlightType + "')";
+            string query = "INSERT INTO allFlights (FlightCode,Source,Destination,AirLine,FlightType,TimeTravel,Date,LuggageAllowance,LayOver) VALUES ('" + "#" + v.alpha() +v.Airline_Code_Generator() + "','" + SourceBox.Text + "','" + DestinationBox.Text + "','" + comboBox1.SelectedItem.ToString() + "','" + value + "','" + textBox3.Text + "','" + dateTimePicker1.Value.Date.ToString("yyyyMMdd") + "','" + textBox4.Text + "','" + flightData.MidWayStop + "')";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
+           
             sda.SelectCommand.ExecuteNonQuery();
             con.Close();
             MessageBox.Show("BALLEY BALLEY", "Hogyaa", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -210,17 +224,13 @@ namespace AirLineManagementSystem
 
             //to View Data in Table
             ToViewFlights();
-
-
-
-
         }
         
        
         public void ToViewFlights()
         {
             con.Open();
-            string query = "SELECT * FROM allFlights";
+            string query = "SELECT FlightCode,Source,Destination,AirLine,FlightType,Date FROM allFlights";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
@@ -234,23 +244,18 @@ namespace AirLineManagementSystem
 
         private void dataGridView1_CellMouseDoubleClick_1(object sender, DataGridViewCellMouseEventArgs e)
         {
+
             SourceBox.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
             DestinationBox.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == 0)
-            {
-
-                SourceBox.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
-                DestinationBox.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
-
-            }
+           
             if (e.ColumnIndex == 1)
             {
 
-                string value = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+                string value = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
                 con.Open();
                 string query = "DELETE FROM allFlights where FlightCode = '" + value + "'";
                 SqlDataAdapter sda = new SqlDataAdapter(query, con);
@@ -260,6 +265,31 @@ namespace AirLineManagementSystem
                 ToViewFlights();
 
             }
+        }
+        public List<String> getAirLine()
+        {
+            DataTable table = new DataTable();
+
+            SqlCommand command = new SqlCommand();
+            command.Connection = con;
+            command.CommandType = System.Data.CommandType.Text;
+            command.CommandText = "select AirlineName from AirlineData";
+
+            con.Open();
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            adapter.Fill(table);
+
+            List<string> list = new List<string>();
+
+            foreach (DataRow row in table.Rows)
+            {
+                String airlinelist;
+               airlinelist = (row["AirlineName"]).ToString();
+                list.Add(airlinelist);
+            }
+
+            con.Close();
+            return list;
         }
     }
 }

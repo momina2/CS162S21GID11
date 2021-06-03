@@ -30,7 +30,9 @@ namespace AirLineManagementSystem
         }
 
         private void button1_Click(object sender, EventArgs e)
+
         {
+
             airlineobj.AirLineName = textBox1.Text;
             airlineobj.Description = richTextBox1.Text;
             if(checkBox1.Checked)

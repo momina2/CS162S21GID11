@@ -315,16 +315,7 @@ namespace AirLineManagementSystem
         }
       
         SqlConnection con = new SqlConnection(Configuration.connection);
-        public void addPassenger()
-        {
-            Validation vad = new Validation();
-                con.Open();
-                string query = "INSERT INTO PassengerInfo (Name,Passport,CNIC,Phone,Email,Ticket) VALUES ('" + NameBox.Text + "','" + PassBox.Text + "','" + CNICBox.Text + "','" + PhoneBox.Text + "','" + EmailBox.Text + "','" + "#A00" + vad.tickNum() + "')";
-                SqlDataAdapter sda = new SqlDataAdapter(query, con);
-                sda.SelectCommand.ExecuteNonQuery();
-                MessageBox.Show("Data Sucessfully Added", "Passenger Added", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                con.Close();
-        }
+       
 
         private void button8_Click(object sender, EventArgs e)
         {
@@ -619,19 +610,32 @@ namespace AirLineManagementSystem
 
         private void DestinationBox_TextChanged(object sender, EventArgs e)
         {
-            if(SourceBox.Text==DestinationBox.Text)
-            {
-                MessageBox.Show("Flight not Found !", "Flight Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+            con.Open();
+
+            string query = " SELECT FlightCode,Date,Source,Destination,AirLine,FlightType,TimeTravel FROM allFlights ";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            dataGridView2.DataSource = dt;
+            (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format(" Destination LIKE '%{0}%'", DestinationBox.Text);
+            con.Close();
+            
 
         }
 
         private void SourceBox_TextChanged(object sender, EventArgs e)
         {
-            if (SourceBox.Text == DestinationBox.Text)
-            {
-                MessageBox.Show("Flight not Found !", "Flight Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+            con.Open();
+          
+            string query = "SELECT FlightCode,Date,Source,Destination,AirLine,FlightType,TimeTravel FROM allFlights ";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            dataGridView2.DataSource = dt;
+            (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format("Source LIKE '%{0}%'", SourceBox.Text, DestinationBox.Text);
+            con.Close();
+
+
         }
 
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
@@ -747,6 +751,33 @@ namespace AirLineManagementSystem
 
 
         }
+        public void addPassenger()
+        {
+            Validation vad = new Validation();
+            con.Open();
+            string query = "INSERT INTO PassengerInfo (Name,Passport,CNIC,Phone,Email,Ticket,Payment) VALUES ('" + NameBox.Text + "','" + PassBox.Text + "','" + CNICBox.Text + "','" + PhoneBox.Text + "','" + EmailBox.Text + "','" + "#A00" + vad.tickNum() + "','" + textBox26.Text + "')";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            sda.SelectCommand.ExecuteNonQuery();
+            MessageBox.Show("Data Sucessfully Added", "Passenger Added", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            con.Close();
+        }
 
+        private void button13_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            con.Open();
+
+            string query = " SELECT * FROM PassengerInfo ";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            dataGridView1.DataSource = dt;
+            (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = string.Format(" Ticket LIKE '%{0}%'", textBox1.Text);
+            con.Close();
+        }
     }
 }

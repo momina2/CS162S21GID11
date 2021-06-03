@@ -5,7 +5,7 @@ using System.Text;
 
 namespace AirLineManagementSystem
 {
-    class Flight
+    class Flight:Multiway
     {
 
         private string source;
@@ -13,11 +13,6 @@ namespace AirLineManagementSystem
         private string flightCode;
         private string airlineName;
         private string flightType;
-
-
-
-
-
         public string Source
         {
             get { return source; }

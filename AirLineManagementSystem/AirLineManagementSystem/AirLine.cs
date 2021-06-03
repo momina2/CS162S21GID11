@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Text;
 
 namespace AirLineManagementSystem
@@ -12,6 +14,7 @@ namespace AirLineManagementSystem
         private string airlineStatus;
         private static AirLine obj = null;
         SortedSet<AirLine> AirlineSet = new SortedSet<AirLine>();
+        SqlConnection con = new SqlConnection(Configuration.connection);
 
         public static AirLine Obj
         {
@@ -46,9 +49,29 @@ namespace AirLineManagementSystem
             get { return description; }
             set { description = value; }
         }
-        public void AddAirLineList(AirLine obj)
+        public SortedSet<AirLine> AddAirLineList(AirLine obj)
         {
-            AirlineSet.Add(obj);
+           AirlineSet.Clear();
+            AirLine air;
+            con.Open();
+            string query = "SELECT * FROM  AirlineData";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                 air = new AirLine();
+               air.AirLineName = dt.Rows[i]["AirlineName"].ToString();
+               air.AirLineCode = dt.Rows[i]["AirlineCode"].ToString();
+                air.AirLineStatus = dt.Rows[i]["Status"].ToString();
+                air.Description = dt.Rows[i]["Description"].ToString();
+               
+
+
+                AirlineSet.Add(air);
+            }
+            con.Close();
+            return AirlineSet;
         }
         public SortedSet<AirLine> DisplayFlight()
         {

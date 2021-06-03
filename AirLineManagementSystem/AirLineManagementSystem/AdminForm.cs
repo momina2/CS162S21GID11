@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
@@ -10,9 +11,12 @@ namespace AirLineManagementSystem
 {
     public partial class AdminForm : Form
     {
+        Passenger pass = new Passenger();
+        
         public AdminForm()
         {
             InitializeComponent();
+            Passenger.Obj.addPassengerList();
 
         }
 
@@ -121,14 +125,16 @@ namespace AirLineManagementSystem
 
         private void AddItemPassenger()
         {
-            PassengerUC[] uc1 = new PassengerUC[6];
+            List<Passenger> passList = new List<Passenger>();
+            passList =Passenger.Obj.getPassengerList();
+            PassengerUC[] uc1 = new PassengerUC[passList.Count];
 
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < passList.Count; i++)
             {
                 uc1[i] = new PassengerUC();
-                uc1[i].Name1 = "KHADIJA DAR";
-                uc1[i].PassNumber = "1" + i;
-                uc1[i].TicketNumber = "#1092" + i;
+                uc1[i].Name1 = passList.ElementAt(i).Name;
+                uc1[i].PassNumber = passList.ElementAt(i).PassportNumber;
+                uc1[i].TicketNumber = passList.ElementAt(i).TicketNumber;
                 uc1[i].Amount = "107" +i+" Rs.";
 
                 flowLayoutPanel2.Controls.Add(uc1[i]);
@@ -140,12 +146,14 @@ namespace AirLineManagementSystem
 
         private void AddItemTransaction()
         {
-            TransactionUC[] uc1 = new TransactionUC[6];
+            List<Passenger> passList = new List<Passenger>();
+            passList = Passenger.Obj.getPassengerList();
+            TransactionUC[] uc1 = new TransactionUC[passList.Count];
 
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < passList.Count; i++)
             {
                 uc1[i] = new TransactionUC();
-                uc1[i].Name = "KHADIJA DAR";
+                uc1[i].Name = passList.ElementAt(i).Name;
                 uc1[i].Amount = "1078" + i + " Rs.";
 
                 flowLayoutPanel3.Controls.Add(uc1[i]);
@@ -154,5 +162,7 @@ namespace AirLineManagementSystem
             }
 
         }
+
+        
     }
 }

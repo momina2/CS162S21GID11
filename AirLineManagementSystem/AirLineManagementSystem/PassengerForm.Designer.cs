@@ -73,6 +73,7 @@ namespace AirLineManagementSystem
             this.panel18 = new System.Windows.Forms.Panel();
             this.label37 = new System.Windows.Forms.Label();
             this.FlyPage = new System.Windows.Forms.TabPage();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -81,13 +82,6 @@ namespace AirLineManagementSystem
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DestinationBox = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.SourceBox = new System.Windows.Forms.TextBox();
@@ -99,14 +93,6 @@ namespace AirLineManagementSystem
             this.button45 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.UpdatePage = new System.Windows.Forms.TabPage();
@@ -278,6 +264,7 @@ namespace AirLineManagementSystem
             this.button22 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -296,15 +283,14 @@ namespace AirLineManagementSystem
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             this.FlyPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.ViewPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.UpdatePage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             this.panel5.SuspendLayout();
@@ -347,6 +333,7 @@ namespace AirLineManagementSystem
             this.panel37.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
             this.downpanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -833,6 +820,7 @@ namespace AirLineManagementSystem
             // FlyPage
             // 
             this.FlyPage.BackColor = System.Drawing.Color.White;
+            this.FlyPage.Controls.Add(this.dataGridView2);
             this.FlyPage.Controls.Add(this.pictureBox24);
             this.FlyPage.Controls.Add(this.pictureBox23);
             this.FlyPage.Controls.Add(this.pictureBox6);
@@ -841,7 +829,6 @@ namespace AirLineManagementSystem
             this.FlyPage.Controls.Add(this.pictureBox4);
             this.FlyPage.Controls.Add(this.radioButton2);
             this.FlyPage.Controls.Add(this.radioButton1);
-            this.FlyPage.Controls.Add(this.dataGridView2);
             this.FlyPage.Controls.Add(this.DestinationBox);
             this.FlyPage.Controls.Add(this.label12);
             this.FlyPage.Controls.Add(this.SourceBox);
@@ -855,6 +842,20 @@ namespace AirLineManagementSystem
             this.FlyPage.TabIndex = 2;
             this.FlyPage.Text = "flypage";
             this.FlyPage.Click += new System.EventHandler(this.FlyPage_Click);
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.GridColor = System.Drawing.Color.White;
+            this.dataGridView2.Location = new System.Drawing.Point(0, 250);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowTemplate.Height = 25;
+            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView2.Size = new System.Drawing.Size(934, 201);
+            this.dataGridView2.TabIndex = 39;
             // 
             // pictureBox24
             // 
@@ -902,7 +903,7 @@ namespace AirLineManagementSystem
             this.button41.FlatAppearance.BorderSize = 0;
             this.button41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button41.Image = global::AirLineManagementSystem.Properties.Resources.icons8_next_page_501;
-            this.button41.Location = new System.Drawing.Point(764, 431);
+            this.button41.Location = new System.Drawing.Point(812, 449);
             this.button41.Name = "button41";
             this.button41.Size = new System.Drawing.Size(75, 62);
             this.button41.TabIndex = 34;
@@ -944,63 +945,6 @@ namespace AirLineManagementSystem
             this.radioButton1.Text = "DOMESTIC FLIGHT";
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToResizeColumns = false;
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.Column8});
-            this.dataGridView2.Enabled = false;
-            this.dataGridView2.GridColor = System.Drawing.SystemColors.ActiveBorder;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 245);
-            this.dataGridView2.MultiSelect = false;
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dataGridView2.RowHeadersWidth = 45;
-            this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(938, 161);
-            this.dataGridView2.TabIndex = 23;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Source";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Destination";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "Flight Code";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "AirLine Name";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.HeaderText = "Departure Date";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Arrival Date";
-            this.Column8.Name = "Column8";
             // 
             // DestinationBox
             // 
@@ -1062,11 +1006,11 @@ namespace AirLineManagementSystem
             // 
             // ViewPage
             // 
+            this.ViewPage.Controls.Add(this.dataGridView1);
             this.ViewPage.Controls.Add(this.pictureBox25);
             this.ViewPage.Controls.Add(this.button45);
             this.ViewPage.Controls.Add(this.panel3);
             this.ViewPage.Controls.Add(this.label2);
-            this.ViewPage.Controls.Add(this.dataGridView1);
             this.ViewPage.Controls.Add(this.textBox1);
             this.ViewPage.Controls.Add(this.label1);
             this.ViewPage.Location = new System.Drawing.Point(4, 24);
@@ -1122,75 +1066,13 @@ namespace AirLineManagementSystem
             this.label2.TabIndex = 4;
             this.label2.Text = " Reservations:\r\n";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column4,
-            this.Column5,
-            this.Column2,
-            this.Column7,
-            this.Column3,
-            this.Column6});
-            this.dataGridView1.Enabled = false;
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveBorder;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 264);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dataGridView1.RowHeadersWidth = 45;
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(938, 177);
-            this.dataGridView1.TabIndex = 3;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Reservation No#";
-            this.Column1.Name = "Column1";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Source";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Destination";
-            this.Column5.Name = "Column5";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Passenger Name";
-            this.Column2.Name = "Column2";
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Flight Code";
-            this.Column7.Name = "Column7";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Ticket No#";
-            this.Column3.Name = "Column3";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Cabin";
-            this.Column6.Name = "Column6";
-            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(317, 85);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(216, 23);
             this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -3079,6 +2961,20 @@ namespace AirLineManagementSystem
             this.button24.Size = new System.Drawing.Size(75, 23);
             this.button24.TabIndex = 0;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.GridColor = System.Drawing.Color.White;
+            this.dataGridView1.Location = new System.Drawing.Point(-4, 278);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(948, 214);
+            this.dataGridView1.TabIndex = 9;
+            // 
             // PassengerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -3117,16 +3013,15 @@ namespace AirLineManagementSystem
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             this.FlyPage.ResumeLayout(false);
             this.FlyPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ViewPage.ResumeLayout(false);
             this.ViewPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.UpdatePage.ResumeLayout(false);
             this.UpdatePage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
@@ -3182,6 +3077,7 @@ namespace AirLineManagementSystem
             this.panel37.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             this.downpanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3213,14 +3109,6 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox textBox6;
@@ -3235,13 +3123,6 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.TextBox DestinationBox;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox SourceBox;
@@ -3439,5 +3320,7 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.Button st12;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
