@@ -50,5 +50,10 @@ namespace AirLineManagementSystem
         {
 
         }
+
+        private void PassengerUC_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

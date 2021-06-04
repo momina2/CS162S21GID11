@@ -135,6 +135,7 @@ namespace AirLineManagementSystem
             this.Controls.Add(this.label1);
             this.Name = "PassengerUC";
             this.Size = new System.Drawing.Size(500, 153);
+            this.Load += new System.EventHandler(this.PassengerUC_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -55,7 +55,7 @@ namespace AirLineManagementSystem
             // pictureBox1
             // 
             this.pictureBox1.Image = global::AirLineManagementSystem.Properties.Resources.LOGO1;
-            this.pictureBox1.Location = new System.Drawing.Point(-4, -36);
+            this.pictureBox1.Location = new System.Drawing.Point(-4, -48);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(173, 187);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

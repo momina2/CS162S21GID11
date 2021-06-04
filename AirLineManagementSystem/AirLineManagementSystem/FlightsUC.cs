@@ -214,7 +214,7 @@ namespace AirLineManagementSystem
 
 
             con.Open();
-            string query = "INSERT INTO allFlights (FlightCode,Source,Destination,AirLine,FlightType,TimeTravel,Date,LuggageAllowance,LayOver) VALUES ('" + "#" + v.alpha() +v.Airline_Code_Generator() + "','" + SourceBox.Text + "','" + DestinationBox.Text + "','" + comboBox1.SelectedItem.ToString() + "','" + value + "','" + textBox3.Text + "','" + dateTimePicker1.Value.Date.ToString("yyyyMMdd") + "','" + textBox4.Text + "','" + flightData.MidWayStop + "')";
+            string query = "INSERT INTO allFlights (FlightCode,Source,Destination,AirLine,FlightType,TimeTravel,Date,Luggage,LayOver) VALUES ('" + "#" + v.alpha() +v.Airline_Code_Generator() + "','" + SourceBox.Text + "','" + DestinationBox.Text + "','" + comboBox1.SelectedItem.ToString() + "','" + value + "','" + textBox3.Text + "','" + dateTimePicker1.Text + "','" + textBox4.Text + "','" + flightData.MidWayStop + "')";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
            
             sda.SelectCommand.ExecuteNonQuery();
