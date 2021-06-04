@@ -110,7 +110,7 @@ namespace AirLineManagementSystem
         }
 
       
-
+       
         private void label31_Click(object sender, EventArgs e)
         {
             this.Dispose();
@@ -219,6 +219,8 @@ namespace AirLineManagementSystem
             }    
         }
 
+        int amount = 0;
+
         private void button44_Click(object sender, EventArgs e)
         {
             if (click != numericUpDown2.Value)
@@ -250,6 +252,9 @@ namespace AirLineManagementSystem
 
                 SourceBox.AutoCompleteCustomSource = auto;
                 DestinationBox.AutoCompleteCustomSource = auto;
+               
+                amount = amount + 4000;
+                
 
             }
         }
@@ -281,6 +286,8 @@ namespace AirLineManagementSystem
                 DestinationBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
                 SourceBox.AutoCompleteCustomSource = auto;
                 DestinationBox.AutoCompleteCustomSource = auto;
+
+                amount = amount +10000;
             }
         }
 
@@ -312,6 +319,8 @@ namespace AirLineManagementSystem
 
             }
             click++;
+            string V = amount + 500.ToString();
+            textBox26.Text = V;
         }
       
         SqlConnection con = new SqlConnection(Configuration.connection);
@@ -321,11 +330,20 @@ namespace AirLineManagementSystem
         {
             if(label60.Text=="Economy")
             {
+                label44.Text = "11 E";
                 label61.Text = "11 E";
+                amount = amount + 1000;
+                label67.Text = "1000";
+                label62.Text = "11 E";
             }
             else
             {
+                label44.Text = "11 B";
                 label61.Text = "11 B";
+                amount = amount + 2000;
+                label67.Text = "1000";
+                label62.Text = "11 B";
+
             }
             st1.Enabled=false;
             totalseats++;
@@ -344,13 +362,27 @@ namespace AirLineManagementSystem
             {
                 if (label60.Text == "Economy")
                 {
-                    label61.Text = "13 E";
-                }
-                else
+                label44.Text = "13 E";
+                label61.Text = "13 E";
+                label67.Text = "1000";
+                label62.Text = "13 E";
+                amount = amount + 1000;
+
+
+
+            }
+            else
                 {
-                    label61.Text = "13 B";
-                }
-                st2.Enabled = false;
+                label44.Text = "13 B";
+                label61.Text = "13 B";
+                label67.Text = "2000";
+                label62.Text = "13 B";
+                amount = amount + 2000;
+
+
+
+            }
+            st2.Enabled = false;
             totalseats++;
             CheckSeats();
             st2.BackColor = Color.LimeGreen;
@@ -365,13 +397,25 @@ namespace AirLineManagementSystem
             {
                 if (label60.Text == "Economy")
                 {
-                    label61.Text = "15 E";
-                }
-                else
+                label44.Text = "15 E";
+                label61.Text = "15 E";
+                label67.Text = "1000";
+                amount = amount + 1000;
+
+
+                label62.Text = "15 E";
+            }
+            else
                 {
-                    label61.Text = "15 B";
-                }
-                st3.Enabled = false;
+                label44.Text = "15 B";
+                label61.Text = "15 B";
+                label67.Text = "2000";
+                label62.Text = "15 B";
+                amount = amount + 2000;
+
+
+            }
+            st3.Enabled = false;
             totalseats++;
             CheckSeats();
             st3.BackColor = Color.LimeGreen;
@@ -388,13 +432,25 @@ namespace AirLineManagementSystem
             {
                 if (label60.Text == "Economy")
                 {
-                    label61.Text = "17 E";
-                }
-                else
+                label44.Text = "17 E";
+                label61.Text = "17 E";
+                label67.Text = "1000";
+                label62.Text = "17 E";
+                amount = amount + 1000;
+
+
+            }
+            else
                 {
-                    label61.Text = "17 B";
-                }
-                st4.Enabled = false;
+                label44.Text = "17 B";
+                label61.Text = "17 B";
+                label67.Text = "2000";
+                label62.Text = "17 B";
+                amount = amount + 2000;
+
+
+            }
+            st4.Enabled = false;
             totalseats++;
             CheckSeats();
             st4.BackColor = Color.LimeGreen;
@@ -411,13 +467,25 @@ namespace AirLineManagementSystem
             {
                 if (label60.Text == "Economy")
                 {
-                    label61.Text = "19 E";
-                }
-                else
+                label44.Text = "19 E";
+                label61.Text = "19 E";
+                label67.Text = "1000";
+                amount = amount + 1000;
+
+                label62.Text = "19 E";
+
+            }
+            else
                 {
-                    label61.Text = "19 B";
-                }
-                st5.Enabled = false;
+                label44.Text = "19 B";
+                label61.Text = "19 B";
+                amount = amount + 2000;
+
+                label67.Text = "2000";
+                label62.Text = "19 B";
+
+            }
+            st5.Enabled = false;
             totalseats++;
             CheckSeats();
             st5.BackColor = Color.LimeGreen;
@@ -432,13 +500,25 @@ namespace AirLineManagementSystem
             {
                 if (label60.Text == "Economy")
                 {
-                    label61.Text = "21 E";
-                }
-                else
+                label44.Text = "21 E";
+                label61.Text = "21 E";
+                amount = amount + 1000;
+
+                label67.Text = "1000";
+                label62.Text = "21 E";
+
+            }
+            else
                 {
-                    label61.Text = "21 B";
-                }
-                st6.Enabled = false;
+                label44.Text = "21 B";
+                label61.Text = "21 B";
+                amount = amount + 2000;
+
+                label67.Text = "2000";
+                label62.Text = "21 B";
+
+            }
+            st6.Enabled = false;
             st6.BackColor = Color.LimeGreen;
             totalseats++;
             CheckSeats();
@@ -453,13 +533,25 @@ namespace AirLineManagementSystem
             {
                 if (label60.Text == "Economy")
                 {
-                    label61.Text = "23 E";
-                }
-                else
+                label44.Text = "23 E";
+                label61.Text = "23 E";
+                amount = amount + 1000;
+
+                label67.Text = "1000";
+                label62.Text = "23 E";
+
+            }
+            else
                 {
-                    label61.Text = "23 B";
-                }
-                st7.Enabled = false;
+                label44.Text = "23 B";
+                label61.Text = "23 B";
+                amount = amount + 2000;
+
+                label67.Text = "2000";
+                label62.Text = "23 B";
+
+            }
+            st7.Enabled = false;
             totalseats++;
             CheckSeats();
             st7.BackColor = Color.LimeGreen;
@@ -474,13 +566,25 @@ namespace AirLineManagementSystem
             {
                 if (label60.Text == "Economy")
                 {
-                    label61.Text = "25 E";
-                }
-                else
+                label44.Text = "25 E";
+                label61.Text = "25 E";
+                amount = amount + 1000;
+
+                label67.Text = "1000";
+                label62.Text = "25 E";
+
+            }
+            else
                 {
-                    label61.Text = "25 B";
-                }
-                st8.Enabled = false;
+                label44.Text = "25 B";
+                label61.Text = "25 B";
+                amount = amount + 2000;
+
+                label67.Text = "2000";
+                label62.Text = "25 B";
+
+            }
+            st8.Enabled = false;
             totalseats++;
             CheckSeats();
             st8.BackColor = Color.LimeGreen;
@@ -495,13 +599,25 @@ namespace AirLineManagementSystem
             {
                 if (label60.Text == "Economy")
                 {
-                    label61.Text = "27 E";
-                }
-                else
+                label44.Text = "27 E";
+                label61.Text = "27 E";
+                amount = amount + 1000;
+
+                label67.Text = "1000";
+                label62.Text = "27 E";
+
+            }
+            else
                 {
-                    label61.Text = "27 B";
-                }
-                st9.Enabled = false;
+                label44.Text = "27 B";
+                label61.Text = "27 B";
+                amount = amount + 2000;
+                
+                label67.Text = "2000";
+                label62.Text = "27 B";
+
+            }
+            st9.Enabled = false;
             totalseats++;
             CheckSeats();
             st9.BackColor = Color.LimeGreen;
@@ -516,13 +632,25 @@ namespace AirLineManagementSystem
             {
                 if (label60.Text == "Economy")
                 {
-                    label61.Text = "29 E";
-                }
-                else
+                label44.Text = "29 E";
+                label61.Text = "29 E";
+                label62.Text = "29 E";
+
+                amount = amount + 1000;
+
+                label67.Text = "1000";
+            }
+            else
                 {
-                    label61.Text = "29 B";
-                }
-                st10.Enabled = false;
+                label44.Text = "29 B";
+                label61.Text = "29 B";
+                amount = amount + 2000;
+                
+                label67.Text = "2000";
+                label62.Text = "29 B";
+
+            }
+            st10.Enabled = false;
             totalseats++;
             CheckSeats();
             st10.BackColor = Color.LimeGreen;
@@ -537,13 +665,25 @@ namespace AirLineManagementSystem
             {
                 if (label60.Text == "Economy")
                 {
-                    label61.Text = "31 E";
-                }
-                else
+                label44.Text = "31 E";
+                label61.Text = "31 E";
+                amount = amount + 1000;
+
+                label67.Text = "1000";
+                label62.Text = "31 E";
+
+            }
+            else
                 {
-                    label61.Text = "31 B";
-                }
-                st11.Enabled = false;
+                label44.Text = "31 B";
+                label61.Text = "31 B";
+                amount = amount + 2000;
+
+                label67.Text = "2000";
+                label62.Text = "31 B";
+
+            }
+            st11.Enabled = false;
             totalseats++;
             CheckSeats();
             st11.BackColor = Color.LimeGreen;
@@ -558,13 +698,25 @@ namespace AirLineManagementSystem
             {
                 if (label60.Text == "Economy")
                 {
-                    label61.Text = "33 E";
-                }
-                else
+                label44.Text = "33 E";
+                label61.Text = "33 E";
+                amount = amount + 1000;
+
+                label67.Text = "2000";
+                label62.Text = "33 E";
+
+            }
+            else
                 {
-                    label61.Text = "33 B";
-                }
-                st12.Enabled = false;
+                label44.Text = "33 B";
+                label61.Text = "33 B";
+                amount = amount + 2000;
+
+                label67.Text = "2000";
+                label62.Text = "33 B";
+
+            }
+            st12.Enabled = false;
             totalseats++;
             CheckSeats();
             st12.BackColor = Color.LimeGreen;
@@ -643,10 +795,16 @@ namespace AirLineManagementSystem
             if (radioButton4.Checked)
             {
                 label60.Text = "Business";
+                int cost = 5000;
+                amount = amount + cost;
+
             }
             else
             {
                 label60.Text = "Economy";
+                int cost = 3000;
+                amount = amount + cost;
+
             }
         }
         private void seatPanel_Paint(object sender, PaintEventArgs e)
@@ -655,11 +813,17 @@ namespace AirLineManagementSystem
            
         }
 
-       
+        public int randomGateNo()
+        {
+            Random ran = new Random();
+            int num = ran.Next(1, 15);
+            return num;
+        }
 
         private void PassengerForm_Load(object sender, EventArgs e)
         {
-           
+            
+            label65.Text = randomGateNo().ToString();
         }
 
         private void label25_Click(object sender, EventArgs e)
@@ -783,6 +947,26 @@ namespace AirLineManagementSystem
         private void button45_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void radioButton5_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Source_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel31_Paint(object sender, PaintEventArgs e)
+        {
+            Source.Text = SourceBox.Text;
+            Dest.Text = DestinationBox.Text;
+            Name.Text = NameBox.Text;
+            Gate.Text = randomGateNo().ToString();
+            label35.Text = SourceBox.Text;
+            label36.Text = DestinationBox.Text;
         }
     }
 }

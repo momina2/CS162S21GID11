@@ -142,6 +142,7 @@ namespace AirLineManagementSystem
             this.panel10 = new System.Windows.Forms.Panel();
             this.pictureBox30 = new System.Windows.Forms.PictureBox();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.label67 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -227,13 +228,12 @@ namespace AirLineManagementSystem
             this.label53 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.Sourcel = new System.Windows.Forms.Label();
+            this.Source = new System.Windows.Forms.Label();
             this.Timel = new System.Windows.Forms.Label();
             this.seatl = new System.Windows.Forms.Label();
-            this.Gatel = new System.Windows.Forms.Label();
+            this.Gate = new System.Windows.Forms.Label();
             this.Flightl = new System.Windows.Forms.Label();
-            this.Namel = new System.Windows.Forms.Label();
+            this.Name = new System.Windows.Forms.Label();
             this.pictureBox31 = new System.Windows.Forms.PictureBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
@@ -1595,6 +1595,7 @@ namespace AirLineManagementSystem
             // panel11
             // 
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel11.Controls.Add(this.label67);
             this.panel11.Controls.Add(this.label24);
             this.panel11.Controls.Add(this.label22);
             this.panel11.Controls.Add(this.label18);
@@ -1605,6 +1606,15 @@ namespace AirLineManagementSystem
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(335, 299);
             this.panel11.TabIndex = 2;
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label67.Location = new System.Drawing.Point(148, 229);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(0, 23);
+            this.label67.TabIndex = 11;
             // 
             // label24
             // 
@@ -2367,6 +2377,7 @@ namespace AirLineManagementSystem
             this.radioButton5.TabStop = true;
             this.radioButton5.Text = "Online Payment";
             this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
             // 
             // label30
             // 
@@ -2398,12 +2409,12 @@ namespace AirLineManagementSystem
             this.panel31.BackColor = System.Drawing.Color.White;
             this.panel31.Controls.Add(this.Dest);
             this.panel31.Controls.Add(this.panel34);
-            this.panel31.Controls.Add(this.Sourcel);
+            this.panel31.Controls.Add(this.Source);
             this.panel31.Controls.Add(this.Timel);
             this.panel31.Controls.Add(this.seatl);
-            this.panel31.Controls.Add(this.Gatel);
+            this.panel31.Controls.Add(this.Gate);
             this.panel31.Controls.Add(this.Flightl);
-            this.panel31.Controls.Add(this.Namel);
+            this.panel31.Controls.Add(this.Name);
             this.panel31.Controls.Add(this.pictureBox31);
             this.panel31.Controls.Add(this.label32);
             this.panel31.Controls.Add(this.label33);
@@ -2423,6 +2434,7 @@ namespace AirLineManagementSystem
             this.panel31.Name = "panel31";
             this.panel31.Size = new System.Drawing.Size(776, 294);
             this.panel31.TabIndex = 1;
+            this.panel31.Paint += new System.Windows.Forms.PaintEventHandler(this.panel31_Paint);
             // 
             // Dest
             // 
@@ -2451,7 +2463,6 @@ namespace AirLineManagementSystem
             this.panel34.Controls.Add(this.label53);
             this.panel34.Controls.Add(this.label54);
             this.panel34.Controls.Add(this.label55);
-            this.panel34.Controls.Add(this.label56);
             this.panel34.Location = new System.Drawing.Point(585, 70);
             this.panel34.Name = "panel34";
             this.panel34.Size = new System.Drawing.Size(191, 206);
@@ -2600,27 +2611,17 @@ namespace AirLineManagementSystem
             this.label55.TabIndex = 12;
             this.label55.Text = "FLIGHT:";
             // 
-            // label56
+            // Source
             // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label56.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.label56.Location = new System.Drawing.Point(74, 147);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(128, 58);
-            this.label56.TabIndex = 11;
-            this.label56.Text = "22 D";
-            // 
-            // Sourcel
-            // 
-            this.Sourcel.AutoSize = true;
-            this.Sourcel.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Sourcel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.Sourcel.Location = new System.Drawing.Point(120, 243);
-            this.Sourcel.Name = "Sourcel";
-            this.Sourcel.Size = new System.Drawing.Size(68, 23);
-            this.Sourcel.TabIndex = 19;
-            this.Sourcel.Text = "Source";
+            this.Source.AutoSize = true;
+            this.Source.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Source.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.Source.Location = new System.Drawing.Point(120, 243);
+            this.Source.Name = "Source";
+            this.Source.Size = new System.Drawing.Size(68, 23);
+            this.Source.TabIndex = 19;
+            this.Source.Text = "Source";
+            this.Source.Click += new System.EventHandler(this.Source_Click);
             // 
             // Timel
             // 
@@ -2644,16 +2645,16 @@ namespace AirLineManagementSystem
             this.seatl.TabIndex = 17;
             this.seatl.Text = "Seat #";
             // 
-            // Gatel
+            // Gate
             // 
-            this.Gatel.AutoSize = true;
-            this.Gatel.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gatel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.Gatel.Location = new System.Drawing.Point(250, 128);
-            this.Gatel.Name = "Gatel";
-            this.Gatel.Size = new System.Drawing.Size(39, 15);
-            this.Gatel.TabIndex = 17;
-            this.Gatel.Text = "Gate #";
+            this.Gate.AutoSize = true;
+            this.Gate.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.Gate.Location = new System.Drawing.Point(250, 128);
+            this.Gate.Name = "Gate";
+            this.Gate.Size = new System.Drawing.Size(39, 15);
+            this.Gate.TabIndex = 17;
+            this.Gate.Text = "Gate #";
             // 
             // Flightl
             // 
@@ -2666,16 +2667,16 @@ namespace AirLineManagementSystem
             this.Flightl.TabIndex = 16;
             this.Flightl.Text = "FlightName";
             // 
-            // Namel
+            // Name
             // 
-            this.Namel.AutoSize = true;
-            this.Namel.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Namel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.Namel.Location = new System.Drawing.Point(197, 76);
-            this.Namel.Name = "Namel";
-            this.Namel.Size = new System.Drawing.Size(53, 21);
-            this.Namel.TabIndex = 15;
-            this.Namel.Text = "Name";
+            this.Name.AutoSize = true;
+            this.Name.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.Name.Location = new System.Drawing.Point(197, 76);
+            this.Name.Name = "Name";
+            this.Name.Size = new System.Drawing.Size(53, 21);
+            this.Name.TabIndex = 15;
+            this.Name.Text = "Name";
             // 
             // pictureBox31
             // 
@@ -3193,7 +3194,6 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Panel panel35;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Panel panel36;
@@ -3303,7 +3303,7 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.Button button47;
         private System.Windows.Forms.PictureBox pictureBox25;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label Namel;
+        private System.Windows.Forms.Label Name;
         private System.Windows.Forms.Label Dest;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.Label label65;
@@ -3312,10 +3312,10 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label Sourcel;
+        private System.Windows.Forms.Label Source;
         private System.Windows.Forms.Label Timel;
         private System.Windows.Forms.Label seatl;
-        private System.Windows.Forms.Label Gatel;
+        private System.Windows.Forms.Label Gate;
         private System.Windows.Forms.Label Flightl;
         private System.Windows.Forms.Button st4;
         private System.Windows.Forms.Button st12;
@@ -3323,5 +3323,6 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label67;
     }
 }

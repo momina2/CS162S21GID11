@@ -60,6 +60,11 @@ namespace AirLineManagementSystem
             }
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
         public void showAlert(string msg)
         {
            // this.Opacity = 0.0;
