@@ -612,7 +612,7 @@ namespace AirLineManagementSystem
         {
             con.Open();
 
-            string query = " SELECT FlightCode,Date,Source,Destination,AirLine,FlightType,TimeTravel FROM allFlights ";
+            string query = " SELECT FlightCode,Source,Destination,AirLine,FlightType FROM allFlights ";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
@@ -627,7 +627,7 @@ namespace AirLineManagementSystem
         {
             con.Open();
           
-            string query = "SELECT FlightCode,Date,Source,Destination,AirLine,FlightType,TimeTravel FROM allFlights ";
+            string query = "SELECT FlightCode,Source,Destination,AirLine,FlightType FROM allFlights ";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
@@ -755,7 +755,7 @@ namespace AirLineManagementSystem
         {
             Validation vad = new Validation();
             con.Open();
-            string query = "INSERT INTO PassengerInfo (Name,Passport,CNIC,Phone,Email,Ticket,Payment) VALUES ('" + NameBox.Text + "','" + PassBox.Text + "','" + CNICBox.Text + "','" + PhoneBox.Text + "','" + EmailBox.Text + "','" + "#A00" + vad.tickNum() + "','" + textBox26.Text + "')";
+            string query = "INSERT INTO PassengerInfo (Name,Passport#,CNIC,Phone#,Email,Ticket#,Payment) VALUES ('" + NameBox.Text + "','" + PassBox.Text + "','" + CNICBox.Text + "','" + PhoneBox.Text + "','" + EmailBox.Text + "','" + "#A00" + vad.tickNum() + "','" + textBox26.Text + "')";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             sda.SelectCommand.ExecuteNonQuery();
             MessageBox.Show("Data Sucessfully Added", "Passenger Added", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -778,6 +778,11 @@ namespace AirLineManagementSystem
             dataGridView1.DataSource = dt;
             (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = string.Format(" Ticket LIKE '%{0}%'", textBox1.Text);
             con.Close();
+        }
+
+        private void button45_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

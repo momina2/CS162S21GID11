@@ -75,11 +75,11 @@ namespace AirLineManagementSystem
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(210, 405);
+            this.button2.Location = new System.Drawing.Point(285, 369);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(102, 26);
             this.button2.TabIndex = 22;
-            this.button2.Text = "Restore";
+            this.button2.Text = "Alter";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -150,9 +150,9 @@ namespace AirLineManagementSystem
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
-            this.panel4.Location = new System.Drawing.Point(78, 38);
+            this.panel4.Location = new System.Drawing.Point(71, 38);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(62, 76);
+            this.panel4.Size = new System.Drawing.Size(81, 76);
             this.panel4.TabIndex = 4;
             // 
             // DelayUC

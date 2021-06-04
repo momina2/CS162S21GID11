@@ -82,10 +82,10 @@ namespace AirLineManagementSystem
             {
                 pass = new Passenger();
                 pass.Name = dt.Rows[i]["Name"].ToString();
-                pass.PassportNumber = dt.Rows[i]["Passport"].ToString();
+                pass.PassportNumber = dt.Rows[i]["Passport#"].ToString();
                 pass.CNIC = dt.Rows[i]["CNIC"].ToString();
-                pass.PhoneNumber =dt.Rows[i]["Phone"].ToString();
-                pass.TicketNumber= dt.Rows[i]["Ticket"].ToString();
+                pass.PhoneNumber =dt.Rows[i]["Phone#"].ToString();
+                pass.TicketNumber= dt.Rows[i]["Ticket#"].ToString();
                 pass.Email = dt.Rows[i]["Email"].ToString();
 
                 // pass.Email = DateTime.Parse(dt.Rows[i]["ManufacturingDate"].ToString());

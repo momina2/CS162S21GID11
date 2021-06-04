@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace AirLineManagementSystem
 {
@@ -32,13 +33,26 @@ namespace AirLineManagementSystem
 
         private void button2_Click(object sender, EventArgs e)
         {
+            
             Agreement a = new Agreement();
             a.Visible = true;
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
+            Validation vad = new Validation();
+            string s = "#AMS" + vad.randomID();
+             SqlConnection con = new SqlConnection(Configuration.connection);
+            con.Open();
+            string query = "INSERT INTO EmployeeInfo (ID,Name,Phone#,CNIC,Password) VALUES ('" + s + "','" + textBox1.Text + "','" + textBox4.Text + "','" + textBox3.Text + "','" + textBox2.Text + "')";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            sda.SelectCommand.ExecuteNonQuery();
+            con.Close();
+            MessageBox.Show("Welcome to the Airline Management System\nPlease Note Your ID\n\tYour ID is: " + s);
+            PassengerForm pf = new PassengerForm();
+            pf.Show();
         }
     }
 }

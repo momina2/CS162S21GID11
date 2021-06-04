@@ -8,7 +8,7 @@ namespace AirLineManagementSystem
 {
     class Validation
     {
-       
+
         public string ValidName(string name)
         {
             if (Regex.Match(name, @"^([a-zA-Z]+|[a-zA-Z]+\s[a-zA-Z]+)$").Success)
@@ -18,11 +18,11 @@ namespace AirLineManagementSystem
             else
             {
                 bool flag = false;
-                
+
             }
             return name;
         }
-    
+
         public int ValidTicket(int ticket)
         {
             if ((ticket >= 'A' || ticket <= 'Z') || (ticket >= 'a' || ticket <= 'z'))
@@ -102,13 +102,13 @@ namespace AirLineManagementSystem
             char randomChar = (char)rnd.Next('A', 'Z');
             return randomChar;
         }
-        
+
         //Random alphabet for Flightcode
         public int Airline_Code_Generator()
         {
             Random ran1 = new Random();
             int num = ran1.Next(100, 500);
-            return num;                      
+            return num;
         }
         //Random Ticket Number
         public int tickNum()
@@ -123,28 +123,39 @@ namespace AirLineManagementSystem
         {
             bool flag = false;
             char[] Phone = phoneNum.ToCharArray();
-            if(phoneNum.Length > 11 || phoneNum.Length < 11)
+            if (phoneNum.Length > 11 || phoneNum.Length < 11)
             {
                 MessageBox.Show("Re-check the Phone Number Length");
             }
 
-            for(int i=0; i<11; i++)
+            for (int i = 0; i < 11; i++)
             {
                 if (Phone[i] >= '0' || Phone[i] <= '9')
                 {
                     flag = true;
                 }
-                else 
+                else
                 {
                     flag = false;
                 }
             }
-            
-            if(false)
+
+            if (false)
             {
                 MessageBox.Show("Invalid Phone#");
             }
             return phoneNum;
         }
+
+        //EMPLOYEE ID RANDOMLY
+        public int randomID()
+        {
+            Random ran = new Random();
+            int num = ran.Next(100, 500);
+            return num;
+
+        }
     }
+
+   
 }

@@ -25,14 +25,14 @@ namespace AirLineManagementSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            con.Open();
+           /* con.Open();
             string query = "INSERT INTO EmployeeData (ID,Name,Phone#,CNIC,Password) VALUES ('" + textBox2.Text + "','" + textBox1.Text + "','" + textBox4.Text + "','" + textBox3.Text + "','" + textBox5.Text + "')";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             sda.SelectCommand.ExecuteNonQuery();
             con.Close();
-            MessageBox.Show("HO GYAAAA BALLAY BALLAY!!!");
+            MessageBox.Show("HO GYAAAA BALLAY BALLAY!!!");*/
 
-            ToViewEmployee();
+           // ToViewEmployee();
             
             //AddToList();
         }
@@ -123,7 +123,7 @@ namespace AirLineManagementSystem
         public void ToViewEmployee()
         {
             con.Open();
-            string query = "SELECT * FROM EmployeeData";
+            string query = "SELECT * FROM EmployeeInfo";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             DataTable dt = new DataTable();
             sda.Fill(dt);

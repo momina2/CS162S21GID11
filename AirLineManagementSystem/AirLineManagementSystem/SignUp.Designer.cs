@@ -33,6 +33,8 @@ namespace AirLineManagementSystem
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -70,6 +72,8 @@ namespace AirLineManagementSystem
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.textBox2);
             this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
@@ -88,6 +92,24 @@ namespace AirLineManagementSystem
             this.panel2.Size = new System.Drawing.Size(359, 471);
             this.panel2.TabIndex = 2;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Black;
+            this.panel4.Location = new System.Drawing.Point(43, 330);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(270, 1);
+            this.panel4.TabIndex = 5;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Location = new System.Drawing.Point(43, 308);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
+            this.textBox2.PlaceholderText = "Password";
+            this.textBox2.Size = new System.Drawing.Size(270, 16);
+            this.textBox2.TabIndex = 13;
             // 
             // panel7
             // 
@@ -119,7 +141,7 @@ namespace AirLineManagementSystem
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(43, 422);
+            this.button1.Location = new System.Drawing.Point(43, 415);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(270, 39);
             this.button1.TabIndex = 10;
@@ -153,7 +175,7 @@ namespace AirLineManagementSystem
             // textBox4
             // 
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Location = new System.Drawing.Point(43, 292);
+            this.textBox4.Location = new System.Drawing.Point(43, 247);
             this.textBox4.Name = "textBox4";
             this.textBox4.PlaceholderText = "Phone #";
             this.textBox4.Size = new System.Drawing.Size(270, 16);
@@ -162,7 +184,7 @@ namespace AirLineManagementSystem
             // textBox3
             // 
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Location = new System.Drawing.Point(43, 206);
+            this.textBox3.Location = new System.Drawing.Point(43, 185);
             this.textBox3.Name = "textBox3";
             this.textBox3.PlaceholderText = "CNIC";
             this.textBox3.Size = new System.Drawing.Size(270, 16);
@@ -171,7 +193,7 @@ namespace AirLineManagementSystem
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Black;
-            this.panel6.Location = new System.Drawing.Point(43, 315);
+            this.panel6.Location = new System.Drawing.Point(43, 269);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(270, 1);
             this.panel6.TabIndex = 4;
@@ -179,7 +201,7 @@ namespace AirLineManagementSystem
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Black;
-            this.panel5.Location = new System.Drawing.Point(43, 227);
+            this.panel5.Location = new System.Drawing.Point(43, 207);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(270, 1);
             this.panel5.TabIndex = 4;
@@ -248,5 +270,7 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
