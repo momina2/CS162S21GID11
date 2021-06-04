@@ -28,6 +28,9 @@ namespace AirLineManagementSystem
         {
 
         }
+        
+     
+    
 
         private void button1_Click(object sender, EventArgs e)
 
@@ -43,7 +46,9 @@ namespace AirLineManagementSystem
             {
                 airlineobj.AirLineStatus = "Not Active";
             }
-            airlineobj.AirLineCode = "#143";
+            Random ran = new Random();
+            int num = ran.Next(100, 500);
+            airlineobj.AirLineCode = num.ToString();
             AirLine.Obj.AddAirLineList(airlineobj);
 
             con.Open();

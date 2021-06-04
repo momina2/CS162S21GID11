@@ -23,7 +23,7 @@ namespace AirLineManagementSystem
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            update();
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -45,12 +45,39 @@ namespace AirLineManagementSystem
             MessageBox.Show("Your Data Has Been Updated successfully, PARWAAZ");
         }
 
-        public void search()
+        public void addToComboBox()
         {
             SqlConnection con = new SqlConnection(Configuration.connection);
 
             con.Open();
-            string query = "SELECT * FROM allFlights where FlightCode = '" + textBox2.Text + "'";
+
+            string query = "SELECT * FROM allFlights";
+            SqlCommand sc = new SqlCommand(query, con);
+            SqlDataReader sdr;
+            sdr = sc.ExecuteReader();
+            try
+            {
+                while (sdr.Read())
+                {
+                    string code = sdr.GetString(0);
+                    comboBox1.Items.Add(code);
+
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            con.Close();
+           
+
+        }
+
+        public void search()
+        {
+            SqlConnection con = new SqlConnection(Configuration.connection);
+            con.Open();
+            string query = "SELECT * FROM allFlights where FlightCode = '" + comboBox1.Text + "'";
             SqlCommand sc = new SqlCommand(query, con);
             SqlDataReader sdr;
             sdr = sc.ExecuteReader();
@@ -58,18 +85,19 @@ namespace AirLineManagementSystem
             {
                 sdr.Read();
                 dateTimePicker1.Text = (sdr["Date"].ToString());
-
+             
             }
             else
             {
-                MessageBox.Show("Data Not Found\nPlease Enter Valid flight code");
+                MessageBox.Show("DATE Not Found");
             }
             con.Close();
-            
+          
+
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        {  
             //searching the flight using flight code to change the time 
             search();
         }
@@ -77,6 +105,16 @@ namespace AirLineManagementSystem
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+  
+        }
+
+        private void DelayUC_Load(object sender, EventArgs e)
+        {
+            addToComboBox();
         }
     }
 }

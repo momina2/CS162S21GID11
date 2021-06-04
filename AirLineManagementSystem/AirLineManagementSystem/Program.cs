@@ -18,8 +18,8 @@ namespace AirLineManagementSystem
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new LoginForm());
-            // Application.Run(new PassengerForm());
-            Application.Run(new AdminForm());
+            Application.Run(new PassengerForm());
+            //Application.Run(new AdminForm());
 
         }
     }

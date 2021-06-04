@@ -6,7 +6,7 @@ using System.Data;
 
 namespace AirLineManagementSystem
 {
-    class Flight:Multiway
+    class Flight : Multiway
     {
 
         List<Flight> FlightInfoList = new List<Flight>();
@@ -118,5 +118,24 @@ namespace AirLineManagementSystem
             return FlightInfoList;
         }
 
+       /* public List<Flight> getFlightCode()
+        {
+            Flight fgt;
+            con.Open();
+            string query = "SELECT * FROM allFights";
+            SqlDataAdapter  = new SqlDataAdapter(query, con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            List<Flight> FlightInfoList = new List<Flight>();
+
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                fgt = new Flight();
+                fgt.FlightCode = dt.Rows[i]["FlightCode"].ToString();
+                FlightInfoList.Add(fgt);
+            }
+
+            return FlightInfoList;
+        }*/
     }
 }

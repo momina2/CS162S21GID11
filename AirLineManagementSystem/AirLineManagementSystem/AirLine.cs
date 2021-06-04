@@ -29,7 +29,9 @@ namespace AirLineManagementSystem
         }
         public string AirLineCode
         {
-            get { return airlineCode; }
+            get {
+
+                return airlineCode; }
             set { airlineCode = value; }
         }
 
