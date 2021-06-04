@@ -48,7 +48,7 @@ namespace AirLineManagementSystem
             }
             Random ran = new Random();
             int num = ran.Next(100, 500);
-            airlineobj.AirLineCode = num.ToString();
+            airlineobj.AirLineCode = "#"+num.ToString();
             AirLine.Obj.AddAirLineList(airlineobj);
 
             con.Open();
@@ -56,7 +56,7 @@ namespace AirLineManagementSystem
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             sda.SelectCommand.ExecuteNonQuery();
             con.Close();
-            MessageBox.Show("BALLEY BALLEY", "Hogyaa", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            MessageBox.Show("Airline Has Been Added", "Parwaz Airlines", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             ToViewAirlines();
         }
 

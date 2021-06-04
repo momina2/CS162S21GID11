@@ -45,9 +45,15 @@ namespace AirLineManagementSystem
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox30 = new System.Windows.Forms.PictureBox();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -161,6 +167,7 @@ namespace AirLineManagementSystem
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
+            this.panel4.Controls.Add(this.pictureBox22);
             this.panel4.Location = new System.Drawing.Point(65, 22);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(48, 57);
@@ -211,10 +218,31 @@ namespace AirLineManagementSystem
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
+            this.panel3.Controls.Add(this.pictureBox30);
             this.panel3.Location = new System.Drawing.Point(65, 314);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(48, 57);
             this.panel3.TabIndex = 4;
+            // 
+            // pictureBox30
+            // 
+            this.pictureBox30.Image = global::AirLineManagementSystem.Properties.Resources.icons8_airport_30;
+            this.pictureBox30.Location = new System.Drawing.Point(7, 8);
+            this.pictureBox30.Name = "pictureBox30";
+            this.pictureBox30.Size = new System.Drawing.Size(35, 40);
+            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox30.TabIndex = 1;
+            this.pictureBox30.TabStop = false;
+            // 
+            // pictureBox22
+            // 
+            this.pictureBox22.Image = global::AirLineManagementSystem.Properties.Resources.icons8_clipboard_30;
+            this.pictureBox22.Location = new System.Drawing.Point(4, 6);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(40, 45);
+            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox22.TabIndex = 26;
+            this.pictureBox22.TabStop = false;
             // 
             // AddAirline
             // 
@@ -230,9 +258,13 @@ namespace AirLineManagementSystem
             this.Load += new System.EventHandler(this.AddAirline_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -255,5 +287,7 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.PictureBox pictureBox30;
+        private System.Windows.Forms.PictureBox pictureBox22;
     }
 }

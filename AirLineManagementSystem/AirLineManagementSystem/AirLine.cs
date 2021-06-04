@@ -13,7 +13,7 @@ namespace AirLineManagementSystem
         private string description;
         private string airlineStatus;
         private static AirLine obj = null;
-        SortedSet<AirLine> AirlineSet = new SortedSet<AirLine>();
+        List<AirLine> Airlist = new List<AirLine>();
         SqlConnection con = new SqlConnection(Configuration.connection);
 
         public static AirLine Obj
@@ -51,9 +51,9 @@ namespace AirLineManagementSystem
             get { return description; }
             set { description = value; }
         }
-        public SortedSet<AirLine> AddAirLineList(AirLine obj)
+        public List<AirLine> AddAirLineList(AirLine obj)
         {
-           AirlineSet.Clear();
+           Airlist.Clear();
             AirLine air;
             con.Open();
             string query = "SELECT * FROM  AirlineData";
@@ -70,14 +70,14 @@ namespace AirLineManagementSystem
                
 
 
-                AirlineSet.Add(air);
+                Airlist.Add(air);
             }
             con.Close();
-            return AirlineSet;
+            return Airlist;
         }
-        public SortedSet<AirLine> DisplayFlight()
+        public  List<AirLine> DisplayFlight()
         {
-            return AirlineSet;
+            return Airlist;
         }
     }
 }

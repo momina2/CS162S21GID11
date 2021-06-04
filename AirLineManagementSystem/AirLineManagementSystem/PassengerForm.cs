@@ -12,7 +12,8 @@ namespace AirLineManagementSystem
     public partial class PassengerForm : Form
     {
       public int totalseats=0;
-       public int click = 1;
+      public int click = 1;
+      public bool nextPage = false;
         public PassengerForm()
         {
             InitializeComponent();
@@ -195,7 +196,10 @@ namespace AirLineManagementSystem
 
         private void button41_Click(object sender, EventArgs e)
         {
+            if(nextPage==true)
             tabControl1.SelectedTab = PassengerinfoPage;
+            else
+            MessageBox.Show("Select  Your Flight ", "Parwaz Airlines", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
 
         private void PassengerinfoPage_Click(object sender, EventArgs e)
@@ -294,7 +298,7 @@ namespace AirLineManagementSystem
         private void button5_Click(object sender, EventArgs e)
         {
             //Adding Passengers To database
-            addPassenger();
+             addPassenger();
 
             NameBox.Text = "";
             PassBox.Text = "";
@@ -779,7 +783,7 @@ namespace AirLineManagementSystem
         {
             con.Open();
           
-            string query = "SELECT FlightCode,Source,Destination,AirLine,FlightType FROM allFlights ";
+            string query = "SELECT FlightCode,Source,Destination,AirLine,FlightType,Date FROM allFlights ";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
@@ -859,7 +863,7 @@ namespace AirLineManagementSystem
         public void Delete(string Ticket)
         {
             con.Open();
-            string query = "DELETE FROM PassengerInfo where Ticket = '" + Ticket + "'";
+            string query = "DELETE FROM PassengerInfo where Ticket# = '" + Ticket + "'";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             sda.SelectCommand.ExecuteNonQuery();
             con.Close();
@@ -870,7 +874,7 @@ namespace AirLineManagementSystem
         {
             con.Open();
 
-            string query = "UPDATE PassengerInfo SET Name = '" + textBox3.Text + "', Passport = '" + textBox4.Text + "', CNIC ='" + textBox5.Text + "', Phone = '" + textBox6.Text + "', Email = '" + textBox7.Text + "'Where Ticket = '" + textBox2.Text + "'";
+            string query = "UPDATE PassengerInfo SET Name = '" + textBox3.Text + "', Passport# = '" + textBox4.Text + "', CNIC ='" + textBox5.Text + "', Phone# = '" + textBox6.Text + "', Email = '" + textBox7.Text + "'Where Ticket# = '" + textBox2.Text + "'";
 
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
 
@@ -885,7 +889,7 @@ namespace AirLineManagementSystem
             {
 
                 con.Open();
-                string query = "SELECT * FROM PassengerInfo where Ticket = '" + ticket + "'";
+                string query = "SELECT * FROM PassengerInfo where Ticket# = '" + ticket + "'";
 
                 SqlCommand sda = new SqlCommand(query, con);
                 SqlDataReader dr;
@@ -895,9 +899,9 @@ namespace AirLineManagementSystem
                 {
                     dr.Read();
                     textBox3.Text = (dr["Name"].ToString());
-                    textBox4.Text = (dr["Passport"].ToString());
+                    textBox4.Text = (dr["Passport#"].ToString());
                     textBox5.Text = (dr["CNIC"].ToString());
-                    textBox6.Text = (dr["Phone"].ToString());
+                    textBox6.Text = (dr["Phone#"].ToString());
                     textBox7.Text = (dr["Email"].ToString());
                 }
                 else
@@ -940,7 +944,7 @@ namespace AirLineManagementSystem
             DataTable dt = new DataTable();
             sda.Fill(dt);
             dataGridView1.DataSource = dt;
-            (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = string.Format(" Ticket LIKE '%{0}%'", textBox1.Text);
+          //  (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = string.Format(" Ticket LIKE '%{0}%'", textBox1.Text);
             con.Close();
         }
 
@@ -967,6 +971,19 @@ namespace AirLineManagementSystem
             Gate.Text = randomGateNo().ToString();
             label35.Text = SourceBox.Text;
             label36.Text = DestinationBox.Text;
+        }
+
+        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
+        }
+
+        private void dataGridView2_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            label17.Text = " Flight Code\n " + dataGridView2.SelectedRows[0].Cells[0].Value.ToString();
+            label14.Text = " Date\n " + dataGridView2.SelectedRows[0].Cells[5].Value.ToString();
+            label18.Text = " Airline\n " + dataGridView2.SelectedRows[0].Cells[3].Value.ToString();
+            nextPage = true;
         }
     }
 }

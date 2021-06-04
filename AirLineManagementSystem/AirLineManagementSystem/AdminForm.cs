@@ -101,6 +101,7 @@ namespace AirLineManagementSystem
 
         private void button8_Click(object sender, EventArgs e)
         {
+
             tabControl1.SelectedTab = PassengerPage;
             tabControl1.BringToFront();
             AddItemPassenger();
@@ -125,9 +126,11 @@ namespace AirLineManagementSystem
 
         private void AddItemPassenger()
         {
+            
             List<Passenger> passList = new List<Passenger>();
             passList =Passenger.Obj.getPassengerList();
             PassengerUC[] uc1 = new PassengerUC[passList.Count];
+          
 
             for (int i = 0; i < passList.Count; i++)
             {
@@ -135,7 +138,7 @@ namespace AirLineManagementSystem
                 uc1[i].Name1 = passList.ElementAt(i).Name;
                 uc1[i].PassNumber = passList.ElementAt(i).PassportNumber;
                 uc1[i].TicketNumber = passList.ElementAt(i).TicketNumber;
-                uc1[i].Amount = "107" +i+" Rs.";
+                uc1[i].Amount = passList.ElementAt(i).Price+" Rs.";
 
                 flowLayoutPanel2.Controls.Add(uc1[i]);
 
@@ -154,7 +157,7 @@ namespace AirLineManagementSystem
             {
                 uc1[i] = new TransactionUC();
                 uc1[i].Name = passList.ElementAt(i).Name;
-                uc1[i].Amount = "1078" + i + " Rs.";
+                uc1[i].Amount = passList.ElementAt(i).Price + " Rs.";
 
                 flowLayoutPanel3.Controls.Add(uc1[i]);
 

@@ -87,9 +87,9 @@ namespace AirLineManagementSystem
                 pass.PhoneNumber =dt.Rows[i]["Phone#"].ToString();
                 pass.TicketNumber= dt.Rows[i]["Ticket#"].ToString();
                 pass.Email = dt.Rows[i]["Email"].ToString();
+                pass.Price = dt.Rows[i]["Payment"].ToString();
 
-                // pass.Email = DateTime.Parse(dt.Rows[i]["ManufacturingDate"].ToString());
-                // pass.ExpiryDate = DateTime.Parse(dt.Rows[i]["ExpiryDate"].ToString());
+               
 
                 passengerList.Add(pass);
             }

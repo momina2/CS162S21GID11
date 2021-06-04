@@ -39,7 +39,10 @@ namespace AirLineManagementSystem
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox30 = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -150,10 +153,21 @@ namespace AirLineManagementSystem
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
-            this.panel4.Location = new System.Drawing.Point(71, 38);
+            this.panel4.Controls.Add(this.pictureBox30);
+            this.panel4.Location = new System.Drawing.Point(75, 41);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(81, 76);
+            this.panel4.Size = new System.Drawing.Size(72, 73);
             this.panel4.TabIndex = 4;
+            // 
+            // pictureBox30
+            // 
+            this.pictureBox30.Image = global::AirLineManagementSystem.Properties.Resources.icons8_airport_30;
+            this.pictureBox30.Location = new System.Drawing.Point(13, 11);
+            this.pictureBox30.Name = "pictureBox30";
+            this.pictureBox30.Size = new System.Drawing.Size(49, 57);
+            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox30.TabIndex = 1;
+            this.pictureBox30.TabStop = false;
             // 
             // DelayUC
             // 
@@ -167,6 +181,8 @@ namespace AirLineManagementSystem
             this.Load += new System.EventHandler(this.DelayUC_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -183,5 +199,6 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.PictureBox pictureBox30;
     }
 }

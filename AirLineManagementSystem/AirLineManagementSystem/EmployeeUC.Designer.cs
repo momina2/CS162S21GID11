@@ -30,7 +30,6 @@ namespace AirLineManagementSystem
         private void InitializeComponent()
         {
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
@@ -47,26 +46,26 @@ namespace AirLineManagementSystem
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox26 = new System.Windows.Forms.PictureBox();
+            this.pictureBox29 = new System.Windows.Forms.PictureBox();
+            this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
             this.SuspendLayout();
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
+            this.panel5.Controls.Add(this.pictureBox29);
             this.panel5.Location = new System.Drawing.Point(77, 330);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(54, 60);
             this.panel5.TabIndex = 7;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
-            this.panel4.Location = new System.Drawing.Point(75, 8);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(54, 59);
-            this.panel4.TabIndex = 6;
             // 
             // panel3
             // 
@@ -243,6 +242,35 @@ namespace AirLineManagementSystem
             this.label1.TabIndex = 0;
             this.label1.Text = " EMPLOYEE  DATA";
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
+            this.panel4.Controls.Add(this.pictureBox26);
+            this.panel4.Location = new System.Drawing.Point(75, 8);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(54, 59);
+            this.panel4.TabIndex = 6;
+            // 
+            // pictureBox26
+            // 
+            this.pictureBox26.Image = global::AirLineManagementSystem.Properties.Resources.icons8_create_30;
+            this.pictureBox26.Location = new System.Drawing.Point(6, 7);
+            this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.Size = new System.Drawing.Size(43, 45);
+            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox26.TabIndex = 39;
+            this.pictureBox26.TabStop = false;
+            // 
+            // pictureBox29
+            // 
+            this.pictureBox29.Image = global::AirLineManagementSystem.Properties.Resources.icons8_man_301;
+            this.pictureBox29.Location = new System.Drawing.Point(2, 5);
+            this.pictureBox29.Name = "pictureBox29";
+            this.pictureBox29.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox29.TabIndex = 1;
+            this.pictureBox29.TabStop = false;
+            // 
             // EmployeeUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -255,11 +283,15 @@ namespace AirLineManagementSystem
             this.Name = "EmployeeUC";
             this.Size = new System.Drawing.Size(708, 590);
             this.Load += new System.EventHandler(this.EmployeeUC_Load);
+            this.panel5.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -267,7 +299,6 @@ namespace AirLineManagementSystem
         #endregion
 
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
@@ -284,5 +315,8 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.PictureBox pictureBox26;
+        private System.Windows.Forms.PictureBox pictureBox29;
     }
 }

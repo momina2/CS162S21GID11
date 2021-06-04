@@ -189,7 +189,10 @@ namespace AirLineManagementSystem
             flightData.Source=SourceBox.Text;
             flightData.Destination = DestinationBox.Text;
             flightData.FlightTime = dateTimePicker1.Value;
-            travelTime.TotalDistance =Convert.ToDouble(textBox3.Text);
+
+            
+
+
             flightData.MidWayStop = Midstop.Text;
             if(flightData.MidWayStop==null)
             {
@@ -197,8 +200,7 @@ namespace AirLineManagementSystem
             }
           
 
-            //call function to calculate timetravel
-            //Random Flight Code Generator
+           
 
             flightData.FlightLuggage = textBox4.Text;
             flightData.AirlineName = comboBox1.SelectedItem.ToString();
@@ -214,7 +216,7 @@ namespace AirLineManagementSystem
 
 
             con.Open();
-            string query = "INSERT INTO allFlights (FlightCode,Source,Destination,AirLine,FlightType,TimeTravel,Date,Luggage,LayOver) VALUES ('" + "#" + v.alpha() +v.Airline_Code_Generator() + "','" + SourceBox.Text + "','" + DestinationBox.Text + "','" + comboBox1.SelectedItem.ToString() + "','" + value + "','" + textBox3.Text + "','" + dateTimePicker1.Text + "','" + textBox4.Text + "','" + flightData.MidWayStop + "')";
+            string query = "INSERT INTO allFlights (FlightCode,Source,Destination,AirLine,FlightType,TimeTravel,Date,Luggage,LayOver) VALUES ('" + "#" + v.alpha() +v.Airline_Code_Generator() + "','" + SourceBox.Text + "','" + DestinationBox.Text + "','" + comboBox1.SelectedItem.ToString() + "','" + value + "','" + travelTime.FlightTime(textBox3.Text) + "','" + dateTimePicker1.Text + "','" + textBox4.Text + "','" + flightData.MidWayStop + "')";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
            
             sda.SelectCommand.ExecuteNonQuery();
@@ -261,7 +263,7 @@ namespace AirLineManagementSystem
                 SqlDataAdapter sda = new SqlDataAdapter(query, con);
                 sda.SelectCommand.ExecuteNonQuery();
                 con.Close();
-                // MessageBox.Show("Ja Ja Tur Ja ");
+               
                 ToViewFlights();
 
             }

@@ -8,7 +8,7 @@ namespace AirLineManagementSystem
     {
         private string ticketNumber;
         private DateTime time;
-        private double price;
+        private string price;
         private int luggage;
         private string flightType;
 
@@ -25,7 +25,7 @@ namespace AirLineManagementSystem
             set { time = value; }
         }
 
-        public double Price
+        public string Price
         {
             get { return price; }
             set { price = value; }

@@ -39,7 +39,7 @@ namespace AirLineManagementSystem
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(22, 22);
+            this.label1.Location = new System.Drawing.Point(65, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(188, 28);
             this.label1.TabIndex = 0;
@@ -49,7 +49,7 @@ namespace AirLineManagementSystem
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(22, 60);
+            this.label2.Location = new System.Drawing.Point(65, 58);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 28);
             this.label2.TabIndex = 1;
@@ -59,7 +59,7 @@ namespace AirLineManagementSystem
             // 
             this.passengernamel.AutoSize = true;
             this.passengernamel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.passengernamel.Location = new System.Drawing.Point(250, 25);
+            this.passengernamel.Location = new System.Drawing.Point(293, 23);
             this.passengernamel.Name = "passengernamel";
             this.passengernamel.Size = new System.Drawing.Size(63, 25);
             this.passengernamel.TabIndex = 2;
@@ -69,7 +69,7 @@ namespace AirLineManagementSystem
             // 
             this.paymentl.AutoSize = true;
             this.paymentl.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.paymentl.Location = new System.Drawing.Point(250, 63);
+            this.paymentl.Location = new System.Drawing.Point(293, 61);
             this.paymentl.Name = "paymentl";
             this.paymentl.Size = new System.Drawing.Size(63, 25);
             this.paymentl.TabIndex = 3;
@@ -79,6 +79,7 @@ namespace AirLineManagementSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.paymentl);
             this.Controls.Add(this.passengernamel);
             this.Controls.Add(this.label2);

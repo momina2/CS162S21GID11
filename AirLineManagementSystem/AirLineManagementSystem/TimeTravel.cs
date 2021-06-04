@@ -21,5 +21,13 @@ namespace AirLineManagementSystem
             get { return time; }
             set { time = value; }
         }
+
+        public String FlightTime (String distance )
+        {
+
+            int Time = (int)(double.Parse(distance) / 926);
+
+            return Time + "Hours";
+        }
     }
 }

@@ -147,7 +147,6 @@ namespace AirLineManagementSystem
             this.label22 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.SeatSelection = new System.Windows.Forms.TabPage();
             this.label23 = new System.Windows.Forms.Label();
@@ -856,6 +855,7 @@ namespace AirLineManagementSystem
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView2.Size = new System.Drawing.Size(934, 201);
             this.dataGridView2.TabIndex = 39;
+            this.dataGridView2.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentDoubleClick);
             // 
             // pictureBox24
             // 
@@ -1035,6 +1035,7 @@ namespace AirLineManagementSystem
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(948, 214);
             this.dataGridView1.TabIndex = 9;
+            this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
             // 
             // pictureBox25
             // 
@@ -1600,7 +1601,6 @@ namespace AirLineManagementSystem
             this.panel11.Controls.Add(this.label22);
             this.panel11.Controls.Add(this.label18);
             this.panel11.Controls.Add(this.label17);
-            this.panel11.Controls.Add(this.label16);
             this.panel11.Controls.Add(this.label14);
             this.panel11.Location = new System.Drawing.Point(552, 68);
             this.panel11.Name = "panel11";
@@ -1621,7 +1621,7 @@ namespace AirLineManagementSystem
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.label24.Location = new System.Drawing.Point(17, 230);
+            this.label24.Location = new System.Drawing.Point(15, 187);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(105, 22);
             this.label24.TabIndex = 10;
@@ -1643,7 +1643,7 @@ namespace AirLineManagementSystem
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.label18.Location = new System.Drawing.Point(17, 193);
+            this.label18.Location = new System.Drawing.Point(15, 150);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(69, 22);
             this.label18.TabIndex = 8;
@@ -1654,22 +1654,11 @@ namespace AirLineManagementSystem
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.label17.Location = new System.Drawing.Point(17, 156);
+            this.label17.Location = new System.Drawing.Point(15, 113);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(114, 22);
             this.label17.TabIndex = 7;
             this.label17.Text = "Flight Code";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.label16.Location = new System.Drawing.Point(15, 113);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(120, 22);
-            this.label16.TabIndex = 6;
-            this.label16.Text = "Arrival Date";
             // 
             // label14
             // 
@@ -2988,9 +2977,9 @@ namespace AirLineManagementSystem
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "PassengerForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PassengerForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Name.Text = "PassengerForm";
             this.Load += new System.EventHandler(this.PassengerForm_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -3141,7 +3130,6 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.RadioButton radioButton3;
