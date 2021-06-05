@@ -981,7 +981,7 @@ namespace AirLineManagementSystem
         private void dataGridView2_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             label17.Text = " Flight Code\n " + dataGridView2.SelectedRows[0].Cells[0].Value.ToString();
-            label14.Text = " Date\n " + dataGridView2.SelectedRows[0].Cells[5].Value.ToString();
+            label14.Text = " Date\n " + dataGridView2.SelectedRows[0].Cells[2].Value.ToString();
             label18.Text = " Airline\n " + dataGridView2.SelectedRows[0].Cells[3].Value.ToString();
             nextPage = true;
         }
