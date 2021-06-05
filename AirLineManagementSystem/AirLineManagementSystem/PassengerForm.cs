@@ -6,6 +6,12 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System.IO;
+using iTextSharp.text.pdf.draw;
+using iTextSharp.text.pdf.parser;
+using System.Linq;
 
 namespace AirLineManagementSystem
 {
@@ -298,7 +304,7 @@ namespace AirLineManagementSystem
         private void button5_Click(object sender, EventArgs e)
         {
             //Adding Passengers To database
-             addPassenger();
+            addPassenger();
 
             NameBox.Text = "";
             PassBox.Text = "";
@@ -325,6 +331,7 @@ namespace AirLineManagementSystem
             click++;
             string V = amount + 500.ToString();
             textBox26.Text = V;
+
         }
       
         SqlConnection con = new SqlConnection(Configuration.connection);
@@ -863,24 +870,24 @@ namespace AirLineManagementSystem
         public void Delete(string Ticket)
         {
             con.Open();
-            string query = "DELETE FROM PassengerInfo where Ticket# = '" + Ticket + "'";
+            string query = "DELETE FROM PassengerInfo where Ticket = '" + Ticket + "'";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             sda.SelectCommand.ExecuteNonQuery();
             con.Close();
-            MessageBox.Show("Ja Ja Tur Ja ");
+            MessageBox.Show("You have canceled your Reservations  ");
         }
 
         public void update()
         {
             con.Open();
 
-            string query = "UPDATE PassengerInfo SET Name = '" + textBox3.Text + "', Passport# = '" + textBox4.Text + "', CNIC ='" + textBox5.Text + "', Phone# = '" + textBox6.Text + "', Email = '" + textBox7.Text + "'Where Ticket# = '" + textBox2.Text + "'";
+            string query = "UPDATE PassengerInfo SET Name = '" + textBox3.Text + "', Passport# = '" + textBox4.Text + "', CNIC ='" + textBox5.Text + "', Phone# = '" + textBox6.Text + "', Email = '" + textBox7.Text + "'Where Ticket = '" + textBox2.Text + "'";
 
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
 
             sda.SelectCommand.ExecuteNonQuery();
             con.Close();
-            MessageBox.Show("HO DYAAAA !!!");
+            MessageBox.Show("Data has been Update !");
         }
         public void search(string ticket)
         {
@@ -889,7 +896,7 @@ namespace AirLineManagementSystem
             {
 
                 con.Open();
-                string query = "SELECT * FROM PassengerInfo where Ticket# = '" + ticket + "'";
+                string query = "SELECT * FROM PassengerInfo where Ticket = '" + ticket + "'";
 
                 SqlCommand sda = new SqlCommand(query, con);
                 SqlDataReader dr;
@@ -923,7 +930,7 @@ namespace AirLineManagementSystem
         {
             Validation vad = new Validation();
             con.Open();
-            string query = "INSERT INTO PassengerInfo (Name,Passport#,CNIC,Phone#,Email,Ticket#,Payment) VALUES ('" + NameBox.Text + "','" + PassBox.Text + "','" + CNICBox.Text + "','" + PhoneBox.Text + "','" + EmailBox.Text + "','" + "#A00" + vad.tickNum() + "','" + textBox26.Text + "')";
+            string query = "INSERT INTO PassengerInfo (Name,Passport#,CNIC,Phone#,Email,Ticket,Payment) VALUES ('" + NameBox.Text + "','" + PassBox.Text + "','" + CNICBox.Text + "','" + PhoneBox.Text + "','" + EmailBox.Text + "','" + "#A00" + vad.tickNum() + "','" + textBox26.Text + "')";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             sda.SelectCommand.ExecuteNonQuery();
             MessageBox.Show("Data Sucessfully Added", "Passenger Added", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -944,7 +951,7 @@ namespace AirLineManagementSystem
             DataTable dt = new DataTable();
             sda.Fill(dt);
             dataGridView1.DataSource = dt;
-          //  (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = string.Format(" Ticket LIKE '%{0}%'", textBox1.Text);
+            (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = string.Format(" Ticket LIKE '%{0}%'", textBox1.Text);
             con.Close();
         }
 
@@ -980,10 +987,81 @@ namespace AirLineManagementSystem
 
         private void dataGridView2_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            label17.Text = " Flight Code\n " + dataGridView2.SelectedRows[0].Cells[0].Value.ToString();
-            label14.Text = " Date\n " + dataGridView2.SelectedRows[0].Cells[2].Value.ToString();
-            label18.Text = " Airline\n " + dataGridView2.SelectedRows[0].Cells[3].Value.ToString();
+            label17.Text = " Flight Code    " + dataGridView2.SelectedRows[0].Cells[0].Value.ToString();
+            label14.Text = " Date           " + dataGridView2.SelectedRows[0].Cells[5].Value.ToString();
+            label18.Text = " Airline        " + dataGridView2.SelectedRows[0].Cells[3].Value.ToString();
             nextPage = true;
+        }
+
+        private void button13_Click_2(object sender, EventArgs e)
+        {
+            Passenger.Obj.addPassengerList();
+            int size=Passenger.Obj.getPassengerList().Count - 1;
+
+
+            using (SaveFileDialog df = new SaveFileDialog() { Filter = "PDF files|*.pdf", ValidateNames = true })
+            {
+                if (df.ShowDialog() == DialogResult.OK)
+                {
+                    Document doc = new Document(PageSize.A4, 25, 25, 30, 30);
+                    try
+                    {
+
+                        BaseFont bf = BaseFont.CreateFont(BaseFont.TIMES_ROMAN, BaseFont.CP1252, BaseFont.EMBEDDED);
+                        iTextSharp.text.Font font = new iTextSharp.text.Font(bf, 24, iTextSharp.text.Font.NORMAL);
+
+                        PdfWriter writer = PdfWriter.GetInstance(doc, new FileStream(df.FileName, FileMode.Create));
+                        doc.Open();
+
+
+                        iTextSharp.text.Image png = iTextSharp.text.Image.GetInstance("logo.jpeg");
+                        png.ScalePercent(20f);
+                        png.Alignment = Element.ALIGN_CENTER;
+                        doc.Add(png);
+
+
+
+                        Paragraph p = new Paragraph(string.Format(" PARWAZ AIRLINES " + Environment.NewLine), font);
+                        p.Alignment = Element.ALIGN_CENTER;
+                        doc.Add(p);
+                        iTextSharp.text.Font font1 = new iTextSharp.text.Font(bf, 12, iTextSharp.text.Font.NORMAL);
+                        Paragraph p1 = new Paragraph(string.Format(" Go Forth And Wander! " + Environment.NewLine), font1);
+                        p1.Alignment = Element.ALIGN_CENTER;
+                        doc.Add(p1);
+                        iTextSharp.text.Font font2 = new iTextSharp.text.Font(bf, 14, iTextSharp.text.Font.NORMAL);
+                        Paragraph p2 = new Paragraph(string.Format(Environment.NewLine +
+                                                                   "  Ticket #        " + Passenger.Obj.getPassengerList().ElementAt(size).TicketNumber +Environment.NewLine +
+                                                                   "  Form   :           "+ dataGridView2.SelectedRows[0].Cells[1].Value.ToString()+ Environment.NewLine +
+                                                                   "  To     :              " + dataGridView2.SelectedRows[0].Cells[2].Value.ToString() + Environment.NewLine +
+                                                                   "  Seat #                " + label62.Text + Environment.NewLine +
+                                                                   "  Passport #           " + Passenger.Obj.getPassengerList().ElementAt(size).PassportNumber + Environment.NewLine +
+                                                                   "  Flight Code          "+ dataGridView2.SelectedRows[0].Cells[0].Value.ToString() + Environment.NewLine +
+                                                                   "  Date   :                " + dataGridView2.SelectedRows[0].Cells[5].Value.ToString() +Environment.NewLine), font2);
+                        p2.Alignment = Element.ALIGN_CENTER;
+                        doc.Add(p2);
+
+                        Paragraph p3 = new Paragraph(string.Format(Environment.NewLine +
+                                                                   " Contact Us : Parwaz@gmail.com" + Environment.NewLine +
+                                                                   " Phone # 03330605515" + Environment.NewLine), font2);
+                        p3.Alignment = Element.ALIGN_RIGHT;
+                        doc.Add(p3);
+
+                        LineSeparator line1 = new LineSeparator(1f, 100f, BaseColor.BLACK, Element.ALIGN_LEFT, 5);
+                        doc.Add(new Chunk(line1));
+
+                    }
+                    catch (Exception E)
+                    {
+                        MessageBox.Show(E.Message);
+                    }
+                    finally
+                    {
+                        doc.Close();
+                    }
+
+                }
+            }
         }
     }
 }
+

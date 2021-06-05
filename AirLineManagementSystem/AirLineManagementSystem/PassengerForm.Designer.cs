@@ -264,6 +264,7 @@ namespace AirLineManagementSystem
             this.button22 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -2383,6 +2384,7 @@ namespace AirLineManagementSystem
             // 
             this.Ticketpage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Ticketpage.BackgroundImage")));
             this.Ticketpage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Ticketpage.Controls.Add(this.button13);
             this.Ticketpage.Controls.Add(this.panel31);
             this.Ticketpage.Location = new System.Drawing.Point(4, 24);
             this.Ticketpage.Name = "Ticketpage";
@@ -2663,9 +2665,9 @@ namespace AirLineManagementSystem
             this.Name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
             this.Name.Location = new System.Drawing.Point(197, 76);
             this.Name.Name = "Name";
-            this.Name.Size = new System.Drawing.Size(53, 21);
+            this.Name.Size = new System.Drawing.Size(126, 21);
             this.Name.TabIndex = 15;
-            this.Name.Text = "Name";
+            this.Name.Text = "PassengerForm";
             // 
             // pictureBox31
             // 
@@ -2966,6 +2968,22 @@ namespace AirLineManagementSystem
             this.button24.Size = new System.Drawing.Size(75, 23);
             this.button24.TabIndex = 0;
             // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(51)))));
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button13.ForeColor = System.Drawing.Color.White;
+            this.button13.Location = new System.Drawing.Point(703, 435);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(128, 33);
+            this.button13.TabIndex = 8;
+            this.button13.Text = "Download";
+            this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click_2);
+            // 
             // PassengerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -2977,9 +2995,9 @@ namespace AirLineManagementSystem
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Text = "PassengerForm";
+            this.Name.Name = "PassengerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Name.Text = "PassengerForm";
+            this.Text = "PassengerForm";
             this.Load += new System.EventHandler(this.PassengerForm_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -3312,5 +3330,6 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Button button13;
     }
 }

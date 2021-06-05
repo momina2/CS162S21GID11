@@ -74,3 +74,5 @@ C:\Users\Ghauri\Documents\C#\CS162S21GID11\AirLineManagementSystem\AirLineManage
 C:\Users\Ghauri\Documents\C#\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 C:\Users\Ghauri\Documents\C#\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Ghauri\Documents\C#\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\CS\2nd semester\AirLineReservationSystem\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+D:\CS\2nd semester\AirLineReservationSystem\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\bin\Debug\netcoreapp3.1\itextsharp.dll

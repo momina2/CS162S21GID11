@@ -85,7 +85,7 @@ namespace AirLineManagementSystem
                 pass.PassportNumber = dt.Rows[i]["Passport#"].ToString();
                 pass.CNIC = dt.Rows[i]["CNIC"].ToString();
                 pass.PhoneNumber =dt.Rows[i]["Phone#"].ToString();
-                pass.TicketNumber= dt.Rows[i]["Ticket#"].ToString();
+                pass.TicketNumber= dt.Rows[i]["Ticket"].ToString();
                 pass.Email = dt.Rows[i]["Email"].ToString();
                 pass.Price = dt.Rows[i]["Payment"].ToString();
 
