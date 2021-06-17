@@ -20,6 +20,8 @@ namespace AirLineManagementSystem
       public int totalseats=0;
       public int click = 1;
       public bool nextPage = false;
+      public int cost = 0;
+      public int amount = 0;
         public PassengerForm()
         {
             InitializeComponent();
@@ -229,7 +231,7 @@ namespace AirLineManagementSystem
             }    
         }
 
-        int amount = 0;
+       
 
         private void button44_Click(object sender, EventArgs e)
         {
@@ -303,8 +305,25 @@ namespace AirLineManagementSystem
 
         private void button5_Click(object sender, EventArgs e)
         {
+           
+            string V = amount.ToString();
+            textBox26.Text = V;
             //Adding Passengers To database
             addPassenger();
+
+
+            if (click == numericUpDown2.Value)
+            {
+                MessageBox.Show("Passengers data had been added", "Passenger Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                NameBox.Enabled = false;
+                PassBox.Enabled = false;
+                CNICBox.Enabled = false;
+                PhoneBox.Enabled = false;
+                EmailBox.Enabled = false;
+
+            }
+            click++;
+          
 
             NameBox.Text = "";
             PassBox.Text = "";
@@ -318,20 +337,6 @@ namespace AirLineManagementSystem
             PhoneBox.PlaceholderText = "Phone #";
             EmailBox.PlaceholderText = "Email";
 
-            if (click == numericUpDown2.Value)
-            {
-                MessageBox.Show("Passengers data had been added", "Passenger Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                NameBox.Enabled = false;
-                PassBox.Enabled = false;
-                CNICBox.Enabled = false;
-                PhoneBox.Enabled = false;
-                EmailBox.Enabled = false;
-
-            }
-            click++;
-            string V = amount + 500.ToString();
-            textBox26.Text = V;
-
         }
       
         SqlConnection con = new SqlConnection(Configuration.connection);
@@ -344,7 +349,7 @@ namespace AirLineManagementSystem
                 label44.Text = "11 E";
                 label61.Text = "11 E";
                 amount = amount + 1000;
-                label67.Text = "1000";
+                label24.Text = "  1000";
                 label62.Text = "11 E";
             }
             else
@@ -352,7 +357,7 @@ namespace AirLineManagementSystem
                 label44.Text = "11 B";
                 label61.Text = "11 B";
                 amount = amount + 2000;
-                label67.Text = "1000";
+                label24.Text = "  1000";
                 label62.Text = "11 B";
 
             }
@@ -375,7 +380,7 @@ namespace AirLineManagementSystem
                 {
                 label44.Text = "13 E";
                 label61.Text = "13 E";
-                label67.Text = "1000";
+                label24.Text = "1000";
                 label62.Text = "13 E";
                 amount = amount + 1000;
 
@@ -386,7 +391,7 @@ namespace AirLineManagementSystem
                 {
                 label44.Text = "13 B";
                 label61.Text = "13 B";
-                label67.Text = "2000";
+                label24.Text = "2000";
                 label62.Text = "13 B";
                 amount = amount + 2000;
 
@@ -410,7 +415,7 @@ namespace AirLineManagementSystem
                 {
                 label44.Text = "15 E";
                 label61.Text = "15 E";
-                label67.Text = "1000";
+                label24.Text = "1000";
                 amount = amount + 1000;
 
 
@@ -420,7 +425,7 @@ namespace AirLineManagementSystem
                 {
                 label44.Text = "15 B";
                 label61.Text = "15 B";
-                label67.Text = "2000";
+                label24.Text = "2000";
                 label62.Text = "15 B";
                 amount = amount + 2000;
 
@@ -445,7 +450,7 @@ namespace AirLineManagementSystem
                 {
                 label44.Text = "17 E";
                 label61.Text = "17 E";
-                label67.Text = "1000";
+                label24.Text = "1000";
                 label62.Text = "17 E";
                 amount = amount + 1000;
 
@@ -455,7 +460,7 @@ namespace AirLineManagementSystem
                 {
                 label44.Text = "17 B";
                 label61.Text = "17 B";
-                label67.Text = "2000";
+                label24.Text = "2000";
                 label62.Text = "17 B";
                 amount = amount + 2000;
 
@@ -480,7 +485,7 @@ namespace AirLineManagementSystem
                 {
                 label44.Text = "19 E";
                 label61.Text = "19 E";
-                label67.Text = "1000";
+                label24.Text = "1000";
                 amount = amount + 1000;
 
                 label62.Text = "19 E";
@@ -492,7 +497,7 @@ namespace AirLineManagementSystem
                 label61.Text = "19 B";
                 amount = amount + 2000;
 
-                label67.Text = "2000";
+                label24.Text = "2000";
                 label62.Text = "19 B";
 
             }
@@ -515,7 +520,7 @@ namespace AirLineManagementSystem
                 label61.Text = "21 E";
                 amount = amount + 1000;
 
-                label67.Text = "1000";
+                label24.Text = "1000";
                 label62.Text = "21 E";
 
             }
@@ -525,7 +530,7 @@ namespace AirLineManagementSystem
                 label61.Text = "21 B";
                 amount = amount + 2000;
 
-                label67.Text = "2000";
+                label24.Text = "2000";
                 label62.Text = "21 B";
 
             }
@@ -548,7 +553,7 @@ namespace AirLineManagementSystem
                 label61.Text = "23 E";
                 amount = amount + 1000;
 
-                label67.Text = "1000";
+                label24.Text = "1000";
                 label62.Text = "23 E";
 
             }
@@ -558,7 +563,7 @@ namespace AirLineManagementSystem
                 label61.Text = "23 B";
                 amount = amount + 2000;
 
-                label67.Text = "2000";
+                label24.Text = "2000";
                 label62.Text = "23 B";
 
             }
@@ -581,7 +586,7 @@ namespace AirLineManagementSystem
                 label61.Text = "25 E";
                 amount = amount + 1000;
 
-                label67.Text = "1000";
+                label24.Text = "1000";
                 label62.Text = "25 E";
 
             }
@@ -591,7 +596,7 @@ namespace AirLineManagementSystem
                 label61.Text = "25 B";
                 amount = amount + 2000;
 
-                label67.Text = "2000";
+                label24.Text = "2000";
                 label62.Text = "25 B";
 
             }
@@ -614,7 +619,7 @@ namespace AirLineManagementSystem
                 label61.Text = "27 E";
                 amount = amount + 1000;
 
-                label67.Text = "1000";
+                label24.Text = "1000";
                 label62.Text = "27 E";
 
             }
@@ -624,7 +629,7 @@ namespace AirLineManagementSystem
                 label61.Text = "27 B";
                 amount = amount + 2000;
                 
-                label67.Text = "2000";
+                label24.Text = "2000";
                 label62.Text = "27 B";
 
             }
@@ -649,7 +654,7 @@ namespace AirLineManagementSystem
 
                 amount = amount + 1000;
 
-                label67.Text = "1000";
+                label24.Text = "1000";
             }
             else
                 {
@@ -657,7 +662,7 @@ namespace AirLineManagementSystem
                 label61.Text = "29 B";
                 amount = amount + 2000;
                 
-                label67.Text = "2000";
+                label24.Text = "2000";
                 label62.Text = "29 B";
 
             }
@@ -680,7 +685,7 @@ namespace AirLineManagementSystem
                 label61.Text = "31 E";
                 amount = amount + 1000;
 
-                label67.Text = "1000";
+                label24.Text = "1000";
                 label62.Text = "31 E";
 
             }
@@ -690,7 +695,7 @@ namespace AirLineManagementSystem
                 label61.Text = "31 B";
                 amount = amount + 2000;
 
-                label67.Text = "2000";
+                label24.Text = "2000";
                 label62.Text = "31 B";
 
             }
@@ -713,7 +718,7 @@ namespace AirLineManagementSystem
                 label61.Text = "33 E";
                 amount = amount + 1000;
 
-                label67.Text = "2000";
+                label24.Text = "2000";
                 label62.Text = "33 E";
 
             }
@@ -723,7 +728,7 @@ namespace AirLineManagementSystem
                 label61.Text = "33 B";
                 amount = amount + 2000;
 
-                label67.Text = "2000";
+                label24.Text = "2000";
                 label62.Text = "33 B";
 
             }
@@ -806,15 +811,18 @@ namespace AirLineManagementSystem
             if (radioButton4.Checked)
             {
                 label60.Text = "Business";
-                int cost = 5000;
+                cost = 5000;
                 amount = amount + cost;
+                label24.Text = "Seat Price : 5000";
 
             }
             else
             {
                 label60.Text = "Economy";
-                int cost = 3000;
+                cost = 3000;
                 amount = amount + cost;
+                label24.Text = "Seat Price : 2000";
+
 
             }
         }
@@ -930,7 +938,7 @@ namespace AirLineManagementSystem
         {
             Validation vad = new Validation();
             con.Open();
-            string query = "INSERT INTO PassengerInfo (Name,Passport#,CNIC,Phone#,Email,Ticket,Payment) VALUES ('" + NameBox.Text + "','" + PassBox.Text + "','" + CNICBox.Text + "','" + PhoneBox.Text + "','" + EmailBox.Text + "','" + "#A00" + vad.tickNum() + "','" + textBox26.Text + "')";
+            string query = "INSERT INTO PassengerInfo (Name,Passport#,CNIC,Phone#,Email,Ticket#,Payment) VALUES ('" + NameBox.Text + "','" + PassBox.Text + "','" + CNICBox.Text + "','" + PhoneBox.Text + "','" + EmailBox.Text + "','" + "#A00" + vad.tickNum() + "','" + textBox26.Text + "')";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             sda.SelectCommand.ExecuteNonQuery();
             MessageBox.Show("Data Sucessfully Added", "Passenger Added", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -1061,6 +1069,11 @@ namespace AirLineManagementSystem
 
                 }
             }
+        }
+
+        private void textBox26_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -211,6 +211,7 @@ namespace AirLineManagementSystem
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.label30 = new System.Windows.Forms.Label();
             this.Ticketpage = new System.Windows.Forms.TabPage();
+            this.button13 = new System.Windows.Forms.Button();
             this.panel31 = new System.Windows.Forms.Panel();
             this.Dest = new System.Windows.Forms.Label();
             this.panel34 = new System.Windows.Forms.Panel();
@@ -264,7 +265,6 @@ namespace AirLineManagementSystem
             this.button22 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -2342,6 +2342,7 @@ namespace AirLineManagementSystem
             this.textBox26.Size = new System.Drawing.Size(261, 16);
             this.textBox26.TabIndex = 30;
             this.textBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox26.TextChanged += new System.EventHandler(this.textBox26_TextChanged);
             // 
             // radioButton6
             // 
@@ -2394,6 +2395,22 @@ namespace AirLineManagementSystem
             this.Ticketpage.Text = "Ticket";
             this.Ticketpage.UseVisualStyleBackColor = true;
             this.Ticketpage.Click += new System.EventHandler(this.Ticketpage_Click);
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(51)))));
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button13.ForeColor = System.Drawing.Color.White;
+            this.button13.Location = new System.Drawing.Point(703, 435);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(128, 33);
+            this.button13.TabIndex = 8;
+            this.button13.Text = "Download";
+            this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click_2);
             // 
             // panel31
             // 
@@ -2967,22 +2984,6 @@ namespace AirLineManagementSystem
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(75, 23);
             this.button24.TabIndex = 0;
-            // 
-            // button13
-            // 
-            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(51)))));
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Location = new System.Drawing.Point(703, 435);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(128, 33);
-            this.button13.TabIndex = 8;
-            this.button13.Text = "Download";
-            this.button13.UseVisualStyleBackColor = false;
-            this.button13.Click += new System.EventHandler(this.button13_Click_2);
             // 
             // PassengerForm
             // 

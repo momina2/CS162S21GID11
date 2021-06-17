@@ -68,5 +68,10 @@ namespace AirLineManagementSystem
             SignUp su = new SignUp();
             su.Visible = true;
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

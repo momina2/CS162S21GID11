@@ -557,19 +557,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hp\\.nuget\\packages\\": {}
+    "C:\\Users\\Ghauri\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CS\\2nd semester\\AirLineReservationSystem\\CS162S21GID11\\AirLineManagementSystem\\AirLineManagementSystem\\AirLineManagementSystem.csproj",
+      "projectUniqueName": "C:\\Users\\Ghauri\\Documents\\C#\\CS162S21GID11\\AirLineManagementSystem\\AirLineManagementSystem\\AirLineManagementSystem.csproj",
       "projectName": "AirLineManagementSystem",
-      "projectPath": "D:\\CS\\2nd semester\\AirLineReservationSystem\\CS162S21GID11\\AirLineManagementSystem\\AirLineManagementSystem\\AirLineManagementSystem.csproj",
-      "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-      "outputPath": "D:\\CS\\2nd semester\\AirLineReservationSystem\\CS162S21GID11\\AirLineManagementSystem\\AirLineManagementSystem\\obj\\",
+      "projectPath": "C:\\Users\\Ghauri\\Documents\\C#\\CS162S21GID11\\AirLineManagementSystem\\AirLineManagementSystem\\AirLineManagementSystem.csproj",
+      "packagesPath": "C:\\Users\\Ghauri\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ghauri\\Documents\\C#\\CS162S21GID11\\AirLineManagementSystem\\AirLineManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ghauri\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
