@@ -13,7 +13,6 @@ namespace AirLineManagementSystem
         {
             if (Regex.Match(name, @"^([a-zA-Z]+|[a-zA-Z]+\s[a-zA-Z]+)$").Success)
             {
-                bool flag = true;
             }
             else
             {

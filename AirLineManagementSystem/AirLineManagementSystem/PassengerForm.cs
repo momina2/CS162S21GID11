@@ -19,11 +19,15 @@ namespace AirLineManagementSystem
         public int cost = 0;
         public int amount = 0;
         public int ticketviewer = 0;
+        public int luggagePrice = 0;
+        SqlConnection con = new SqlConnection(Configuration.connection);
         public PassengerForm()
         {
             InitializeComponent();
+            autocompeletecancel();
+            autocompeleteupdate();
         }
-        SqlConnection con = new SqlConnection(Configuration.connection);
+        
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -33,6 +37,8 @@ namespace AirLineManagementSystem
 
 
             tabControl1.SelectedTab = CancelPage;
+            
+          
             // tabControl1.BringToFront();
         }
 
@@ -43,7 +49,7 @@ namespace AirLineManagementSystem
             sidepanel.Location = button1.Location;
             tabControl1.SelectedTab = HomePage;
             // tabControl1.BringToFront();
-            //string name =Microsoft.VisualBasic.Interaction.InputBox(null, "PLEASE ENTER YOUR CHOICE OF SQUARE NUMBER");
+          
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -303,7 +309,7 @@ namespace AirLineManagementSystem
         private void button5_Click(object sender, EventArgs e)
         {
 
-            string V = amount.ToString();
+            string V = (amount + luggagePrice).ToString();
             textBox26.Text = V;
             //Adding Passengers To database
             addPassenger();
@@ -762,6 +768,7 @@ namespace AirLineManagementSystem
 
         private void CancelPage_Click(object sender, EventArgs e)
         {
+
             downpanel.Size = downpanel.MinimumSize;
         }
         public void CheckSeats()
@@ -869,7 +876,38 @@ namespace AirLineManagementSystem
         private void button11_Click_1(object sender, EventArgs e)
         {
             string searchticket = textBox20.Text;
-            Delete(searchticket);
+            try
+            {
+
+                con.Open();
+                string query = "SELECT * FROM PassengerInfo where Ticket = '" + searchticket + "'";
+
+                SqlCommand sda = new SqlCommand(query, con);
+                SqlDataReader dr;
+
+                dr = sda.ExecuteReader();
+                if (dr.HasRows)
+                {
+                    dr.Read();
+                    textBox19.Text = (dr["Name"].ToString());
+                    textBox18.Text = (dr["Passport#"].ToString());
+                    textBox17.Text = (dr["CNIC"].ToString());
+                    textBox15.Text = (dr["Phone#"].ToString());
+                    textBox16.Text = (dr["Email"].ToString());
+                }
+                else
+                {
+                    MessageBox.Show("DATA NOT FOUND!!");
+
+                }
+
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
 
         }
 
@@ -882,7 +920,7 @@ namespace AirLineManagementSystem
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             sda.SelectCommand.ExecuteNonQuery();
             con.Close();
-            MessageBox.Show("You have canceled your Reservations  ");
+
         }
 
         public void update()
@@ -944,6 +982,52 @@ namespace AirLineManagementSystem
             MessageBox.Show("Data Sucessfully Added", "Passenger Added", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             con.Close();
         }
+        public void autocompeletecancel()
+        {
+            Passenger.Obj.addPassengerList();
+            textBox20.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            textBox20.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            AutoCompleteStringCollection auto = new AutoCompleteStringCollection();
+            try
+            {
+
+                for(int i=0;i< Passenger.Obj.getPassengerList().Count-1;i++)
+                {
+                    auto.Add(Passenger.Obj.getPassengerList().ElementAt(i).TicketNumber);
+                }
+                
+               
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            textBox20.AutoCompleteCustomSource = auto;
+            
+        }
+        public void autocompeleteupdate()
+        {
+            Passenger.Obj.addPassengerList();
+            textBox2.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            textBox2.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            AutoCompleteStringCollection auto = new AutoCompleteStringCollection();
+            try
+            {
+
+                for (int i = 0; i < Passenger.Obj.getPassengerList().Count - 1; i++)
+                {
+                    auto.Add(Passenger.Obj.getPassengerList().ElementAt(i).TicketNumber);
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            textBox2.AutoCompleteCustomSource = auto;
+
+        }
 
         private void button13_Click_1(object sender, EventArgs e)
         {
@@ -997,12 +1081,37 @@ namespace AirLineManagementSystem
         {
 
         }
-
+        public int flightluggage = 0;
         private void dataGridView2_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             label17.Text = " Flight Code    " + dataGridView2.SelectedRows[0].Cells[0].Value.ToString();
             label14.Text = " Date           " + dataGridView2.SelectedRows[0].Cells[5].Value.ToString();
             label18.Text = " Airline        " + dataGridView2.SelectedRows[0].Cells[3].Value.ToString();
+            try
+            {
+                con.Open();
+                string query = "SELECT * FROM allFlights where FlightCode = '" + dataGridView2.SelectedRows[0].Cells[0].Value.ToString() + "'";
+
+                SqlCommand sda = new SqlCommand(query, con);
+                SqlDataReader dr;
+
+                dr = sda.ExecuteReader();
+                if (dr.HasRows)
+                {
+                    dr.Read();
+                    label67.Text = "Total Time Travel : " + (dr["TimeTravel"].ToString()) + " Hours";
+                    label50.Text = "Luggage Allowance : " + (dr["Luggage"].ToString()) + " Kgs";
+                    flightluggage = int.Parse((dr["Luggage"].ToString()));
+
+                }
+
+
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
             nextPage = true;
         }
 
@@ -1076,25 +1185,50 @@ namespace AirLineManagementSystem
                 }
             }
         }
-
-        private void textBox26_TextChanged(object sender, EventArgs e)
-        {
-        }
         public int index = 1;
         private void button15_Click_1(object sender, EventArgs e)
         {
             if (ticketviewer != numericUpDown2.Value)
             {
                 Passenger.Obj.addPassengerList();
-                Name.Text=Passenger.Obj.getPassengerList().ElementAt(Passenger.Obj.getPassengerList().Count -index).Name;
+                Name.Text = Passenger.Obj.getPassengerList().ElementAt(Passenger.Obj.getPassengerList().Count - index).Name;
                 index++;
                 ticketviewer++;
             }
             else
-            { 
+            {
                 tabControl1.SelectedTab = HomePage;
             }
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Delete(textBox20.Text);
+            MessageBox.Show("You have canceled your Reservations  ");
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+
+            if (textBox8.Text != " ")
+            {
+                if (int.Parse(textBox8.Text) > flightluggage)
+                {
+                    DialogResult result = MessageBox.Show("Cross the maximum luggage allowance \n" +
+                        "Reduce some luggage  or would like to pay for extra luggage ? ", "Luggage Allowance", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.No)
+                    {
+                        textBox8.Text = " ";
+                    }
+                    else
+                    {
+                        luggagePrice = (int.Parse(textBox8.Text) - flightluggage) * 45;
+                    }
+
+                }
+            }
+        }
+        
     }
 }
 

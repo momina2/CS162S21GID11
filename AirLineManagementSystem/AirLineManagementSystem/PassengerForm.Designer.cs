@@ -131,6 +131,8 @@ namespace AirLineManagementSystem
             this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox29 = new System.Windows.Forms.PictureBox();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
@@ -142,6 +144,7 @@ namespace AirLineManagementSystem
             this.panel10 = new System.Windows.Forms.Panel();
             this.pictureBox30 = new System.Windows.Forms.PictureBox();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.label50 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -694,6 +697,7 @@ namespace AirLineManagementSystem
             this.button9.TabIndex = 15;
             this.button9.Text = "Delete";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // label38
             // 
@@ -1478,6 +1482,8 @@ namespace AirLineManagementSystem
             // panel9
             // 
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel9.Controls.Add(this.label16);
+            this.panel9.Controls.Add(this.textBox8);
             this.panel9.Controls.Add(this.numericUpDown2);
             this.panel9.Controls.Add(this.numericUpDown1);
             this.panel9.Controls.Add(this.radioButton3);
@@ -1490,6 +1496,25 @@ namespace AirLineManagementSystem
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(336, 299);
             this.panel9.TabIndex = 4;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.label16.Location = new System.Drawing.Point(20, 253);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(164, 22);
+            this.label16.TabIndex = 32;
+            this.label16.Text = "Luggage Weight\r\n";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(190, 252);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(66, 23);
+            this.textBox8.TabIndex = 31;
+            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // numericUpDown2
             // 
@@ -1509,7 +1534,7 @@ namespace AirLineManagementSystem
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.radioButton3.Location = new System.Drawing.Point(20, 245);
+            this.radioButton3.Location = new System.Drawing.Point(20, 211);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(80, 21);
             this.radioButton3.TabIndex = 27;
@@ -1522,7 +1547,7 @@ namespace AirLineManagementSystem
             // 
             this.radioButton4.AutoSize = true;
             this.radioButton4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.radioButton4.Location = new System.Drawing.Point(20, 218);
+            this.radioButton4.Location = new System.Drawing.Point(20, 184);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(73, 21);
             this.radioButton4.TabIndex = 26;
@@ -1558,7 +1583,7 @@ namespace AirLineManagementSystem
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.label20.Location = new System.Drawing.Point(20, 184);
+            this.label20.Location = new System.Drawing.Point(20, 150);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(71, 24);
             this.label20.TabIndex = 6;
@@ -1597,6 +1622,7 @@ namespace AirLineManagementSystem
             // panel11
             // 
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel11.Controls.Add(this.label50);
             this.panel11.Controls.Add(this.label67);
             this.panel11.Controls.Add(this.label24);
             this.panel11.Controls.Add(this.label22);
@@ -1608,14 +1634,27 @@ namespace AirLineManagementSystem
             this.panel11.Size = new System.Drawing.Size(335, 299);
             this.panel11.TabIndex = 2;
             // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.label50.Location = new System.Drawing.Point(15, 253);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(208, 22);
+            this.label50.TabIndex = 12;
+            this.label50.Text = "Luggage Allowance :";
+            // 
             // label67
             // 
             this.label67.AutoSize = true;
-            this.label67.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label67.Location = new System.Drawing.Point(148, 229);
+            this.label67.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label67.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.label67.Location = new System.Drawing.Point(15, 218);
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(0, 23);
+            this.label67.Size = new System.Drawing.Size(160, 22);
             this.label67.TabIndex = 11;
+            this.label67.Text = "Total Flight Time :";
             // 
             // label24
             // 
@@ -2342,7 +2381,6 @@ namespace AirLineManagementSystem
             this.textBox26.Size = new System.Drawing.Size(261, 16);
             this.textBox26.TabIndex = 30;
             this.textBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox26.TextChanged += new System.EventHandler(this.textBox26_TextChanged);
             // 
             // radioButton6
             // 
@@ -2987,7 +3025,7 @@ namespace AirLineManagementSystem
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name.Text = "PassengerForm";
+            this.Name.Name = "PassengerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PassengerForm";
             this.Load += new System.EventHandler(this.PassengerForm_Load);
@@ -3322,5 +3360,8 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Label label50;
     }
 }
