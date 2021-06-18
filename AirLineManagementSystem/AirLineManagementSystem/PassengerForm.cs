@@ -1228,7 +1228,12 @@ namespace AirLineManagementSystem
                 }
             }
         }
-        
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            EmailSending ES = new EmailSending();
+            ES.Show();
+        }
     }
 }
 
