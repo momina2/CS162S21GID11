@@ -16,6 +16,9 @@ namespace AirLineManagementSystem
             InitializeComponent();
         }
         SqlConnection con = new SqlConnection(Configuration.connection);
+        string namecheck  = null;
+         string passwordcheck = null;
+        bool flag = false;
 
         public void searchFromDB()
         {
@@ -27,39 +30,51 @@ namespace AirLineManagementSystem
             if (sdr.HasRows)
             {
                 sdr.Read();
-                PasswordBox.Text = (sdr["Name"].ToString());
-                textBox1.Text = (sdr["Password"].ToString());
+               namecheck  = (sdr["Name"].ToString());
+                passwordcheck = (sdr["Password"].ToString());
+                if(namecheck==NametextBox.Text && passwordcheck==PasswordtextBox.Text)
+                {
+                    MessageBox.Show("\tWelcome!!, Airline Management System");
+                    flag = true;
+                    
+                }
+               
+                else
+                {
+                    MessageBox.Show("Invalid Credentials ");
+                    textBox2.Text = "";
+                    NametextBox.Text = "";
+                    PasswordtextBox.Text = "";
+                }
             }
             else
             {
                 MessageBox.Show("You Might not have been Registered");
             }
             con.Close();
-            MessageBox.Show("\tWelcome!!, Airline Management System");
+          
 
 
         }
         private void button1_Click(object sender, EventArgs e)
         {
             searchFromDB();
-            ProgressBar PB = new ProgressBar();
-            PB.Show();
-
-          
-
-        
-                    
+            if (flag)
+            {
+                ProgressBar PB = new ProgressBar();
+                PB.Show();
+            }
         }
 
         private void Password_CheckedChanged(object sender, EventArgs e)
         {
             if (Password.Checked)
             {
-                PasswordBox.UseSystemPasswordChar = false;
+               PasswordtextBox.UseSystemPasswordChar = false;
             }
             else
             {
-                PasswordBox.UseSystemPasswordChar = true;
+                PasswordtextBox.UseSystemPasswordChar = true;
             }
         }
 

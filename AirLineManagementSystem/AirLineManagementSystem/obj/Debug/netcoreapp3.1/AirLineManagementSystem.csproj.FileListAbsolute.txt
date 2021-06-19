@@ -79,3 +79,4 @@ D:\CS\2nd semester\AirLineReservationSystem\CS162S21GID11\AirLineManagementSyste
 C:\Users\Ghauri\Documents\C#\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
 C:\Users\Ghauri\Documents\C#\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\bin\Debug\netcoreapp3.1\itextsharp.dll
 C:\Users\Ghauri\Documents\C#\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\obj\Debug\netcoreapp3.1\AirLineManagementSystem.EmailSending.resources
+D:\CS\2nd semester\AirLineReservationSystem\CS162S21GID11\AirLineManagementSystem\AirLineManagementSystem\obj\Debug\netcoreapp3.1\AirLineManagementSystem.EmailSending.resources

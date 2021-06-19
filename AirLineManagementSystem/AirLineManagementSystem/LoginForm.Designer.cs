@@ -36,8 +36,8 @@ namespace AirLineManagementSystem
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
-            this.PasswordBox = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.NametextBox = new System.Windows.Forms.TextBox();
+            this.PasswordtextBox = new System.Windows.Forms.TextBox();
             this.Password = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -66,27 +66,27 @@ namespace AirLineManagementSystem
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.button2);
-            this.panel3.Controls.Add(this.PasswordBox);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.NametextBox);
+            this.panel3.Controls.Add(this.PasswordtextBox);
             this.panel3.Controls.Add(this.Password);
             this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(336, 17);
+            this.panel3.Location = new System.Drawing.Point(326, 17);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(358, 318);
+            this.panel3.Size = new System.Drawing.Size(368, 318);
             this.panel3.TabIndex = 0;
             // 
             // textBox2
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBox2.Location = new System.Drawing.Point(133, 78);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(178, 16);
             this.textBox2.TabIndex = 13;
-            this.textBox2.UseSystemPasswordChar = true;
             // 
             // panel6
             // 
@@ -130,23 +130,23 @@ namespace AirLineManagementSystem
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // PasswordBox
+            // NametextBox
             // 
-            this.PasswordBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PasswordBox.Location = new System.Drawing.Point(91, 134);
-            this.PasswordBox.Name = "PasswordBox";
-            this.PasswordBox.Size = new System.Drawing.Size(178, 16);
-            this.PasswordBox.TabIndex = 9;
-            this.PasswordBox.UseSystemPasswordChar = true;
+            this.NametextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.NametextBox.Location = new System.Drawing.Point(97, 134);
+            this.NametextBox.Name = "NametextBox";
+            this.NametextBox.Size = new System.Drawing.Size(172, 16);
+            this.NametextBox.TabIndex = 9;
             // 
-            // textBox1
+            // PasswordtextBox
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(116, 187);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(207, 16);
-            this.textBox1.TabIndex = 8;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.PasswordtextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PasswordtextBox.Location = new System.Drawing.Point(126, 187);
+            this.PasswordtextBox.Name = "PasswordtextBox";
+            this.PasswordtextBox.Size = new System.Drawing.Size(197, 16);
+            this.PasswordtextBox.TabIndex = 8;
+            this.PasswordtextBox.UseSystemPasswordChar = true;
+            this.PasswordtextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Password
             // 
@@ -170,6 +170,7 @@ namespace AirLineManagementSystem
             this.button1.TabIndex = 5;
             this.button1.Text = "Sign In";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.UseWaitCursor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel5
@@ -218,7 +219,7 @@ namespace AirLineManagementSystem
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
             this.panel2.Location = new System.Drawing.Point(91, 26);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(246, 477);
+            this.panel2.Size = new System.Drawing.Size(223, 473);
             this.panel2.TabIndex = 1;
             // 
             // LoginForm
@@ -251,8 +252,8 @@ namespace AirLineManagementSystem
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.CheckBox Password;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox PasswordBox;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox NametextBox;
+        private System.Windows.Forms.TextBox PasswordtextBox;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel4;

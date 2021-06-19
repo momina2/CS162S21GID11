@@ -26,38 +26,7 @@ namespace AirLineManagementSystem
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            switch (this.action)
-            {
-                case enmAction.wait:
-                    timer1.Interval = 10;
-                    action = enmAction.close;
-                    break;
-                case NotificationForm.enmAction.start:
-                    this.timer1.Interval = 1;
-                    this.Opacity += 0.1;
-                    if (this.x < this.Location.X)
-                    {
-                        this.Left--;
-                    }
-                    else
-                    {
-                        if (this.Opacity == 1.0)
-                        {
-                            action = NotificationForm.enmAction.wait;
-                        }
-                    }
-                    break;
-                case enmAction.close:
-                    timer1.Interval = 1;
-                    this.Opacity -= 0.1;
-
-                    this.Left -= 3;
-                    if (base.Opacity == 0.0)
-                    {
-                        base.Close();
-                    }
-                    break;
-            }
+           
         }
 
         private void label1_Click(object sender, EventArgs e)

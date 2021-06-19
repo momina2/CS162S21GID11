@@ -80,7 +80,7 @@ namespace AirLineManagementSystem
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.ClientSize = new System.Drawing.Size(440, 106);
+            this.ClientSize = new System.Drawing.Size(455, 121);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.SetPrice);

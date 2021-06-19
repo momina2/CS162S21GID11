@@ -2,6 +2,7 @@
 using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.draw;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -24,6 +25,7 @@ namespace AirLineManagementSystem
         public PassengerForm()
         {
             InitializeComponent();
+            //call autocomplete functions
             autocompeletecancel();
             autocompeleteupdate();
         }
@@ -31,29 +33,26 @@ namespace AirLineManagementSystem
 
         private void button3_Click(object sender, EventArgs e)
         {
+            //cancel tabpage
             sidepanel.Width = button3.Width;
             sidepanel.Top = button3.Bottom;
             sidepanel.Location = button3.Location;
-
-
             tabControl1.SelectedTab = CancelPage;
-            
-          
-            // tabControl1.BringToFront();
+        
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //home tabpage
             sidepanel.Width = button1.Width;
             sidepanel.Top = button1.Bottom;
             sidepanel.Location = button1.Location;
             tabControl1.SelectedTab = HomePage;
-            // tabControl1.BringToFront();
-          
-        }
+         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //flypage tabpage
             sidepanel.Width = button2.Width;
             sidepanel.Top = button2.Bottom;
             sidepanel.Location = button2.Location;
@@ -69,7 +68,6 @@ namespace AirLineManagementSystem
 
 
             tabControl1.SelectedTab = FlyPage;
-            // tabControl1.BringToFront();
         }
 
         private void button2_MouseHover(object sender, EventArgs e)
@@ -81,17 +79,17 @@ namespace AirLineManagementSystem
 
         private void button7_Click(object sender, EventArgs e)
         {
+            //update tabpage
             tabControl1.SelectedTab = UpdatePage;
             downpanel.Size = downpanel.MinimumSize;
-            //this.downpanel.BringToFront();
+            
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
+            //view tabpage
             tabControl1.SelectedTab = ViewPage;
             downpanel.Size = downpanel.MinimumSize;
-            // this.downpanel.BringToFront();
-
         }
 
         private void HomePage_Click(object sender, EventArgs e)
@@ -161,11 +159,13 @@ namespace AirLineManagementSystem
 
         private void label62_Click(object sender, EventArgs e)
         {
+            //Ticket tabpage
             tabControl1.SelectedTab = Ticketpage;
         }
 
         private void radioButton6_CheckedChanged(object sender, EventArgs e)
         {
+            //notification alert
             if (radioButton6.Checked)
             { this.Alert("Visit Booth No # 11"); }
         }
@@ -177,13 +177,13 @@ namespace AirLineManagementSystem
 
         private void label23_Click(object sender, EventArgs e)
         {
+            //seatselection tabpage
             tabControl1.SelectedTab = SeatSelection;
         }
 
         private void LOGIN_Click(object sender, EventArgs e)
         {
             LoginForm Af = new LoginForm();
-            //AdminForm Af = new AdminForm();
             Af.Show();
             this.Visible = false;
         }
@@ -278,6 +278,7 @@ namespace AirLineManagementSystem
         {
             if (radioButton2.Checked)
             {
+                //autocomplete dynamically 
 
                 AutoCompleteStringCollection auto = new AutoCompleteStringCollection();
                 string[] countries = new string[] {"Afghanistan","Algeria","Argentina","Aruba","Australia",
@@ -313,18 +314,14 @@ namespace AirLineManagementSystem
             textBox26.Text = V;
             //Adding Passengers To database
             addPassenger();
-
-
-
-
-
-
+            
             NameBox.Text = "";
             PassBox.Text = "";
             CNICBox.Text = "";
             PhoneBox.Text = "";
             EmailBox.Text = "";
 
+            //placeholder dynamically
             NameBox.PlaceholderText = "Name";
             PassBox.PlaceholderText = "Passport";
             CNICBox.PlaceholderText = "CNIC #";
@@ -346,10 +343,8 @@ namespace AirLineManagementSystem
         }
 
 
-
-
-        private void button8_Click(object sender, EventArgs e)
-        {
+          private void button8_Click(object sender, EventArgs e)
+          {
             if (label60.Text == "Economy")
             {
                 label44.Text = "11 E";
@@ -389,9 +384,6 @@ namespace AirLineManagementSystem
                 label24.Text = "1000";
                 label62.Text = "13 E";
                 amount = amount + 1000;
-
-
-
             }
             else
             {
@@ -400,9 +392,6 @@ namespace AirLineManagementSystem
                 label24.Text = "2000";
                 label62.Text = "13 B";
                 amount = amount + 2000;
-
-
-
             }
             st2.Enabled = false;
             totalseats++;
@@ -469,8 +458,6 @@ namespace AirLineManagementSystem
                 label24.Text = "2000";
                 label62.Text = "17 B";
                 amount = amount + 2000;
-
-
             }
             st4.Enabled = false;
             totalseats++;
@@ -785,6 +772,7 @@ namespace AirLineManagementSystem
 
         private void DestinationBox_TextChanged(object sender, EventArgs e)
         {
+            //filter in datagridview 
             con.Open();
 
             string query = " SELECT FlightCode,Source,Destination,AirLine,FlightType FROM allFlights ";
@@ -801,7 +789,7 @@ namespace AirLineManagementSystem
         private void SourceBox_TextChanged(object sender, EventArgs e)
         {
             con.Open();
-
+            //filter in datagridview 
             string query = "SELECT FlightCode,Source,Destination,AirLine,FlightType,Date FROM allFlights ";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             DataTable dt = new DataTable();
@@ -841,6 +829,7 @@ namespace AirLineManagementSystem
 
         public int randomGateNo()
         {
+            //random gate number
             Random ran = new Random();
             int num = ran.Next(1, 15);
             return num;
@@ -865,6 +854,12 @@ namespace AirLineManagementSystem
         private void button4_Click(object sender, EventArgs e)
         {
             update();
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+            textBox5.Text = "";
+            textBox7.Text = "";
+            textBox6.Text = "";
         }
 
         private void button8_Click_1(object sender, EventArgs e)
@@ -875,6 +870,7 @@ namespace AirLineManagementSystem
 
         private void button11_Click_1(object sender, EventArgs e)
         {
+            //search a ticket 
             string searchticket = textBox20.Text;
             try
             {
@@ -915,6 +911,7 @@ namespace AirLineManagementSystem
 
         public void Delete(string Ticket)
         {
+            //delete from DB
             con.Open();
             string query = "DELETE FROM PassengerInfo where Ticket = '" + Ticket + "'";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
@@ -925,6 +922,7 @@ namespace AirLineManagementSystem
 
         public void update()
         {
+            //update form DB
             con.Open();
 
             string query = "UPDATE PassengerInfo SET Name = '" + textBox3.Text + "', Passport# = '" + textBox4.Text + "', CNIC ='" + textBox5.Text + "', Phone# = '" + textBox6.Text + "', Email = '" + textBox7.Text + "'Where Ticket = '" + textBox2.Text + "'";
@@ -972,8 +970,11 @@ namespace AirLineManagementSystem
 
 
         }
+        List<Passenger> pList = new List<Passenger>();
         public void addPassenger()
         {
+            Passenger p = new Passenger();
+            //adding data in DB
             Validation vad = new Validation();
             con.Open();
             string query = "INSERT INTO PassengerInfo (Name,Passport#,CNIC,Phone#,Email,Ticket,Payment) VALUES ('" + NameBox.Text + "','" + PassBox.Text + "','" + CNICBox.Text + "','" + PhoneBox.Text + "','" + EmailBox.Text + "','" + "#A00" + vad.tickNum() + "','" + textBox26.Text + "')";
@@ -981,7 +982,12 @@ namespace AirLineManagementSystem
             sda.SelectCommand.ExecuteNonQuery();
             MessageBox.Show("Data Sucessfully Added", "Passenger Added", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             con.Close();
+            p.Name = NameBox.Text;
+            p.PassportNumber = PassBox.Text;
+            pList.Add(p);
         }
+
+        //auto complete functions 
         public void autocompeletecancel()
         {
             Passenger.Obj.addPassengerList();
@@ -1036,6 +1042,7 @@ namespace AirLineManagementSystem
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            //filter tickets
             con.Open();
 
             string query = " SELECT * FROM PassengerInfo ";
@@ -1064,17 +1071,20 @@ namespace AirLineManagementSystem
 
         private void panel31_Paint(object sender, PaintEventArgs e)
         {
+            Passenger.Obj.addPassengerList();
+            
+
             Source.Text = dataGridView2.SelectedRows[0].Cells[1].Value.ToString();
             Dest.Text = dataGridView2.SelectedRows[0].Cells[2].Value.ToString();
-            Flightl.Text = dataGridView2.SelectedRows[0].Cells[0].Value.ToString();
+           Flightl.Text = dataGridView2.SelectedRows[0].Cells[0].Value.ToString();
             label26.Text = Flightl.Text;
             seatl.Text = label44.Text;
-            Timel.Text = dataGridView2.SelectedRows[0].Cells[5].Value.ToString();
-            Name.Text = NameBox.Text;
+           Timel.Text = dataGridView2.SelectedRows[0].Cells[5].Value.ToString();
+            Name.Text = pList.ElementAt(pList.Count-1).Name;
             Gate.Text = randomGateNo().ToString();
             label65.Text = Gate.Text;
-            label35.Text = SourceBox.Text;
-            label36.Text = DestinationBox.Text;
+            label35.Text = Source.Text;
+            label36.Text = Dest.Text;
         }
 
         private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -1117,10 +1127,11 @@ namespace AirLineManagementSystem
 
         private void button13_Click_2(object sender, EventArgs e)
         {
+            //pdf
             Passenger.Obj.addPassengerList();
-            int size = Passenger.Obj.getPassengerList().Count - 1;
+            
 
-
+            //choose a file only pdf 
             using (SaveFileDialog df = new SaveFileDialog() { Filter = "PDF files|*.pdf", ValidateNames = true })
             {
 
@@ -1153,14 +1164,14 @@ namespace AirLineManagementSystem
                         doc.Add(p1);
                         iTextSharp.text.Font font2 = new iTextSharp.text.Font(bf, 14, iTextSharp.text.Font.NORMAL);
                         Paragraph p2 = new Paragraph(string.Format(Environment.NewLine +
-                                                                   "  Ticket #        " + Passenger.Obj.getPassengerList().ElementAt(size).TicketNumber + Environment.NewLine +
-                                                                   "  Form   :           " + dataGridView2.SelectedRows[0].Cells[1].Value.ToString() + Environment.NewLine +
-                                                                   "  To     :              " + dataGridView2.SelectedRows[0].Cells[2].Value.ToString() + Environment.NewLine +
-                                                                   "  Seat #                " + label62.Text + Environment.NewLine +
-                                                                   "  Passport #           " + Passenger.Obj.getPassengerList().ElementAt(size).PassportNumber + Environment.NewLine +
-                                                                   "  Flight Code          " + dataGridView2.SelectedRows[0].Cells[0].Value.ToString() + Environment.NewLine +
-                                                                   "  Date   :                " + dataGridView2.SelectedRows[0].Cells[5].Value.ToString() + Environment.NewLine), font2);
-                        p2.Alignment = Element.ALIGN_CENTER;
+                                                                   "  Ticket #        " + Passenger.Obj.getPassengerList().ElementAt(0).TicketNumber + Environment.NewLine +
+                                                                   "  Form   :         " + dataGridView2.SelectedRows[0].Cells[1].Value.ToString().ToUpper()+ Environment.NewLine +
+                                                                   "  To     :            " + dataGridView2.SelectedRows[0].Cells[2].Value.ToString().ToUpper() + Environment.NewLine +
+                                                                   "  Seat #              " + label62.Text + Environment.NewLine +
+                                                                   "  Passport #        " + pList.ElementAt(pList.Count-index).PassportNumber + Environment.NewLine +
+                                                                   "  Flight Code     " + dataGridView2.SelectedRows[0].Cells[0].Value.ToString() + Environment.NewLine +
+                                                                   "  Date   :            " + dataGridView2.SelectedRows[0].Cells[5].Value.ToString() + Environment.NewLine), font2);
+                        p2.Alignment = Element.ALIGN_LEFT;
                         doc.Add(p2);
 
                         Paragraph p3 = new Paragraph(string.Format(Environment.NewLine +
@@ -1191,7 +1202,7 @@ namespace AirLineManagementSystem
             if (ticketviewer != numericUpDown2.Value)
             {
                 Passenger.Obj.addPassengerList();
-                Name.Text = Passenger.Obj.getPassengerList().ElementAt(Passenger.Obj.getPassengerList().Count - index).Name;
+                Name.Text = pList.ElementAt(pList.Count-index).Name;
                 index++;
                 ticketviewer++;
             }
@@ -1205,17 +1216,25 @@ namespace AirLineManagementSystem
         {
             Delete(textBox20.Text);
             MessageBox.Show("You have canceled your Reservations  ");
+            textBox20.Text = "";
+            textBox19.Text = "";
+            textBox18.Text = "";
+            textBox17.Text = "";
+            textBox16.Text = "";
+            textBox15.Text = "";
+
+
         }
 
         private void textBox8_TextChanged(object sender, EventArgs e)
         {
-
+            //check luggage allowance 
             if (textBox8.Text != " ")
             {
                 if (int.Parse(textBox8.Text) > flightluggage)
                 {
                     DialogResult result = MessageBox.Show("Cross the maximum luggage allowance \n" +
-                        "Reduce some luggage  or would like to pay for extra luggage ? ", "Luggage Allowance", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        "Reduce some luggage  or would like to pay for extra luggage? ", "Luggage Allowance", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (result == DialogResult.No)
                     {
                         textBox8.Text = " ";
@@ -1231,6 +1250,7 @@ namespace AirLineManagementSystem
 
         private void button26_Click(object sender, EventArgs e)
         {
+            //email sending form 
             EmailSending ES = new EmailSending();
             ES.Show();
         }

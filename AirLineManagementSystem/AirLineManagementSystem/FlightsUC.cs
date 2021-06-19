@@ -29,7 +29,7 @@ namespace AirLineManagementSystem
             comboBox1.DataSource = getAirLine();
             comboBox1.DisplayMember = "Airline";
 
-
+            //Add buttons in the table dynamically 
             DataGridViewButtonColumn btn2 = new DataGridViewButtonColumn();
             btn2.HeaderText = "Delete";
             btn2.Width = 25;
@@ -37,8 +37,8 @@ namespace AirLineManagementSystem
             btn2.Text = "Delete";
             btn2.UseColumnTextForButtonValue = true;
             btn2.FlatStyle = FlatStyle.Popup;
-            btn2.DefaultCellStyle.BackColor = Color.DarkBlue;
-            btn2.DefaultCellStyle.ForeColor = Color.White;
+            btn2.DefaultCellStyle.BackColor = Color.White;
+            btn2.DefaultCellStyle.ForeColor = Color.Blue;
             dataGridView1.Columns.Add(btn2);
 
 
@@ -82,8 +82,8 @@ namespace AirLineManagementSystem
         {
             if(radioButton2.Checked)
             {
-               
 
+                //autocomplete dynamically 
                 AutoCompleteStringCollection auto = new AutoCompleteStringCollection();
                 string[] countries = new string[] {"Afghanistan","Algeria","Argentina","Aruba","Australia",
                     "Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belgium","Bermuda",
@@ -186,6 +186,7 @@ namespace AirLineManagementSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             flightData.Source=SourceBox.Text;
             flightData.Destination = DestinationBox.Text;
             flightData.FlightTime = dateTimePicker1.Value;
@@ -221,16 +222,18 @@ namespace AirLineManagementSystem
            
             sda.SelectCommand.ExecuteNonQuery();
             con.Close();
-            MessageBox.Show("BALLEY BALLEY", "Hogyaa", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            MessageBox.Show("Flight has been added ", "Flights ", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
 
             //to View Data in Table
             ToViewFlights();
         }
         
-       
+      
+        //add data in table 
         public void ToViewFlights()
         {
+
             con.Open();
             string query = "SELECT FlightCode,Source,Destination,AirLine,FlightType,Date FROM allFlights";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
@@ -268,6 +271,8 @@ namespace AirLineManagementSystem
 
             }
         }
+        //From DB to list
+        //and in combobox
         public List<String> getAirLine()
         {
             DataTable table = new DataTable();

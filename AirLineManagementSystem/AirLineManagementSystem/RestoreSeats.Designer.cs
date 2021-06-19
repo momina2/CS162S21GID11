@@ -73,6 +73,7 @@ namespace AirLineManagementSystem
             this.button2.TabIndex = 16;
             this.button2.Text = "Restore";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // comboBox1
             // 
@@ -80,6 +81,7 @@ namespace AirLineManagementSystem
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(172, 23);
             this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -111,6 +113,7 @@ namespace AirLineManagementSystem
             this.Name = "RestoreSeats";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RestoreSeats";
+            this.Load += new System.EventHandler(this.RestoreSeats_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);

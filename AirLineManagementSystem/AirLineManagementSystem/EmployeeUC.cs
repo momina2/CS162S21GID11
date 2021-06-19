@@ -33,6 +33,7 @@ namespace AirLineManagementSystem
             MessageBox.Show("HO Gya Kam");
         }
 
+        //add data to list
         public void AddToList(string emp)
         {
             e=new Employee();
@@ -55,14 +56,8 @@ namespace AirLineManagementSystem
 
                 data.Add(e);
             }
-            for (int i = 0; i < data.Count; i++)
-            {
-                MessageBox.Show(e.Name); 
-                MessageBox.Show("Nahi hoya");
-               
-
-            }
-            MessageBox.Show("Nahi hoya");
+           
+            
 
         }
        

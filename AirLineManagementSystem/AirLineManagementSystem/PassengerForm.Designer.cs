@@ -214,6 +214,7 @@ namespace AirLineManagementSystem
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.label30 = new System.Windows.Forms.Label();
             this.Ticketpage = new System.Windows.Forms.TabPage();
+            this.button26 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.panel31 = new System.Windows.Forms.Panel();
@@ -267,7 +268,6 @@ namespace AirLineManagementSystem
             this.button22 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -1175,7 +1175,7 @@ namespace AirLineManagementSystem
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(51)))));
             this.panel5.Controls.Add(this.pictureBox22);
-            this.panel5.Location = new System.Drawing.Point(314, 139);
+            this.panel5.Location = new System.Drawing.Point(305, 133);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(51, 58);
             this.panel5.TabIndex = 6;
@@ -1211,16 +1211,16 @@ namespace AirLineManagementSystem
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.textBox3);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(278, 152);
+            this.panel4.Location = new System.Drawing.Point(276, 152);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(446, 304);
+            this.panel4.Size = new System.Drawing.Size(461, 304);
             this.panel4.TabIndex = 4;
             // 
             // pictureBox11
             // 
             this.pictureBox11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox11.BackgroundImage")));
             this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox11.Location = new System.Drawing.Point(75, 211);
+            this.pictureBox11.Location = new System.Drawing.Point(85, 210);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(34, 28);
             this.pictureBox11.TabIndex = 21;
@@ -1230,7 +1230,7 @@ namespace AirLineManagementSystem
             // 
             this.pictureBox10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox10.BackgroundImage")));
             this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox10.Location = new System.Drawing.Point(75, 174);
+            this.pictureBox10.Location = new System.Drawing.Point(85, 173);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(34, 28);
             this.pictureBox10.TabIndex = 20;
@@ -1240,7 +1240,7 @@ namespace AirLineManagementSystem
             // 
             this.pictureBox9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.BackgroundImage")));
             this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox9.Location = new System.Drawing.Point(75, 98);
+            this.pictureBox9.Location = new System.Drawing.Point(85, 97);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(34, 28);
             this.pictureBox9.TabIndex = 19;
@@ -1250,7 +1250,7 @@ namespace AirLineManagementSystem
             // 
             this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
             this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox8.Location = new System.Drawing.Point(75, 133);
+            this.pictureBox8.Location = new System.Drawing.Point(85, 132);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(34, 28);
             this.pictureBox8.TabIndex = 18;
@@ -1261,7 +1261,7 @@ namespace AirLineManagementSystem
             // 
             this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Location = new System.Drawing.Point(75, 64);
+            this.pictureBox7.Location = new System.Drawing.Point(85, 63);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(34, 28);
             this.pictureBox7.TabIndex = 17;
@@ -1303,7 +1303,7 @@ namespace AirLineManagementSystem
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(219, 179);
+            this.textBox6.Location = new System.Drawing.Point(229, 178);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(152, 23);
             this.textBox6.TabIndex = 13;
@@ -1313,7 +1313,7 @@ namespace AirLineManagementSystem
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.label7.Location = new System.Drawing.Point(109, 213);
+            this.label7.Location = new System.Drawing.Point(119, 212);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(59, 21);
             this.label7.TabIndex = 12;
@@ -1321,7 +1321,7 @@ namespace AirLineManagementSystem
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(219, 216);
+            this.textBox7.Location = new System.Drawing.Point(229, 215);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(152, 23);
             this.textBox7.TabIndex = 11;
@@ -1331,7 +1331,7 @@ namespace AirLineManagementSystem
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.label8.Location = new System.Drawing.Point(109, 176);
+            this.label8.Location = new System.Drawing.Point(119, 175);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(71, 21);
             this.label8.TabIndex = 10;
@@ -1339,7 +1339,7 @@ namespace AirLineManagementSystem
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(219, 138);
+            this.textBox5.Location = new System.Drawing.Point(229, 137);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(152, 23);
             this.textBox5.TabIndex = 9;
@@ -1349,7 +1349,7 @@ namespace AirLineManagementSystem
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.label6.Location = new System.Drawing.Point(109, 135);
+            this.label6.Location = new System.Drawing.Point(119, 134);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 21);
             this.label6.TabIndex = 8;
@@ -1357,7 +1357,7 @@ namespace AirLineManagementSystem
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(219, 100);
+            this.textBox4.Location = new System.Drawing.Point(229, 99);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(152, 23);
             this.textBox4.TabIndex = 7;
@@ -1367,7 +1367,7 @@ namespace AirLineManagementSystem
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.label5.Location = new System.Drawing.Point(109, 100);
+            this.label5.Location = new System.Drawing.Point(119, 99);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(87, 42);
             this.label5.TabIndex = 6;
@@ -1375,7 +1375,7 @@ namespace AirLineManagementSystem
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(219, 64);
+            this.textBox3.Location = new System.Drawing.Point(229, 63);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(152, 23);
             this.textBox3.TabIndex = 5;
@@ -1385,7 +1385,7 @@ namespace AirLineManagementSystem
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.label4.Location = new System.Drawing.Point(109, 65);
+            this.label4.Location = new System.Drawing.Point(119, 64);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 21);
             this.label4.TabIndex = 4;
@@ -2437,6 +2437,22 @@ namespace AirLineManagementSystem
             this.Ticketpage.UseVisualStyleBackColor = true;
             this.Ticketpage.Click += new System.EventHandler(this.Ticketpage_Click);
             // 
+            // button26
+            // 
+            this.button26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
+            this.button26.FlatAppearance.BorderSize = 0;
+            this.button26.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
+            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button26.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button26.ForeColor = System.Drawing.Color.White;
+            this.button26.Location = new System.Drawing.Point(732, 19);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(128, 33);
+            this.button26.TabIndex = 37;
+            this.button26.Text = "Send Email";
+            this.button26.UseVisualStyleBackColor = false;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
+            // 
             // button15
             // 
             this.button15.BackColor = System.Drawing.Color.White;
@@ -3017,22 +3033,6 @@ namespace AirLineManagementSystem
             this.button24.Size = new System.Drawing.Size(75, 23);
             this.button24.TabIndex = 0;
             // 
-            // button26
-            // 
-            this.button26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
-            this.button26.FlatAppearance.BorderSize = 0;
-            this.button26.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(21)))), ((int)(((byte)(52)))));
-            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button26.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button26.ForeColor = System.Drawing.Color.White;
-            this.button26.Location = new System.Drawing.Point(84, 461);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(128, 33);
-            this.button26.TabIndex = 37;
-            this.button26.Text = "Send Email";
-            this.button26.UseVisualStyleBackColor = false;
-            this.button26.Click += new System.EventHandler(this.button26_Click);
-            // 
             // PassengerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -3044,7 +3044,7 @@ namespace AirLineManagementSystem
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name.Name = "PassengerForm";
+            this.Name = "PassengerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PassengerForm";
             this.Load += new System.EventHandler(this.PassengerForm_Load);

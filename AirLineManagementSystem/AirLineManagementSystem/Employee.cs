@@ -7,7 +7,7 @@ namespace AirLineManagementSystem
     class Employee
     {
 
-        SortedSet<Employee> empset = new SortedSet<Employee>();
+        List<Employee> empList = new List<Employee>();
         private static Employee obj = null;
         public static Employee Obj
         {
@@ -48,11 +48,11 @@ namespace AirLineManagementSystem
         }
         public void AddEmployeeList(Employee obj)
         {
-            empset.Add(obj);
+            empList.Add(obj);
         }
-        public SortedSet<Employee> DisplayFlight()
+        public List<Employee> DisplayFlight()
         {
-            return empset;
+            return empList;
         }
     }
 }

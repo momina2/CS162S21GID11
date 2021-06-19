@@ -90,7 +90,7 @@ namespace AirLineManagementSystem
             FlightInfoList.Clear();
             Flight fgt;
             con.Open();
-            string query = "SELECT * FROM allFights";
+            string query = "SELECT * FROM allFlights";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
@@ -109,8 +109,7 @@ namespace AirLineManagementSystem
 
 
 
-                // pass.Email = DateTime.Parse(dt.Rows[i]["ManufacturingDate"].ToString());
-                // pass.ExpiryDate = DateTime.Parse(dt.Rows[i]["ExpiryDate"].ToString());
+           
 
                 FlightInfoList.Add(fgt);
             }
@@ -118,24 +117,10 @@ namespace AirLineManagementSystem
             return FlightInfoList;
         }
 
-       /* public List<Flight> getFlightCode()
+        public List<Flight> getFlight()
         {
-            Flight fgt;
-            con.Open();
-            string query = "SELECT * FROM allFights";
-            SqlDataAdapter  = new SqlDataAdapter(query, con);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            List<Flight> FlightInfoList = new List<Flight>();
-
-            for (int i = 0; i < dt.Rows.Count; i++)
-            {
-                fgt = new Flight();
-                fgt.FlightCode = dt.Rows[i]["FlightCode"].ToString();
-                FlightInfoList.Add(fgt);
-            }
-
+           
             return FlightInfoList;
-        }*/
+        }
     }
 }
