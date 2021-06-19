@@ -58,11 +58,24 @@ namespace AirLineManagementSystem
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            searchFromDB();
-            if (flag)
+            if (!textBox2.Text.Contains("#") || !textBox2.Text.Contains("#AMS") || !textBox2.Text.Contains("AMS") || NametextBox.Text.Contains("[0-9]"))
             {
-                ProgressBar PB = new ProgressBar();
-                PB.Show();
+                MessageBox.Show("Invalid Pattern for the ID\n Please Re-check");
+                textBox2.Text = null;
+            }
+            if (NametextBox.Text.Contains("[0-9]"))
+            {
+                MessageBox.Show("Invalid credentials for name","RE-CHECK",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                NametextBox.Text = null;
+            }
+            else
+            {
+                searchFromDB();
+                if (flag)
+                {
+                    ProgressBar PB = new ProgressBar();
+                    PB.Show();
+                }
             }
         }
 
@@ -85,6 +98,16 @@ namespace AirLineManagementSystem
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NametextBox_TextChanged(object sender, EventArgs e)
         {
 
         }

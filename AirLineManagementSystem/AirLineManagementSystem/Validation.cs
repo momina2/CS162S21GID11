@@ -9,19 +9,39 @@ namespace AirLineManagementSystem
     class Validation
     {
 
-        public string ValidName(string name)
+        public bool ValidName(string name)
         {
-            if (Regex.Match(name, @"^([a-zA-Z]+|[a-zA-Z]+\s[a-zA-Z]+)$").Success)
+            bool flag = false;
+            char[] arr = name.ToCharArray();
+            for(int i=0; i<name.Length;i++)
             {
+                if ((arr[i] <= 'a' && arr[i] >= 'z') || (arr[i] <= 'A' && arr[i] >= 'Z') || (arr[i] == ' '))
+                {
+                    flag = true;
+                }
+                else
+                {
+                    flag = false;
+                }
+            }
+            return flag;
+        }
+
+        public bool ValidPassPort(string passport)
+        {
+            bool flag = false;
+            if (passport.Length == 9)
+            {
+               flag = true;
             }
             else
             {
-                bool flag = false;
-
+                flag = false;
             }
-            return name;
-        }
 
+
+            return flag;
+        }
         public int ValidTicket(int ticket)
         {
             if ((ticket >= 'A' || ticket <= 'Z') || (ticket >= 'a' || ticket <= 'z'))
@@ -36,9 +56,9 @@ namespace AirLineManagementSystem
             return ticket;
         }
 
-        public string isValidCNIC(string cnic)
+        public bool isValidCNIC(string cnic)
         {
-            bool flag = false;
+            /*bool flag = false;
             char[] c = cnic.ToCharArray();
             for (int i = 0; i <= 4; i++)
             {
@@ -46,10 +66,18 @@ namespace AirLineManagementSystem
                 {
                     flag = true;
                 }
+                else
+                {
+                    flag = false;
+                }
             }
             if (c[5] == '-')
             {
                 flag = true;
+            }
+            else
+            {
+                flag = false;
             }
             for (int i = 6; i <= 12; i++)
             {
@@ -57,41 +85,49 @@ namespace AirLineManagementSystem
                 {
                     flag = true;
                 }
+                else
+                {
+                    flag = false;
+                }
             }
             if (c[13] == '-')
             {
                 flag = true;
             }
+            else
+            {
+                flag = false;
+            }
             if (c[14] >= '0' && c[14] <= '9')
             {
                 flag = true;
             }
-            return cnic;
+            else
+            {
+                flag = false;
+            }
+            return flag;*/
+            Regex check = new Regex(@"^[0-9]{5}-[0-9]{7}-[0-9]{1}$");
+            bool valid = false;
+            valid = check.IsMatch(cnic);
+            return valid;
         }
 
-        public string isValidEmail(string email)
+        public bool isValidEmail(string email)
         {
             bool flag = false;
             if (email.Contains("@"))
             {
-                Console.WriteLine("Email contains @");
+                if (email.Contains(".com"))
+                {
+                    flag = true;
+                }
             }
             else
             {
-                Console.WriteLine("inValid");
-
+                flag = false;
             }
-            if (email.Contains("[0123456789]"))
-            {
-                Console.WriteLine("Valid Name");
-            }
-            else
-            {
-                Console.WriteLine("inValid Name");
-
-            }
-
-            return email;
+            return flag;
         }
 
         //Random number for Flightcode
@@ -118,32 +154,22 @@ namespace AirLineManagementSystem
             return num;
 
         }
-        public string isValidPhoneNum(string phoneNum)
+        public bool isValidPhoneNum(string phoneNum)
         {
             bool flag = false;
             char[] Phone = phoneNum.ToCharArray();
-            if (phoneNum.Length > 11 || phoneNum.Length < 11)
+            if (phoneNum.Length == 11)
             {
-                MessageBox.Show("Re-check the Phone Number Length");
-            }
 
-            for (int i = 0; i < 11; i++)
-            {
-                if (Phone[i] >= '0' || Phone[i] <= '9')
+                for (int i = 0; i < 11; i++)
                 {
-                    flag = true;
-                }
-                else
-                {
-                    flag = false;
+                    if (Phone[i] >= '0' || Phone[i] <= '9')
+                    {
+                        flag = true;
+                    }
                 }
             }
-
-            if (false)
-            {
-                MessageBox.Show("Invalid Phone#");
-            }
-            return phoneNum;
+            return flag;
         }
 
         //EMPLOYEE ID RANDOMLY

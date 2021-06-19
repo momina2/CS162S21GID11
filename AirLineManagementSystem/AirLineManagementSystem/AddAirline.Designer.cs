@@ -40,20 +40,20 @@ namespace AirLineManagementSystem
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox30 = new System.Windows.Forms.PictureBox();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -133,6 +133,7 @@ namespace AirLineManagementSystem
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(179, 23);
             this.textBox1.TabIndex = 9;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
@@ -172,6 +173,16 @@ namespace AirLineManagementSystem
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(48, 57);
             this.panel4.TabIndex = 3;
+            // 
+            // pictureBox22
+            // 
+            this.pictureBox22.Image = global::AirLineManagementSystem.Properties.Resources.icons8_clipboard_30;
+            this.pictureBox22.Location = new System.Drawing.Point(4, 6);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(40, 45);
+            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox22.TabIndex = 26;
+            this.pictureBox22.TabStop = false;
             // 
             // textBox2
             // 
@@ -234,16 +245,6 @@ namespace AirLineManagementSystem
             this.pictureBox30.TabIndex = 1;
             this.pictureBox30.TabStop = false;
             // 
-            // pictureBox22
-            // 
-            this.pictureBox22.Image = global::AirLineManagementSystem.Properties.Resources.icons8_clipboard_30;
-            this.pictureBox22.Location = new System.Drawing.Point(4, 6);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(40, 45);
-            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox22.TabIndex = 26;
-            this.pictureBox22.TabStop = false;
-            // 
             // AddAirline
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -259,12 +260,12 @@ namespace AirLineManagementSystem
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             this.ResumeLayout(false);
 
         }

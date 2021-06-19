@@ -1397,6 +1397,7 @@ namespace AirLineManagementSystem
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(120, 23);
             this.textBox2.TabIndex = 3;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label3
             // 
@@ -3044,7 +3045,7 @@ namespace AirLineManagementSystem
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "PassengerForm";
+            this.Name.Name= "PassengerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PassengerForm";
             this.Load += new System.EventHandler(this.PassengerForm_Load);

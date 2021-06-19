@@ -35,29 +35,36 @@ namespace AirLineManagementSystem
         private void button1_Click(object sender, EventArgs e)
 
         {
-
-            airlineobj.AirLineName = textBox1.Text;
-            airlineobj.Description = richTextBox1.Text;
-            if(checkBox1.Checked)
+            if (textBox1.Text.Contains("[0-9]"))
             {
-                airlineobj.AirLineStatus = "Active";
+                MessageBox.Show("Airline Must have an Alphabetic name Only", "Airline Name", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textBox1.Text = null;
             }
             else
             {
-                airlineobj.AirLineStatus = "Not Active";
-            }
-            Random ran = new Random();
-            int num = ran.Next(100, 500);
-            airlineobj.AirLineCode = "#"+num.ToString();
-            AirLine.Obj.AddAirLineList(airlineobj);
+                airlineobj.AirLineName = textBox1.Text;
+                airlineobj.Description = richTextBox1.Text;
+                if (checkBox1.Checked)
+                {
+                    airlineobj.AirLineStatus = "Active";
+                }
+                else
+                {
+                    airlineobj.AirLineStatus = "Not Active";
+                }
+                Random ran = new Random();
+                int num = ran.Next(100, 500);
+                airlineobj.AirLineCode = "#" + num.ToString();
+                AirLine.Obj.AddAirLineList(airlineobj);
 
-            con.Open();
-            String query = "INSERT INTO AirlineData (AirlineCode,AirlineName,Status,Description) VALUES ('" + airlineobj.AirLineCode  + "','" + airlineobj.AirLineName + "','" + airlineobj.AirLineStatus +"','" + airlineobj.Description + "')";
-            SqlDataAdapter sda = new SqlDataAdapter(query, con);
-            sda.SelectCommand.ExecuteNonQuery();
-            con.Close();
-            MessageBox.Show("Airline Has Been Added", "Parwaz Airlines", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            ToViewAirlines();
+                con.Open();
+                String query = "INSERT INTO AirlineData (AirlineCode,AirlineName,Status,Description) VALUES ('" + airlineobj.AirLineCode + "','" + airlineobj.AirLineName + "','" + airlineobj.AirLineStatus + "','" + airlineobj.Description + "')";
+                SqlDataAdapter sda = new SqlDataAdapter(query, con);
+                sda.SelectCommand.ExecuteNonQuery();
+                con.Close();
+                MessageBox.Show("Airline Has Been Added", "Parwaz Airlines", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                ToViewAirlines();
+            }
         }
 
         private void AddAirline_Load(object sender, EventArgs e)
@@ -88,6 +95,11 @@ namespace AirLineManagementSystem
             }
             else
                 checkBox1.CheckState = CheckState.Checked;
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

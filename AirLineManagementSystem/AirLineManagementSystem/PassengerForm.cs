@@ -309,11 +309,21 @@ namespace AirLineManagementSystem
 
         private void button5_Click(object sender, EventArgs e)
         {
+         
+                addPassenger(); 
+            
 
+         
+
+       
+
+         
+
+        
             string V = (amount + luggagePrice).ToString();
             textBox26.Text = V;
             //Adding Passengers To database
-            addPassenger();
+            
             
             NameBox.Text = "";
             PassBox.Text = "";
@@ -328,6 +338,8 @@ namespace AirLineManagementSystem
             PhoneBox.PlaceholderText = "Phone #";
             EmailBox.PlaceholderText = "Email";
             click++;
+
+          
 
             if (click == numericUpDown2.Value)
             {
@@ -788,15 +800,22 @@ namespace AirLineManagementSystem
 
         private void SourceBox_TextChanged(object sender, EventArgs e)
         {
-            con.Open();
-            //filter in datagridview 
-            string query = "SELECT FlightCode,Source,Destination,AirLine,FlightType,Date FROM allFlights ";
-            SqlDataAdapter sda = new SqlDataAdapter(query, con);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            dataGridView2.DataSource = dt;
-            (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format("Source LIKE '%{0}%'", SourceBox.Text, DestinationBox.Text);
-            con.Close();
+            if (SourceBox.Text.Contains("[0-9]") || DestinationBox.Text.Contains("[0-9]"))
+            {
+                MessageBox.Show("Invalid Source or Destination\nPlease recheck");
+            }
+            else
+            {
+                con.Open();
+                //filter in datagridview 
+                string query = "SELECT FlightCode,Source,Destination,AirLine,FlightType,Date FROM allFlights ";
+                SqlDataAdapter sda = new SqlDataAdapter(query, con);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                dataGridView2.DataSource = dt;
+                (dataGridView2.DataSource as DataTable).DefaultView.RowFilter = string.Format("Source LIKE '%{0}%'", SourceBox.Text, DestinationBox.Text);
+                con.Close();
+            }
 
 
         }
@@ -865,43 +884,58 @@ namespace AirLineManagementSystem
         private void button8_Click_1(object sender, EventArgs e)
         {
             string searchticket = textBox2.Text;
-            search(searchticket);
+            if (searchticket.Contains("#"))
+            {
+                search(searchticket);
+            }
+            else
+            {
+                MessageBox.Show("# (hash) Missing in ticket pattern\nPlease Try Again!","Mis-Information",MessageBoxButtons.RetryCancel,MessageBoxIcon.Warning);
+            }
         }
 
         private void button11_Click_1(object sender, EventArgs e)
         {
             //search a ticket 
             string searchticket = textBox20.Text;
-            try
+            if (!searchticket.Contains("#") || searchticket.Contains("[0-9]"))
             {
-
-                con.Open();
-                string query = "SELECT * FROM PassengerInfo where Ticket = '" + searchticket + "'";
-
-                SqlCommand sda = new SqlCommand(query, con);
-                SqlDataReader dr;
-
-                dr = sda.ExecuteReader();
-                if (dr.HasRows)
-                {
-                    dr.Read();
-                    textBox19.Text = (dr["Name"].ToString());
-                    textBox18.Text = (dr["Passport#"].ToString());
-                    textBox17.Text = (dr["CNIC"].ToString());
-                    textBox15.Text = (dr["Phone#"].ToString());
-                    textBox16.Text = (dr["Email"].ToString());
-                }
-                else
-                {
-                    MessageBox.Show("DATA NOT FOUND!!");
-
-                }
-
-                con.Close();
+                MessageBox.Show("Invalid Pattern");
+                textBox20.Text = null;
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                try
+                {
+
+                    con.Open();
+                    string query = "SELECT * FROM PassengerInfo where Ticket = '" + searchticket + "'";
+
+                    SqlCommand sda = new SqlCommand(query, con);
+                    SqlDataReader dr;
+
+                    dr = sda.ExecuteReader();
+                    if (dr.HasRows)
+                    {
+                        dr.Read();
+                        textBox19.Text = (dr["Name"].ToString());
+                        textBox18.Text = (dr["Passport#"].ToString());
+                        textBox17.Text = (dr["CNIC"].ToString());
+                        textBox15.Text = (dr["Phone#"].ToString());
+                        textBox16.Text = (dr["Email"].ToString());
+                    }
+                    else
+                    {
+                        MessageBox.Show("DATA NOT FOUND!!");
+
+                    }
+
+                    con.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
 
 
@@ -974,17 +1008,30 @@ namespace AirLineManagementSystem
         public void addPassenger()
         {
             Passenger p = new Passenger();
-            //adding data in DB
+            //Validators for each input TextBoxes
             Validation vad = new Validation();
-            con.Open();
-            string query = "INSERT INTO PassengerInfo (Name,Passport#,CNIC,Phone#,Email,Ticket,Payment) VALUES ('" + NameBox.Text + "','" + PassBox.Text + "','" + CNICBox.Text + "','" + PhoneBox.Text + "','" + EmailBox.Text + "','" + "#A00" + vad.tickNum() + "','" + textBox26.Text + "')";
-            SqlDataAdapter sda = new SqlDataAdapter(query, con);
-            sda.SelectCommand.ExecuteNonQuery();
-            MessageBox.Show("Data Sucessfully Added", "Passenger Added", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            con.Close();
-            p.Name = NameBox.Text;
-            p.PassportNumber = PassBox.Text;
-            pList.Add(p);
+            if (!vad.ValidName(NameBox.Text) && !vad.ValidPassPort(PassBox.Text) && !vad.isValidCNIC(CNICBox.Text) && !vad.isValidPhoneNum(PhoneBox.Text) && !vad.isValidEmail(EmailBox.Text))
+            {
+                NameBox.Text = "";
+                PassBox.Text = "";
+                CNICBox.Text = "";
+                PhoneBox.Text = "";
+                EmailBox.Text = "";
+                MessageBox.Show("Invalid credentials");
+            }
+            //adding data in DB
+            else
+            {
+                con.Open();
+                string query = "INSERT INTO PassengerInfo (Name,Passport#,CNIC,Phone#,Email,Ticket,Payment) VALUES ('" + NameBox.Text + "','" + PassBox.Text + "','" + CNICBox.Text + "','" + PhoneBox.Text + "','" + EmailBox.Text + "','" + "#A00" + vad.tickNum() + "','" + textBox26.Text + "')";
+                SqlDataAdapter sda = new SqlDataAdapter(query, con);
+                sda.SelectCommand.ExecuteNonQuery();
+                MessageBox.Show("Data Sucessfully Added", "Passenger Added", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                con.Close();
+                p.Name = NameBox.Text;
+                p.PassportNumber = PassBox.Text;
+                pList.Add(p);
+            }
         }
 
         //auto complete functions 
@@ -1043,15 +1090,23 @@ namespace AirLineManagementSystem
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             //filter tickets
-            con.Open();
+            if (!textBox1.Text.Contains("#") || textBox1.Text.Contains("[A-Z][a-z]"))
+            {
+                MessageBox.Show("Invalid Ticket Pattern!!!");
+                textBox1.Text = null;
+            }
+            else
+            {
+                con.Open();
 
-            string query = " SELECT * FROM PassengerInfo ";
-            SqlDataAdapter sda = new SqlDataAdapter(query, con);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            dataGridView1.DataSource = dt;
-            (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = string.Format(" Ticket LIKE '%{0}%'", textBox1.Text);
-            con.Close();
+                string query = " SELECT * FROM PassengerInfo ";
+                SqlDataAdapter sda = new SqlDataAdapter(query, con);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                dataGridView1.DataSource = dt;
+                (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = string.Format(" Ticket LIKE '%{0}%'", textBox1.Text);
+                con.Close();
+            }
         }
 
         private void button45_Click(object sender, EventArgs e)
@@ -1231,19 +1286,27 @@ namespace AirLineManagementSystem
             //check luggage allowance 
             if (textBox8.Text != " ")
             {
-                if (int.Parse(textBox8.Text) > flightluggage)
+                if (textBox8.Text.Contains("[A-Z][a-z]"))
                 {
-                    DialogResult result = MessageBox.Show("Cross the maximum luggage allowance \n" +
-                        "Reduce some luggage  or would like to pay for extra luggage? ", "Luggage Allowance", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    if (result == DialogResult.No)
+                    MessageBox.Show("PLease Enter Digits Only","WARNING",MessageBoxButtons.RetryCancel,MessageBoxIcon.Warning);
+                    textBox8.Text = null;
+                }
+                else
+                {
+                    if (int.Parse(textBox8.Text) > flightluggage)
                     {
-                        textBox8.Text = " ";
-                    }
-                    else
-                    {
-                        luggagePrice = (int.Parse(textBox8.Text) - flightluggage) * 45;
-                    }
+                        DialogResult result = MessageBox.Show("Cross the maximum luggage allowance \n" +
+                            "Reduce some luggage  or would like to pay for extra luggage? ", "Luggage Allowance", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.No)
+                        {
+                            textBox8.Text = " ";
+                        }
+                        else
+                        {
+                            luggagePrice = (int.Parse(textBox8.Text) - flightluggage) * 45;
+                        }
 
+                    }
                 }
             }
         }
@@ -1253,6 +1316,11 @@ namespace AirLineManagementSystem
             //email sending form 
             EmailSending ES = new EmailSending();
             ES.Show();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

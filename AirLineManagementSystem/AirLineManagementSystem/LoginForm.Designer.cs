@@ -87,6 +87,7 @@ namespace AirLineManagementSystem
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(178, 16);
             this.textBox2.TabIndex = 13;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // panel6
             // 
@@ -137,6 +138,7 @@ namespace AirLineManagementSystem
             this.NametextBox.Name = "NametextBox";
             this.NametextBox.Size = new System.Drawing.Size(172, 16);
             this.NametextBox.TabIndex = 9;
+            this.NametextBox.TextChanged += new System.EventHandler(this.NametextBox_TextChanged);
             // 
             // PasswordtextBox
             // 
