@@ -12,33 +12,35 @@ namespace AirLineManagementSystem
         public bool ValidName(string name)
         {
             bool flag = false;
-            char[] arr = name.ToCharArray();
-            for(int i=0; i<name.Length;i++)
+            if (!name.Contains("[A-Z]") || !name.Contains("[a-z]"))
             {
-                if ((arr[i] <= 'a' && arr[i] >= 'z') || (arr[i] <= 'A' && arr[i] >= 'Z') || (arr[i] == ' '))
-                {
-                    flag = true;
-                }
-                else
-                {
-                    MessageBox.Show("InValid Name");
-                    return false;
-                }
-                
+                flag = true;
+
+
+
+            }
+            else
+            {
+                flag = false;
+                MessageBox.Show("Invalid Name", "RE-CHECK", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
             }
             return flag;
+
         }
 
         public bool ValidPassPort(string passport)
         {
             bool flag = false;
-            if (passport.Length == 9)
+            Regex checking = new Regex(@"^[0-9]{9}$");
+            if (checking.IsMatch(passport))
             {
-               flag = true;
+                flag = true;
             }
             else
             {
-                MessageBox.Show("InValid PassPort");
+                MessageBox.Show("Invalid Passport Number", "RE-CHECK", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
                 return false;
             }
 
@@ -61,65 +63,18 @@ namespace AirLineManagementSystem
 
         public bool isValidCNIC(string cnic)
         {
-            /*bool flag = false;
-            char[] c = cnic.ToCharArray();
-            for (int i = 0; i <= 4; i++)
-            {
-                if (c[i] >= '0' && c[i] <= '9')
-                {
-                    flag = true;
-                }
-                else
-                {
-                    flag = false;
-                }
-            }
-            if (c[5] == '-')
-            {
-                flag = true;
-            }
+           
+            Regex checking = new Regex(@"^[0-9]{5}-[0-9]{7}-[0-9]{1}$");
+            bool flag = false;
+            if (checking.IsMatch(cnic))
+                flag= true;
             else
             {
+                MessageBox.Show("Invalid CNIC Number", "RE-CHECK", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
                 flag = false;
             }
-            for (int i = 6; i <= 12; i++)
-            {
-                if (c[i] >= '0' && c[i] <= '9')
-                {
-                    flag = true;
-                }
-                else
-                {
-                    flag = false;
-                }
-            }
-            if (c[13] == '-')
-            {
-                flag = true;
-            }
-            else
-            {
-                flag = false;
-            }
-            if (c[14] >= '0' && c[14] <= '9')
-            {
-                flag = true;
-            }
-            else
-            {
-                flag = false;
-            }
-            return flag;*/
-            Regex check = new Regex(@"^[0-9]{5}-[0-9]{7}-[0-9]{1}$");
-            bool valid = false;
-            if (check.IsMatch(cnic))
-                valid= true;
-            else
-            {
-                MessageBox.Show("InValid Cnic");
-                return false;
-            }
-            return valid;
+            return flag;
         }
                 
                 
@@ -127,22 +82,14 @@ namespace AirLineManagementSystem
         public bool isValidEmail(string email)
         {
             bool flag = false;
-            if (email.Contains("@"))
+            if (email.Contains("@") && email.Contains(".com"))
             {
-                if (email.Contains(".com"))
-                {
+               
                     flag = true;
-                }
-                else
-                {
-                    MessageBox.Show("InValid Email");
-                    return false;
-                   
-                }
             }
             else
             {
-                MessageBox.Show("InValid Email");
+                MessageBox.Show("Invalid Email","RE-CHECK",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 return  false;
 
             }
@@ -175,27 +122,20 @@ namespace AirLineManagementSystem
         }
         public bool isValidPhoneNum(string phoneNum)
         {
+            
+            Regex checking = new Regex(@"^[0-9]{11}$");
             bool flag = false;
-            char[] Phone = phoneNum.ToCharArray();
-            if (phoneNum.Length == 11)
+            if (checking.IsMatch(phoneNum))
             {
-
-                for (int i = 0; i < 11; i++)
-                {
-                    if (Phone[i] >= '0' || Phone[i] <= '9')
-                    {
-                        flag = true;
-                    }
-                    else
-                    {
-                        MessageBox.Show("InValid Number");
-                        return false;
-                        
-                    }
-                       
-                }
+                flag = true;
+            }
+            else
+            {
+                MessageBox.Show("Invalid Phone Number");
+                flag = false;
             }
             return flag;
+            
         }
 
         //EMPLOYEE ID RANDOMLY

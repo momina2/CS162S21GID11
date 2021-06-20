@@ -314,8 +314,55 @@ namespace AirLineManagementSystem
             
            string V = (amount + luggagePrice).ToString();
             textBox26.Text = V;
+            bool flagv = false;
             //Adding Passengers To database
-            addPassenger();
+            //Validators for each input TextBoxes
+            Validation vad = new Validation();
+            string a = NameBox.Text;
+            string b = PassBox.Text;
+            string c = CNICBox.Text;
+            string d = PhoneBox.Text;
+            string E = EmailBox.Text;
+          
+             if (a.Contains("[A-Z]") || a.Contains("[a-z]"))
+             {
+               
+                 flagv = true;
+
+             }
+
+            if  (!vad.ValidPassPort(b))
+            {
+                PassBox.Text = null;
+                flagv = false;
+
+            }
+          
+            if (!vad.isValidCNIC(c))
+            {
+                CNICBox.Text = null;
+                flagv = false;
+
+            }
+          
+            /*if (!vad.isValidPhoneNum(d))
+            {
+                PhoneBox.Text = null;
+                flagv = false;
+
+            }*/
+           
+            if (!vad.isValidEmail(E))
+            {
+                EmailBox.Text = null;
+                flagv = false;
+
+            }
+       
+            else if(vad.ValidName(a) == true && vad.ValidPassPort(b) ==  true && vad.isValidCNIC(c) == true  && vad.isValidPhoneNum(E) == true)
+            { 
+                addPassenger();
+            }
             if (flagv)
             {
                 NameBox.Text = "";
@@ -999,29 +1046,17 @@ namespace AirLineManagementSystem
 
         }
         List<Passenger> pList = new List<Passenger>();
-        bool flagv = false;
+        bool flagv = true;
         public void addPassenger()
         {
+            Validation vad = new Validation();
             Passenger p = new Passenger();
 
-            //Validators for each input TextBoxes
-            Validation vad = new Validation();
-            if (!vad.ValidName(NameBox.Text) || !vad.ValidPassPort(PassBox.Text) || !vad.isValidCNIC(CNICBox.Text) || !vad.isValidPhoneNum(PhoneBox.Text) || !vad.isValidEmail(EmailBox.Text))
-            {
-                NameBox.Text = "";
-                PassBox.Text = "";
-                CNICBox.Text = "";
-                PhoneBox.Text = "";
-                EmailBox.Text = "";
+          
 
-                MessageBox.Show("Invalid Data Enterred!!");
-                flagv = false;
-            }
-            
-           
+
             //adding data in DB
-            else
-            {
+            
                 con.Open();
                 string query = "INSERT INTO PassengerInfo (Name,Passport#,CNIC,Phone#,Email,Ticket,Payment) VALUES ('" + NameBox.Text + "','" + PassBox.Text + "','" + CNICBox.Text + "','" + PhoneBox.Text + "','" + EmailBox.Text + "','" + "#A00" + vad.tickNum() + "','" + textBox26.Text + "')";
                 SqlDataAdapter sda = new SqlDataAdapter(query, con);
@@ -1032,7 +1067,7 @@ namespace AirLineManagementSystem
                 p.PassportNumber = PassBox.Text;
                 pList.Add(p);
                 flagv = true;
-            }
+            
         }
 
         //auto complete functions 
@@ -1243,7 +1278,7 @@ namespace AirLineManagementSystem
         private void button9_Click(object sender, EventArgs e)
         {
             Delete(textBox20.Text);
-            MessageBox.Show("You have canceled your Reservations  ");
+            MessageBox.Show("You have cancelled your Reservations  ");
             textBox20.Text = "";
             textBox19.Text = "";
             textBox18.Text = "";
