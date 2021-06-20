@@ -310,46 +310,40 @@ namespace AirLineManagementSystem
         private void button5_Click(object sender, EventArgs e)
         {
          
-                addPassenger(); 
+               
             
-
-         
-
-       
-
-         
-
-        
-            string V = (amount + luggagePrice).ToString();
+           string V = (amount + luggagePrice).ToString();
             textBox26.Text = V;
             //Adding Passengers To database
-            
-            
-            NameBox.Text = "";
-            PassBox.Text = "";
-            CNICBox.Text = "";
-            PhoneBox.Text = "";
-            EmailBox.Text = "";
-
-            //placeholder dynamically
-            NameBox.PlaceholderText = "Name";
-            PassBox.PlaceholderText = "Passport";
-            CNICBox.PlaceholderText = "CNIC #";
-            PhoneBox.PlaceholderText = "Phone #";
-            EmailBox.PlaceholderText = "Email";
-            click++;
-
-          
-
-            if (click == numericUpDown2.Value)
+            addPassenger();
+            if (flagv)
             {
-                MessageBox.Show("Passengers data had been added", "Passenger Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                NameBox.Enabled = false;
-                PassBox.Enabled = false;
-                CNICBox.Enabled = false;
-                PhoneBox.Enabled = false;
-                EmailBox.Enabled = false;
+                NameBox.Text = "";
+                PassBox.Text = "";
+                CNICBox.Text = "";
+                PhoneBox.Text = "";
+                EmailBox.Text = "";
 
+                //placeholder dynamically
+                NameBox.PlaceholderText = "Name";
+                PassBox.PlaceholderText = "Passport";
+                CNICBox.PlaceholderText = "CNIC #";
+                PhoneBox.PlaceholderText = "Phone #";
+                EmailBox.PlaceholderText = "Email";
+                click++;
+
+
+
+                if (click == numericUpDown2.Value)
+                {
+                    MessageBox.Show("Passengers data had been added", "Passenger Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    NameBox.Enabled = false;
+                    PassBox.Enabled = false;
+                    CNICBox.Enabled = false;
+                    PhoneBox.Enabled = false;
+                    EmailBox.Enabled = false;
+
+                }
             }
 
         }
@@ -1005,9 +999,11 @@ namespace AirLineManagementSystem
 
         }
         List<Passenger> pList = new List<Passenger>();
+        bool flagv = false;
         public void addPassenger()
         {
             Passenger p = new Passenger();
+
             //Validators for each input TextBoxes
             Validation vad = new Validation();
             if (!vad.ValidName(NameBox.Text) || !vad.ValidPassPort(PassBox.Text) || !vad.isValidCNIC(CNICBox.Text) || !vad.isValidPhoneNum(PhoneBox.Text) || !vad.isValidEmail(EmailBox.Text))
@@ -1019,7 +1015,9 @@ namespace AirLineManagementSystem
                 EmailBox.Text = "";
 
                 MessageBox.Show("Invalid Data Enterred!!");
+                flagv = false;
             }
+            
            
             //adding data in DB
             else
@@ -1033,6 +1031,7 @@ namespace AirLineManagementSystem
                 p.Name = NameBox.Text;
                 p.PassportNumber = PassBox.Text;
                 pList.Add(p);
+                flagv = true;
             }
         }
 
@@ -1151,35 +1150,7 @@ namespace AirLineManagementSystem
         public int flightluggage = 0;
         private void dataGridView2_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            label17.Text = " Flight Code    " + dataGridView2.SelectedRows[0].Cells[0].Value.ToString();
-            label14.Text = " Date           " + dataGridView2.SelectedRows[0].Cells[5].Value.ToString();
-            label18.Text = " Airline        " + dataGridView2.SelectedRows[0].Cells[3].Value.ToString();
-            try
-            {
-                con.Open();
-                string query = "SELECT * FROM allFlights where FlightCode = '" + dataGridView2.SelectedRows[0].Cells[0].Value.ToString() + "'";
-
-                SqlCommand sda = new SqlCommand(query, con);
-                SqlDataReader dr;
-
-                dr = sda.ExecuteReader();
-                if (dr.HasRows)
-                {
-                    dr.Read();
-                    label67.Text = "Total Time Travel : " + (dr["TimeTravel"].ToString()) + " Hours";
-                    label50.Text = "Luggage Allowance : " + (dr["Luggage"].ToString()) + " Kgs";
-                    flightluggage = int.Parse((dr["Luggage"].ToString()));
-
-                }
-
-
-                con.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            nextPage = true;
+           
         }
 
         private void button13_Click_2(object sender, EventArgs e)
@@ -1286,7 +1257,7 @@ namespace AirLineManagementSystem
         private void textBox8_TextChanged(object sender, EventArgs e)
         {
             //check luggage allowance 
-            if (textBox8.Text != " ")
+            if (textBox8.Text != "")
             {
                 if (textBox8.Text.Contains("[A-Z][a-z]"))
                 {
@@ -1323,6 +1294,39 @@ namespace AirLineManagementSystem
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            label17.Text = " Flight Code    " + dataGridView2.SelectedRows[0].Cells[0].Value.ToString();
+            label14.Text = " Date           " + dataGridView2.SelectedRows[0].Cells[5].Value.ToString();
+            label18.Text = " Airline        " + dataGridView2.SelectedRows[0].Cells[3].Value.ToString();
+            try
+            {
+                con.Open();
+                string query = "SELECT * FROM allFlights where FlightCode = '" + dataGridView2.SelectedRows[0].Cells[0].Value.ToString() + "'";
+
+                SqlCommand sda = new SqlCommand(query, con);
+                SqlDataReader dr;
+
+                dr = sda.ExecuteReader();
+                if (dr.HasRows)
+                {
+                    dr.Read();
+                    label67.Text = "Total Time Travel : " + (dr["TimeTravel"].ToString()) + " Hours";
+                    label50.Text = "Luggage Allowance : " + (dr["Luggage"].ToString()) + " Kgs";
+                    flightluggage = int.Parse((dr["Luggage"].ToString()));
+
+                }
+
+
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            nextPage = true;
         }
     }
 }

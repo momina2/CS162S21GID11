@@ -21,8 +21,10 @@ namespace AirLineManagementSystem
                 }
                 else
                 {
-                    flag = false;
+                    MessageBox.Show("InValid Name");
+                    return false;
                 }
+                
             }
             return flag;
         }
@@ -36,7 +38,8 @@ namespace AirLineManagementSystem
             }
             else
             {
-                flag = false;
+                MessageBox.Show("InValid PassPort");
+                return false;
             }
 
 
@@ -46,11 +49,11 @@ namespace AirLineManagementSystem
         {
             if ((ticket >= 'A' || ticket <= 'Z') || (ticket >= 'a' || ticket <= 'z'))
             {
-                Console.WriteLine("InValid Name");
+                MessageBox.Show("InValid Name");
             }
             else
             {
-                Console.WriteLine("Valid Name");
+                MessageBox.Show("Valid Name");
             }
 
             return ticket;
@@ -109,9 +112,17 @@ namespace AirLineManagementSystem
             return flag;*/
             Regex check = new Regex(@"^[0-9]{5}-[0-9]{7}-[0-9]{1}$");
             bool valid = false;
-            valid = check.IsMatch(cnic);
+            if (check.IsMatch(cnic))
+                valid= true;
+            else
+            {
+                MessageBox.Show("InValid Cnic");
+                return false;
+            }
             return valid;
         }
+                
+                
 
         public bool isValidEmail(string email)
         {
@@ -122,10 +133,18 @@ namespace AirLineManagementSystem
                 {
                     flag = true;
                 }
+                else
+                {
+                    MessageBox.Show("InValid Email");
+                    return false;
+                   
+                }
             }
             else
             {
-                flag = false;
+                MessageBox.Show("InValid Email");
+                return  false;
+
             }
             return flag;
         }
@@ -167,6 +186,13 @@ namespace AirLineManagementSystem
                     {
                         flag = true;
                     }
+                    else
+                    {
+                        MessageBox.Show("InValid Number");
+                        return false;
+                        
+                    }
+                       
                 }
             }
             return flag;
