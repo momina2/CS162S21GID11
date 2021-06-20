@@ -1010,15 +1010,17 @@ namespace AirLineManagementSystem
             Passenger p = new Passenger();
             //Validators for each input TextBoxes
             Validation vad = new Validation();
-            if (!vad.ValidName(NameBox.Text) && !vad.ValidPassPort(PassBox.Text) && !vad.isValidCNIC(CNICBox.Text) && !vad.isValidPhoneNum(PhoneBox.Text) && !vad.isValidEmail(EmailBox.Text))
+            if (!vad.ValidName(NameBox.Text) || !vad.ValidPassPort(PassBox.Text) || !vad.isValidCNIC(CNICBox.Text) || !vad.isValidPhoneNum(PhoneBox.Text) || !vad.isValidEmail(EmailBox.Text))
             {
                 NameBox.Text = "";
                 PassBox.Text = "";
                 CNICBox.Text = "";
                 PhoneBox.Text = "";
                 EmailBox.Text = "";
-                MessageBox.Show("Invalid credentials");
+
+                MessageBox.Show("Invalid Data Enterred!!");
             }
+           
             //adding data in DB
             else
             {

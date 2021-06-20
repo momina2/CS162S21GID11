@@ -38,7 +38,7 @@ namespace AirLineManagementSystem
             
             SqlConnection con = new SqlConnection(Configuration.connection);
             con.Open();
-            string query = "UPDATE allFlights SET Date = '" + dateTimePicker1.Text  + "'";
+            string query = "UPDATE allFlights SET Date = '" + dateTimePicker1.Text.ToString()  + "'";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             sda.SelectCommand.ExecuteNonQuery();
             con.Close();
@@ -84,13 +84,20 @@ namespace AirLineManagementSystem
             if (sdr.HasRows)
             {
                 sdr.Read();
-                dateTimePicker1.Text = (sdr["Date"].ToString());
-             
+                // DateTime date;
+                // date = Convert.ToDateTime(dateTimePicker1.Text,
+                //System.Globalization.CultureInfo.GetCultureInfo("hi-IN").DateTimeFormat);
+                //dateTimePicker1.Text = sdr["Date"].ToString();
+                DateTime date;
+                date = Convert.ToDateTime(dateTimePicker1.Text);
+                date = Convert.ToDateTime(sdr["Date"]);
+                sdr.Close();
             }
             else
             {
                 MessageBox.Show("DATE Not Found");
             }
+            
             con.Close();
           
 

@@ -50,15 +50,15 @@ namespace AirLineManagementSystem
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox30 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
+            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
             this.SuspendLayout();
             // 
@@ -202,10 +202,9 @@ namespace AirLineManagementSystem
             // dateTimePicker1
             // 
             this.dateTimePicker1.CustomFormat = "dd-MM-yyyy";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(109, 134);
             this.dateTimePicker1.MaxDate = new System.DateTime(2023, 12, 31, 0, 0, 0, 0);
-            this.dateTimePicker1.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker1.MinDate = new System.DateTime(2021, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(186, 23);
             this.dateTimePicker1.TabIndex = 4;
@@ -300,15 +299,6 @@ namespace AirLineManagementSystem
             this.panel4.Size = new System.Drawing.Size(48, 53);
             this.panel4.TabIndex = 2;
             // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
-            this.panel5.Controls.Add(this.pictureBox30);
-            this.panel5.Location = new System.Drawing.Point(45, 336);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(48, 49);
-            this.panel5.TabIndex = 3;
-            // 
             // pictureBox22
             // 
             this.pictureBox22.Image = global::AirLineManagementSystem.Properties.Resources.icons8_clipboard_30;
@@ -318,6 +308,15 @@ namespace AirLineManagementSystem
             this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox22.TabIndex = 27;
             this.pictureBox22.TabStop = false;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
+            this.panel5.Controls.Add(this.pictureBox30);
+            this.panel5.Location = new System.Drawing.Point(45, 336);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(48, 49);
+            this.panel5.TabIndex = 3;
             // 
             // pictureBox30
             // 
@@ -347,8 +346,8 @@ namespace AirLineManagementSystem
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel4.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
+            this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
             this.ResumeLayout(false);
 
