@@ -15,9 +15,6 @@ namespace AirLineManagementSystem
             if (!name.Contains("[A-Z]") || !name.Contains("[a-z]"))
             {
                 flag = true;
-
-
-
             }
             else
             {
@@ -70,7 +67,7 @@ namespace AirLineManagementSystem
                 flag= true;
             else
             {
-                MessageBox.Show("Invalid CNIC Number", "RE-CHECK", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Invalid CNIC Number\n xxxxx-xxxxxxx-x", "RE-CHECK", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                 flag = false;
             }
@@ -122,20 +119,22 @@ namespace AirLineManagementSystem
         }
         public bool isValidPhoneNum(string phoneNum)
         {
-            
-            Regex checking = new Regex(@"^[0-9]{11}$");
             bool flag = false;
-            if (checking.IsMatch(phoneNum))
+            for(int i=0;i<phoneNum.Length;i++)
             {
-                flag = true;
-            }
-            else
-            {
-                MessageBox.Show("Invalid Phone Number");
-                flag = false;
+                if(phoneNum[i]>=0||phoneNum[i]<=9)
+                {
+                    flag = true;
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Phone Number", "RE-CHECK", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return false;
+                }
+               
             }
             return flag;
-            
+
         }
 
         //EMPLOYEE ID RANDOMLY

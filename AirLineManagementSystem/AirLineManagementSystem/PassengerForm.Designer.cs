@@ -483,10 +483,10 @@ namespace AirLineManagementSystem
             this.tabControl1.Controls.Add(this.SeatSelection);
             this.tabControl1.Controls.Add(this.Payment);
             this.tabControl1.Controls.Add(this.Ticketpage);
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Location = new System.Drawing.Point(0, -23);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(952, 539);
+            this.tabControl1.Size = new System.Drawing.Size(952, 562);
             this.tabControl1.TabIndex = 7;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
@@ -2433,7 +2433,7 @@ namespace AirLineManagementSystem
             this.Ticketpage.Location = new System.Drawing.Point(4, 24);
             this.Ticketpage.Name = "Ticketpage";
             this.Ticketpage.Padding = new System.Windows.Forms.Padding(3);
-            this.Ticketpage.Size = new System.Drawing.Size(944, 511);
+            this.Ticketpage.Size = new System.Drawing.Size(944, 534);
             this.Ticketpage.TabIndex = 8;
             this.Ticketpage.Text = "Ticket";
             this.Ticketpage.UseVisualStyleBackColor = true;
@@ -3046,7 +3046,7 @@ namespace AirLineManagementSystem
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name.Name = "PassengerForm";
+            this.Name = "PassengerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PassengerForm";
             this.Load += new System.EventHandler(this.PassengerForm_Load);

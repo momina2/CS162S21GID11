@@ -220,7 +220,12 @@ namespace AirLineManagementSystem
 
         private void button42_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedTab = SeatSelection;
+            if (numericUpDown2.Value == 0)
+            {
+                MessageBox.Show("Not any Passenger Selected ");
+            }
+            else
+            { tabControl1.SelectedTab = SeatSelection; }
 
         }
 
@@ -315,6 +320,7 @@ namespace AirLineManagementSystem
            string V = (amount + luggagePrice).ToString();
             textBox26.Text = V;
             bool flagv = false;
+
             //Adding Passengers To database
             //Validators for each input TextBoxes
             Validation vad = new Validation();
@@ -324,44 +330,12 @@ namespace AirLineManagementSystem
             string d = PhoneBox.Text;
             string E = EmailBox.Text;
           
-             if (a.Contains("[A-Z]") || a.Contains("[a-z]"))
-             {
-               
-                 flagv = true;
-
-             }
-
-            if  (!vad.ValidPassPort(b))
-            {
-                PassBox.Text = null;
-                flagv = false;
-
-            }
-          
-            if (!vad.isValidCNIC(c))
-            {
-                CNICBox.Text = null;
-                flagv = false;
-
-            }
-          
-            /*if (!vad.isValidPhoneNum(d))
-            {
-                PhoneBox.Text = null;
-                flagv = false;
-
-            }*/
            
-            if (!vad.isValidEmail(E))
-            {
-                EmailBox.Text = null;
-                flagv = false;
-
-            }
        
-            else if(vad.ValidName(a) == true && vad.ValidPassPort(b) ==  true && vad.isValidCNIC(c) == true  && vad.isValidPhoneNum(E) == true)
+             if(vad.ValidName(a) == true && vad.ValidPassPort(b) ==  true && vad.isValidCNIC(c) == true  && vad.isValidPhoneNum(E) )
             { 
                 addPassenger();
+                flagv = true;
             }
             if (flagv)
             {
@@ -1051,12 +1025,7 @@ namespace AirLineManagementSystem
         {
             Validation vad = new Validation();
             Passenger p = new Passenger();
-
-          
-
-
             //adding data in DB
-            
                 con.Open();
                 string query = "INSERT INTO PassengerInfo (Name,Passport#,CNIC,Phone#,Email,Ticket,Payment) VALUES ('" + NameBox.Text + "','" + PassBox.Text + "','" + CNICBox.Text + "','" + PhoneBox.Text + "','" + EmailBox.Text + "','" + "#A00" + vad.tickNum() + "','" + textBox26.Text + "')";
                 SqlDataAdapter sda = new SqlDataAdapter(query, con);

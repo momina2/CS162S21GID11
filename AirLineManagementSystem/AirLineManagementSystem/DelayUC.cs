@@ -36,12 +36,12 @@ namespace AirLineManagementSystem
         public void update()
         {
             
-            SqlConnection con = new SqlConnection(Configuration.connection);
+           /* SqlConnection con = new SqlConnection(Configuration.connection);
             con.Open();
-            string query = "UPDATE allFlights SET Date = '" + dateTimePicker1.Text.ToString()  + "'";
+            string query = "UPDATE allFlights SET Date = '" + Convert.ToDateTime(dateTimePicker1.Text) + "'Where FlightCode = '" +  comboBox1.SelectedItem + "'";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             sda.SelectCommand.ExecuteNonQuery();
-            con.Close();
+            con.Close();*/
             MessageBox.Show("Your Data Has Been Updated successfully, PARWAAZ");
         }
 
