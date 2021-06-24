@@ -3046,7 +3046,7 @@ namespace AirLineManagementSystem
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "PassengerForm";
+            this.Name.Name = "PassengerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PassengerForm";
             this.Load += new System.EventHandler(this.PassengerForm_Load);
